@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="DeletedGame"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\usr\;CMake Files\..\..\..\..\usr\lib64\;CMake Files\..\..\..\..\usr\lib64\cmake\;CMake Files\..\..\..\..\usr\lib64\cmake\SFML\;CMake Files\tests\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DeletedGame">
+				<Option output="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/DeletedGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 DeletedGame"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DeletedGame/fast">
+				<Option output="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/DeletedGame" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 DeletedGame/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runUnitTests">
+				<Option output="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/runUnitTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 runUnitTests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="runUnitTests/fast">
+				<Option output="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/runUnitTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/../../../../include/c++/10.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 runUnitTests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/BulletCase.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Carrier.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/CleverEnemy.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/DeletedGame.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/FieldObject.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/ForagerEnemy.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Hero.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Item.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Layer.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Level.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/MapObject.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/MedChest.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Shooter.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Unit.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Weapon.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/WildEnemy.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/main.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/myView.h">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Hero.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Item.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Layer.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Level.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Unit.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/main.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/myView.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/tests/gtest.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/../../../../usr/lib64/cmake/SFML/SFMLConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/../../../../usr/lib64/cmake/SFML/SFMLConfigDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/../../../../usr/lib64/cmake/SFML/SFMLConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/../../../../usr/lib64/cmake/SFML/SFMLSharedTargets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/../../../../usr/lib64/cmake/SFML/SFMLSharedTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\usr\lib64\cmake\SFML\"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/tests/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\tests\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

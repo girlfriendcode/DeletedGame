@@ -1,0 +1,6 @@
+/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir
+/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/CMakeFiles/edit_cache.dir
+/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/CMakeFiles/rebuild_cache.dir
+/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests/CMakeFiles/runUnitTests.dir

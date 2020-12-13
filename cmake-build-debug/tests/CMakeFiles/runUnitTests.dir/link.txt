@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/runUnitTests.dir/gtest.cpp.o  -o runUnitTests  -lgtest -lgtest_main 
