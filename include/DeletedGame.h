@@ -19,6 +19,7 @@
 #include "../include/Weapon.h"
 #include "../include/MedChest.h"
 #include "../include/BulletCase.h"
+#include "../include/Bullet.h"
 
 using namespace sf;
 
@@ -39,7 +40,6 @@ public:
      * Загрузка карты и игровой процесс
      */
     void Run();
-
 
 };
 

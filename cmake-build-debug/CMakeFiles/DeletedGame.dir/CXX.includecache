@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/valeria/CLionProjects/DeletedGame/include/Bullet.h
+FieldObject.h
+/home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+cmath
+-
+
 /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
 Item.h
 /home/valeria/CLionProjects/DeletedGame/include/Item.h
@@ -55,6 +61,8 @@ list
 /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
 ../include/BulletCase.h
 /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
+../include/Bullet.h
+/home/valeria/CLionProjects/DeletedGame/include/Bullet.h
 
 /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
 iostream
@@ -175,6 +183,8 @@ Item.h
 /home/valeria/CLionProjects/DeletedGame/include/WildEnemy.h
 Unit.h
 /home/valeria/CLionProjects/DeletedGame/include/Unit.h
+../include/Hero.h
+/home/valeria/CLionProjects/DeletedGame/include/Hero.h
 
 /home/valeria/CLionProjects/DeletedGame/include/main.h
 SFML/Graphics.hpp
@@ -191,6 +201,10 @@ SFML/System.hpp
 /home/valeria/CLionProjects/DeletedGame/include/myView.h
 main.h
 /home/valeria/CLionProjects/DeletedGame/include/main.h
+
+/home/valeria/CLionProjects/DeletedGame/src/Bullet.cpp
+../include/Bullet.h
+/home/valeria/CLionProjects/DeletedGame/include/Bullet.h
 
 /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp
 ../include/DeletedGame.h

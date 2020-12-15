@@ -32,3 +32,12 @@ void FieldObject::draw(RenderWindow &window) {
     window.draw(sprite);
 }
 
+FieldObject::FieldObject(std::string &name, std::string &fileName, float x, float y, float w, float h) {
+    this->name = name;
+    this->fileName = fileName;
+    this->x = x;
+    this->y = y;
+    this->w = w;
+    this->h = h;
+}
+

@@ -10,8 +10,8 @@
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
-                <property name="radius" value="500"/>
-                <property name="precision" value="0.8"/>
+                <property name="radius" value="400"/>
+                <property name="precision" value="0.7"/>
             </properties>
         </object>
         <object name="hero" type="hero" x="240" y="34" width="30" height="47">
@@ -21,8 +21,8 @@
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
-                <property name="radius" value="500"/>
-                <property name="precision" value="1.0"/>
+                <property name="radius" value="300"/>
+                <property name="precision" value="0.8"/>
             </properties>
         </object>
         <object name="hero" type="hero" x="182" y="76" width="30" height="47">
@@ -33,7 +33,7 @@
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
                 <property name="radius" value="500"/>
-                <property name="precision" value="1.0"/>
+                <property name="precision" value="0.6"/>
             </properties>
         </object>
         <object name="hero" type="hero" x="220" y="70" width="30" height="47">
@@ -43,33 +43,33 @@
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
-                <property name="radius" value="500"/>
-                <property name="precision" value="0.9"/>
+                <property name="radius" value="350"/>
+                <property name="precision" value="0.7"/>
             </properties>
         </object>
         <!--Enemies-->
-        <object name="wild_enemy" type="enemy" subType="wild_enemy" x="1332" y="130" width="78" height="50">
+        <object name="wild_enemy" type="enemy" subType="wild_enemy" x="1332" y="130" width="72" height="50">
             <properties>
                 <property name="health" value="100"/>
                 <property name="maxHealth" value="100"/>
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
-                <property name="timeStep" value="2"/>
+                <property name="timeStep" value="4"/>
                 <property name="radius" value="200"/>
-                <property name="damage" value="15"/>
-                <property name="precision" value="0.9"/>
+                <property name="damage" value="5"/>
+                <property name="precision" value="0.6"/>
             </properties>
         </object>
-        <object name="wild_enemy" type="enemy" subType="wild_enemy" x="130" y="780" width="78" height="50">
+        <object name="wild_enemy" type="enemy" subType="wild_enemy" x="130" y="780" width="72" height="50">
             <properties>
                 <property name="health" value="100"/>
                 <property name="maxHealth" value="100"/>
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
-                <property name="timeStep" value="2"/>
+                <property name="timeStep" value="4"/>
                 <property name="radius" value="200"/>
-                <property name="damage" value="15"/>
-                <property name="precision" value="0.9"/>
+                <property name="damage" value="5"/>
+                <property name="precision" value="0.6"/>
             </properties>
         </object>
         <object name="clever_enemy" type="enemy" subType="clever_enemy" x="600" y="600" width="44" height="50">
@@ -80,7 +80,7 @@
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
                 <property name="radius" value="500"/>
-                <property name="precision" value="0.8"/>
+                <property name="precision" value="0.6"/>
             </properties>
         </object>
         <object name="clever_enemy" type="enemy" subType="clever_enemy" x="214" y="1328" width="44" height="50">
@@ -90,8 +90,8 @@
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
-                <property name="radius" value="100"/>
-                <property name="precision" value="0.8"/>
+                <property name="radius" value="300"/>
+                <property name="precision" value="0.7"/>
             </properties>
         </object>
         <object name="clever_enemy" type="enemy" subType="clever_enemy" x="1388" y="788" width="44" height="50">
@@ -101,8 +101,8 @@
                 <property name="time" value="100"/>
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="5"/>
-                <property name="radius" value="100"/>
-                <property name="precision" value="0.8"/>
+                <property name="radius" value="400"/>
+                <property name="precision" value="0.5"/>
             </properties>
         </object>
         <object name="forager_enemy" type="enemy" subType="forager_enemy" x="1080" y="576" width="93" height="58">
@@ -113,6 +113,7 @@
                 <property name="maxTime" value="120"/>
                 <property name="timeStep" value="5"/>
                 <property name="radius" value="500"/>
+                <property name="precision" value="0.6"/>
             </properties>
         </object>
         <object name="forager_enemy" type="enemy" subType="forager_enemy" x="232" y="380" width="93" height="58">
@@ -123,6 +124,7 @@
                 <property name="maxTime" value="120"/>
                 <property name="timeStep" value="5"/>
                 <property name="radius" value="500"/>
+                <property name="precision" value="0.6"/>
             </properties>
         </object>
         <!--Items-->

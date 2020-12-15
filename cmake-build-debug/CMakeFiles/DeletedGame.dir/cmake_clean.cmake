@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o"
   "CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o"
   "CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o"
+  "CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o"

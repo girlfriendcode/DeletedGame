@@ -23,8 +23,10 @@ public:
     float getPrecision() const { return this->shootPrecision; };
 
     Weapon *getWeapon() const { return this->activeWeapon; };
-    //virtual bool shootSuccessful(int precision,int distance);
+    bool shootSuccessful(float distance);
+
     //virtual void shoot();
+    void makeShoot(Unit *hitUnit);
 };
 
 #endif //DELETEDGAME_SHOOTER_H

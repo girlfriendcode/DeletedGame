@@ -5,6 +5,7 @@
 #include "../include/Unit.h"
 #include <cmath>
 
+
 Unit::Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view)
         : FieldObject(level, name, fileName, x, y, w, h) {
     isAlive = true;
@@ -97,6 +98,7 @@ void Unit::doStep(float time) {
     if (distance > 2 && basicStats["time"] > 0) {
         x += 0.1 * time * (tempX - x) / distance;//идем по иксу с помощью вектора нормали
         y += 0.1 * time * (tempY - y) / distance;//идем по игреку так же
+        basicStats["time"] -= basicStats["timeStep"] * distance / 400;
         for (auto &i:map) {
             if (getRect().intersects(i.rect)) {
                 distance -= sqrt((h + i.rect.height) * (h + i.rect.height) +
@@ -177,6 +179,6 @@ void Unit::control(float time) {
     }
 }
 
-void Unit::acceptDamage(Unit &from) {
-
+Unit::Unit(std::string &name, std::string &fileName, float x, float y, float w, float h) : FieldObject(name, fileName,
+                                                                                                       x, y, w, h) {
 }

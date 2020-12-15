@@ -6,7 +6,7 @@
 #define GAME_WILDENEMY_H
 
 #include "Unit.h"
-
+#include "../include/Hero.h"
 class WildEnemy : public Unit {
 private:
     float precision;
@@ -15,10 +15,10 @@ public:
     WildEnemy(Level &level, float precision, float damage, std::string &name, std::string &fileName, float x, float y,
               float w, float h, myView &view);
 
-    //void makeDamage();
+    //void makeDamage(Hero *hero);
     float getPrecision() const { return precision; };
 
-    virtual float getValueDamage() const { return damage; };
+    virtual float getDamage() const { return damage; };
 
 };
 

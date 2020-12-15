@@ -35,6 +35,8 @@ public:
 
     FieldObject(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h);
 
+    FieldObject(std::string &name, std::string &fileName, float x, float y, float w, float h);
+
     /**
      * Отрисовка объекта
      * @param window-окно, в котором отрисовывается объект

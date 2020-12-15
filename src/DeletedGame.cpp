@@ -24,6 +24,7 @@ void DeletedGame::Run() {
     std::list<Hero *> heroList;
     std::list<Unit *> enemyList;
     std::vector<FieldObject *> collectPoints;
+    std::vector<Bullet *> bullets;
     for (auto i:level.getStaticObjectsByName("collect")) {
         collectPoints.push_back(
                 new FieldObject(level, i.name, i.imagePath, i.rect.left, i.rect.top, i.rect.width, i.rect.height));
@@ -47,7 +48,7 @@ void DeletedGame::Run() {
         }
         if (i.subType == "wild_enemy") {
             enemyList.push_back((Unit *) new WildEnemy(level, std::stof(i.properties["precision"]),
-                                                       std::stoi(i.properties["damage"]), i.name, i.imagePath,
+                                                       std::stof(i.properties["damage"]), i.name, i.imagePath,
                                                        i.rect.left, i.rect.top, i.rect.width, i.rect.height, mapView));
         }
 
@@ -92,8 +93,16 @@ void DeletedGame::Run() {
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
-
+            if (event.type == sf::Event::KeyPressed) {
+                //обрабатываем в цикле событий, иначе потом будет литься куча пуль
+                if (event.key.code == sf::Keyboard::Space) {
+                    Bullet *bull = new Bullet(level, 500, 500, pos.x,
+                                              pos.y);//cоздаю пулю - пока нет ружья, стреляем из точки (100,100)
+                    bullets.push_back(bull);//кладем в вектор
+                }
+            }
         }
+
         for (auto it = heroList.begin(); it != heroList.end(); it++) {
             Hero *b = *it;
             if (!b->isAlive) {
@@ -104,7 +113,7 @@ void DeletedGame::Run() {
             if (b->isMove) {
                 b->doStep(time);
                 mapView.getplayercoordforview(b->x, b->y);
-                b->basicStats["time"] -= b->basicStats["timeStep"];
+
             }
             for (auto item: itemsList) {
                 if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
@@ -114,7 +123,8 @@ void DeletedGame::Run() {
                 }
 
             }
-            b->update(time);
+
+
         }
         for (auto it = enemyList.begin(); it != enemyList.end(); it++) {
             Unit *b = *it;
@@ -138,18 +148,9 @@ void DeletedGame::Run() {
                 }
 
             }
-            for (auto it2 = enemyList.begin(); it2 != enemyList.end(); it2++) {
-                if ((*it)->getRect() != (*it2)->getRect()) {
-                    if (((*it)->getRect().intersects((*it2)->getRect()))) //если столкнулись два объекта и они враги
-                    {
-                        //меняем направление движения врага
-                        (*it)->sprite.scale(-1, 1);//отражаем спрайт по горизонтали
 
-                    }
-                }
-            }
-            b->update(time);
         }
+
         for (auto item = itemsList.begin(); item != itemsList.end(); item++) {
 
         }
@@ -168,11 +169,20 @@ void DeletedGame::Run() {
         for (auto hero: heroList) {
             if (hero->isAlive) {
                 hero->draw(window);
+                hero->update(time);
             }
         }
         for (auto enemy: enemyList) {
             if (enemy->isAlive) {
                 enemy->draw(window);
+                enemy->update(time);
+            }
+        }
+        for (auto b:bullets) {
+            if (b->isAlive) {
+                b->doShoot(time);
+                b->draw(window);
+                b->update(time);
             }
         }
         window.display();

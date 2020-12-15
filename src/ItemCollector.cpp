@@ -10,6 +10,7 @@ ItemCollector::ItemCollector(Level &level, std::string &name, std::string &fileN
 void ItemCollector::takeItem(Item *item) {
     inventory.push_back(item);
     item->state = Item::STATE::onInvent;
+    basicStats["time"] -= 5;
 }
 //мб стоит добавить хоть какой-то максимальный размер вектора? хотя, предметов на поле не дофига
 

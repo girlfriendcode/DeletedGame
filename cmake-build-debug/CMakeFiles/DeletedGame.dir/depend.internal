@@ -16,6 +16,16 @@ CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o
+ /home/valeria/CLionProjects/DeletedGame/include/Bullet.h
+ /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/Layer.h
+ /home/valeria/CLionProjects/DeletedGame/include/Level.h
+ /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
+ /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
+ /home/valeria/CLionProjects/DeletedGame/include/main.h
+ /home/valeria/CLionProjects/DeletedGame/src/Bullet.cpp
 CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
  /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
@@ -58,6 +68,7 @@ CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/myView.h
  /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o
+ /home/valeria/CLionProjects/DeletedGame/include/Bullet.h
  /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
  /home/valeria/CLionProjects/DeletedGame/include/Carrier.h
  /home/valeria/CLionProjects/DeletedGame/include/CleverEnemy.h
@@ -216,19 +227,26 @@ CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/main.h
  /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o
+ /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
  /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/Hero.h
  /home/valeria/CLionProjects/DeletedGame/include/Item.h
+ /home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
  /home/valeria/CLionProjects/DeletedGame/include/Layer.h
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
  /home/valeria/CLionProjects/DeletedGame/include/Unit.h
+ /home/valeria/CLionProjects/DeletedGame/include/Weapon.h
  /home/valeria/CLionProjects/DeletedGame/include/WildEnemy.h
  /home/valeria/CLionProjects/DeletedGame/include/main.h
  /home/valeria/CLionProjects/DeletedGame/include/myView.h
  /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp
 CMakeFiles/DeletedGame.dir/src/main.cpp.o
+ /home/valeria/CLionProjects/DeletedGame/include/Bullet.h
  /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
  /home/valeria/CLionProjects/DeletedGame/include/Carrier.h
  /home/valeria/CLionProjects/DeletedGame/include/CleverEnemy.h

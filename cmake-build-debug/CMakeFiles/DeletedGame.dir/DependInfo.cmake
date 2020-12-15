@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o"
+  "/home/valeria/CLionProjects/DeletedGame/src/Bullet.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o"

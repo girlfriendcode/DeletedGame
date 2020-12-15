@@ -10,6 +10,7 @@
 #include "MapObject.h"
 #include "myView.h"
 #include "Level.h"
+
 #include <map>
 
 /**
@@ -30,6 +31,8 @@ public:
     myView view;
     int tempX, tempY;
     std::vector<MapObject> map;
+
+    Unit(std::string &name, std::string &fileName, float x, float y, float w, float h);
 
     Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view);
 
@@ -63,8 +66,6 @@ public:
 
 
     void control(float time);
-
-    virtual void acceptDamage(Unit &from);
     // virtual void calculateDamage(Unit *unit);
 };
 

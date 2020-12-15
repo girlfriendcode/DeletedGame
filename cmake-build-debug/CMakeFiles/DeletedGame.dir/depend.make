@@ -16,6 +16,16 @@ CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o: ../include/TinyX
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o: ../include/TinyXML/tinyxml.h
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o: ../include/TinyXML/tinyxmlparser.cpp
 
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/Bullet.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/FieldObject.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/Layer.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/Level.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/MapObject.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/TinyXML/tinystr.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/TinyXML/tinyxml.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../include/main.h
+CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../src/Bullet.cpp
+
 CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: ../include/BulletCase.h
 CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: ../include/FieldObject.h
 CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: ../include/Item.h
@@ -57,6 +67,7 @@ CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: ../include/main.h
 CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: ../include/myView.h
 CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: ../src/CleverEnemy.cpp
 
+CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/Bullet.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/BulletCase.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/Carrier.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/CleverEnemy.h
@@ -215,19 +226,26 @@ CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: ../include/Weapon.h
 CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: ../include/main.h
 CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: ../src/Weapon.cpp
 
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/BulletCase.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/FieldObject.h
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Hero.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Item.h
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/ItemCollector.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/MapObject.h
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Shooter.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/TinyXML/tinyxml.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Unit.h
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Weapon.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/WildEnemy.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/main.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/myView.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../src/WildEnemy.cpp
 
+CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/Bullet.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/BulletCase.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/Carrier.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/CleverEnemy.h
