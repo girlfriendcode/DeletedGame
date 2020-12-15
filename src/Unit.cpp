@@ -19,10 +19,6 @@ Unit::Unit(Level &level, std::string &name, std::string &fileName, float x, floa
             {"timeStep",  20},
             {"radius",    100}
     };
-    dx = 0;
-    dy = 0;
-    speed = 0;
-    dir = 0;
     this->view = view;
     tempX = 0;
     tempY = 0;
@@ -31,29 +27,6 @@ Unit::Unit(Level &level, std::string &name, std::string &fileName, float x, floa
 
 void Unit::update(float time) {
     if (basicStats["time"] > 0) {
-        //control(time);
-        switch (dir) {
-            case 0:
-                dx = -speed;
-                dy = 0;
-                break;
-            case 1:
-                dx = speed;
-                dy = 0;
-                break;
-            case 2:
-                dx = 0;
-                dy = -speed;
-                break;
-            case 3:
-                dx = 0;
-                dy = speed;
-        }
-        x += dx * time;
-        interactionWithMap(dx, 0);
-        y += dy * time;
-        interactionWithMap(0, dy);
-        if (!isMove) speed = 0;
         sprite.setPosition(x, y);
     }
     if (basicStats["health"] <= 0) {
@@ -66,28 +39,6 @@ void Unit::update(float time) {
     }
 }
 
-void Unit::interactionWithMap(float Dx, float Dy) {
-    for (auto &i:map)
-        if (getRect().intersects(i.rect)) {
-            if (i.name == "solid" || i.name == "glass" || i.name == "part") {
-                if (Dy > 0) {
-                    y = i.rect.top - h;
-                    dy = 0;
-                }
-                if (Dy < 0) {
-                    y = i.rect.top + i.rect.height;
-                    dy = 0;
-                }
-                if (Dx > 0) {
-                    x = i.rect.left - w;
-                }
-                if (Dx < 0) {
-                    x = i.rect.left + i.rect.width;
-                }
-            }
-        }
-
-}
 
 void Unit::doStep(float time) {
     float distance = 0;
@@ -96,19 +47,34 @@ void Unit::doStep(float time) {
                                                                y));//считаем дистанцию (расстояние от точки А до точки Б). используя формулу длины вектора
     float tga = tan((tempY - y) / (tempX - x));
     if (distance > 2 && basicStats["time"] > 0) {
-        x += 0.1 * time * (tempX - x) / distance;//идем по иксу с помощью вектора нормали
-        y += 0.1 * time * (tempY - y) / distance;//идем по игреку так же
+        x += 0.13 * time * (tempX - x) /
+             distance;//идем по иксу с помощью вектора нормали 0.13-что-то вроде скорости, чтобы замедлить спрайт
+        y += 0.13 * time * (tempY - y) / distance;//идем по игреку так же
         basicStats["time"] -= basicStats["timeStep"] * distance / 400;
         for (auto &i:map) {
             if (getRect().intersects(i.rect)) {
                 distance -= sqrt((h + i.rect.height) * (h + i.rect.height) +
                                  (w + i.rect.height / tga) * (w + i.rect.height / tga));
+                if (i.rect.width >= i.rect.height) {
+                    if (tempY - y > 0) {
+                        y -= i.rect.height / 3;
+                    } else {
+                        y += i.rect.height / 3;
+                    }
+                } else {
+                    if (tempX - x > 0) {
+                        x -= i.rect.width / 3;
+                    } else {
+                        x += i.rect.width / 3;
+                    }
+                }
+                isMove = false;
             }
         }
     } else {
         isMove = false;
         std::cout << "priehali\n";
-    }//говорим что уже никуда не идем и выводим веселое сообщение в консоль
+    }//говорим что уже никуда не идем и выводим сообщение в консоль
 }
 
 void Unit::toSelect(Vector2f pos, sf::Event event) {
@@ -134,51 +100,3 @@ void Unit::toSelect(Vector2f pos, sf::Event event) {
     }
 }
 
-void Unit::control(float time) {
-    if (isAlive) {
-        if (Keyboard::isKeyPressed(Keyboard::Left)) {
-            sprite.setOrigin({30, 0});
-            sprite.setScale({-1, 1});
-            dir = 0;
-            speed = 0.1;
-            currentFrame += 0.005 * time;
-            if (currentFrame > 3) currentFrame -= 3;
-            sprite.setTextureRect(IntRect(w * int(currentFrame), 0, w, 50));
-            view.getplayercoordforview(x, y);
-        }
-
-        if (Keyboard::isKeyPressed(Keyboard::Right)) {
-            sprite.setScale({1, 1});
-            sprite.setOrigin({0, 0});
-            dir = 1;
-            speed = 0.1;
-            currentFrame += 0.005 * time;
-            if (currentFrame > 3) currentFrame -= 3;
-            sprite.setTextureRect(IntRect(this->w * int(currentFrame), 0, w, 50));
-            view.getplayercoordforview(x, y);
-        }
-
-        if (Keyboard::isKeyPressed(Keyboard::Up)) {
-            dir = 2;
-            speed = 0.1;
-            currentFrame += 0.005 * time;
-            if (currentFrame > 3) currentFrame -= 3;
-            sprite.setTextureRect(IntRect(w * int(currentFrame), 0, w, 50));
-            view.getplayercoordforview(x, y);
-        }
-
-        if (Keyboard::isKeyPressed(Keyboard::Down)) {
-            dir = 3;
-            speed = 0.1;
-            currentFrame += 0.005 * time;
-            if (currentFrame > 3) currentFrame -= 3;
-            sprite.setTextureRect(IntRect(w * int(currentFrame), 0, w, 50));
-            view.getplayercoordforview(x, y);
-        }
-
-    }
-}
-
-Unit::Unit(std::string &name, std::string &fileName, float x, float y, float w, float h) : FieldObject(name, fileName,
-                                                                                                       x, y, w, h) {
-}

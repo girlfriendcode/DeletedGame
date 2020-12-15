@@ -25,14 +25,15 @@ public:
      */
     std::map<std::string, float> basicStats;
     bool isAlive, isMove, isSelect;
-    float dx, dy, speed;//перемещение по х и у в единицу времени
+
     double currentFrame = 0;
-    int dir;
+
     myView view;
-    int tempX, tempY;
+
+    float tempX, tempY;
+
     std::vector<MapObject> map;
 
-    Unit(std::string &name, std::string &fileName, float x, float y, float w, float h);
 
     Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view);
 
@@ -48,7 +49,7 @@ public:
      * @param Dy
      */
 
-    void interactionWithMap(float Dx, float Dy);
+
 
     /**
      * Выбор данного юнита
@@ -65,7 +66,6 @@ public:
     void doStep(float time);
 
 
-    void control(float time);
     // virtual void calculateDamage(Unit *unit);
 };
 
