@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
+Item.h
+/home/valeria/CLionProjects/DeletedGame/include/Item.h
+Weapon.h
+/home/valeria/CLionProjects/DeletedGame/include/Weapon.h
+
 /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
 iostream
 -
@@ -14,9 +20,27 @@ main.h
 Level.h
 /home/valeria/CLionProjects/DeletedGame/include/Level.h
 
+/home/valeria/CLionProjects/DeletedGame/include/Hero.h
+ItemCollector.h
+/home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
+Shooter.h
+/home/valeria/CLionProjects/DeletedGame/include/Shooter.h
+
 /home/valeria/CLionProjects/DeletedGame/include/Item.h
 FieldObject.h
 /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+
+/home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
+Unit.h
+/home/valeria/CLionProjects/DeletedGame/include/Unit.h
+Weapon.h
+/home/valeria/CLionProjects/DeletedGame/include/Weapon.h
+BulletCase.h
+/home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
+MedChest.h
+/home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+MyContainer.h
+/home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
 
 /home/valeria/CLionProjects/DeletedGame/include/Layer.h
 iostream
@@ -45,6 +69,22 @@ iostream
 -
 main.h
 /home/valeria/CLionProjects/DeletedGame/include/main.h
+
+/home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+Item.h
+/home/valeria/CLionProjects/DeletedGame/include/Item.h
+
+/home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
+iostream
+-
+iterator
+-
+
+/home/valeria/CLionProjects/DeletedGame/include/Shooter.h
+Unit.h
+/home/valeria/CLionProjects/DeletedGame/include/Unit.h
+Weapon.h
+/home/valeria/CLionProjects/DeletedGame/include/Weapon.h
 
 /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
 assert.h
@@ -86,6 +126,10 @@ Level.h
 map
 -
 
+/home/valeria/CLionProjects/DeletedGame/include/Weapon.h
+Item.h
+/home/valeria/CLionProjects/DeletedGame/include/Item.h
+
 /home/valeria/CLionProjects/DeletedGame/include/main.h
 SFML/Graphics.hpp
 -
@@ -102,9 +146,7 @@ SFML/System.hpp
 main.h
 /home/valeria/CLionProjects/DeletedGame/include/main.h
 
-/home/valeria/CLionProjects/DeletedGame/src/Unit.cpp
-../include/Unit.h
-/home/valeria/CLionProjects/DeletedGame/include/Unit.h
-cmath
--
+/home/valeria/CLionProjects/DeletedGame/src/Hero.cpp
+../include/Hero.h
+/home/valeria/CLionProjects/DeletedGame/include/Hero.h
 

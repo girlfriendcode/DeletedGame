@@ -24,21 +24,9 @@ void Hero::takeItem(Item *item) {
 }
 
 void Hero::throwItem(Item *item) {
-    auto iter = inventory.begin();
-    if (inventory.empty()) {
-        std::cout << "There is nothing to delete!" << std::endl;
-        return;
-    }
-    while (*iter != item) {
-        iter++;
-        if (iter == inventory.end()) {
-            std::cout << "Item wasn't found!" << std::endl;
-            return;
-        }
-    }
+    ItemCollector::throwItem(item);
     item->state = Item::STATE::onMap;
     this->setWeight(this->getWeight() - item->getWeight());
-    inventory.erase(iter);
     //добавляем предмет на поле
 }
 

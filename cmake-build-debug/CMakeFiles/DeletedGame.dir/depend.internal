@@ -82,6 +82,7 @@ CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
  /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
@@ -111,6 +112,7 @@ CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
  /home/valeria/CLionProjects/DeletedGame/include/Unit.h
@@ -128,6 +130,7 @@ CMakeFiles/DeletedGame.dir/src/Hero.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
  /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
@@ -155,6 +158,7 @@ CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
  /home/valeria/CLionProjects/DeletedGame/include/Unit.h
@@ -236,6 +240,7 @@ CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
  /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
@@ -260,6 +265,7 @@ CMakeFiles/DeletedGame.dir/src/main.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+ /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
  /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h

@@ -168,6 +168,9 @@
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/MedChest.h">
 			<Option target="DeletedGame"/>
 		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/MyContainer.h">
+			<Option target="DeletedGame"/>
+		</Unit>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Shooter.h">
 			<Option target="DeletedGame"/>
 		</Unit>

@@ -15,20 +15,21 @@ void ItemCollector::takeItem(Item *item) {
 //мб стоит добавить хоть какой-то максимальный размер вектора? хотя, предметов на поле не дофига
 
 void ItemCollector::throwItem(Item *item) {
-    auto iter = inventory.begin();
+
     if (inventory.empty()) {
         std::cout << "There is nothing to delete!" << std::endl;
         return;
     }
-    while (*iter != item) {
-        iter++;
-        if (iter == inventory.end()) {
+    int i = 0;
+    while (inventory.getElem()[i] != item) {
+        i++;
+        if (i > inventory.getSize()) {
             std::cout << "Item wasn't found!" << std::endl;
             return;
         }
     }
     item->state = Item::STATE::onMap;
-    inventory.erase(iter);
+    inventory.erase(i);
     //добавляем предмет на поле
 }
 

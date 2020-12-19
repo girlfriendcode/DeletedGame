@@ -9,10 +9,11 @@
 #include "Weapon.h"
 #include "BulletCase.h"
 #include "MedChest.h"
+#include "MyContainer.h"
 
 class ItemCollector : virtual public Unit {
 protected:
-    std::vector<Item *> inventory;
+    MyContainer<Item *> inventory;
 public:
     ItemCollector(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h,
                   myView &view);

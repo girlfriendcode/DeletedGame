@@ -81,6 +81,7 @@ CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/MapObject.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/MyContainer.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/Shooter.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../include/TinyXML/tinyxml.h
@@ -110,6 +111,7 @@ CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/MapObject.h
 CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/MyContainer.h
 CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/TinyXML/tinyxml.h
 CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../include/Unit.h
@@ -127,6 +129,7 @@ CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/MapObject.h
 CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/MyContainer.h
 CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/Shooter.h
 CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../include/TinyXML/tinyxml.h
@@ -154,6 +157,7 @@ CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/MapObject.h
 CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/MyContainer.h
 CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/TinyXML/tinyxml.h
 CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../include/Unit.h
@@ -235,6 +239,7 @@ CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/MapObject.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/MyContainer.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/Shooter.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../include/TinyXML/tinyxml.h
@@ -259,6 +264,7 @@ CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/Layer.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/Level.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/MapObject.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/MedChest.h
+CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/MyContainer.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/Shooter.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/DeletedGame.dir/src/main.cpp.o: ../include/TinyXML/tinyxml.h
