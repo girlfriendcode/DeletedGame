@@ -8,7 +8,7 @@ set(TINY_SOURCES "include/TinyXML/tinyxml.h"
         "include/TinyXML/tinystr.cpp"
         "include/TinyXML/tinyxml.cpp"
         "include/TinyXML/tinyxmlparser.cpp"
-        "include/TinyXML/tinyxmlerror.cpp" include/myView.h src/myView.cpp include/Bullet.h src/Bullet.cpp include/MyContainer.h)
+        "include/TinyXML/tinyxmlerror.cpp" include/myView.h src/myView.cpp include/Bullet.h src/Bullet.cpp include/MyContainer.h include/Inventory.h src/Inventory.cpp)
 find_package(SFML 2.5.1 COMPONENTS graphics audio REQUIRED)
 add_executable(DeletedGame
         src/main.cpp

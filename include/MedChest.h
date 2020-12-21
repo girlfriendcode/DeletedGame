@@ -4,9 +4,10 @@
 
 #ifndef GAME_MEDCHEST_H
 #define GAME_MEDCHEST_H
-
 #include "Item.h"
-
+/**
+ * Класс аптечки
+ */
 class MedChest : public Item {
 private:
     float timeRecovery;

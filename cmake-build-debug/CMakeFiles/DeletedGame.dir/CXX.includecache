@@ -6,11 +6,65 @@
 
 #IncludeRegexTransform: 
 
+/home/valeria/CLionProjects/DeletedGame/include/Bullet.h
+FieldObject.h
+/home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+cmath
+-
+
 /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
 Item.h
 /home/valeria/CLionProjects/DeletedGame/include/Item.h
 Weapon.h
 /home/valeria/CLionProjects/DeletedGame/include/Weapon.h
+
+/home/valeria/CLionProjects/DeletedGame/include/Carrier.h
+main.h
+/home/valeria/CLionProjects/DeletedGame/include/main.h
+Unit.h
+/home/valeria/CLionProjects/DeletedGame/include/Unit.h
+
+/home/valeria/CLionProjects/DeletedGame/include/CleverEnemy.h
+Shooter.h
+/home/valeria/CLionProjects/DeletedGame/include/Shooter.h
+Carrier.h
+/home/valeria/CLionProjects/DeletedGame/include/Carrier.h
+Weapon.h
+/home/valeria/CLionProjects/DeletedGame/include/Weapon.h
+
+/home/valeria/CLionProjects/DeletedGame/include/DeletedGame.h
+myView.h
+/home/valeria/CLionProjects/DeletedGame/include/myView.h
+../include/Level.h
+/home/valeria/CLionProjects/DeletedGame/include/Level.h
+../include/Hero.h
+/home/valeria/CLionProjects/DeletedGame/include/Hero.h
+../include/Item.h
+/home/valeria/CLionProjects/DeletedGame/include/Item.h
+../include/WildEnemy.h
+/home/valeria/CLionProjects/DeletedGame/include/WildEnemy.h
+../include/ForagerEnemy.h
+/home/valeria/CLionProjects/DeletedGame/include/ForagerEnemy.h
+../include/CleverEnemy.h
+/home/valeria/CLionProjects/DeletedGame/include/CleverEnemy.h
+cmath
+-
+list
+-
+../include/myView.h
+/home/valeria/CLionProjects/DeletedGame/include/myView.h
+../include/TinyXML/tinyxml.h
+/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
+../include/Weapon.h
+/home/valeria/CLionProjects/DeletedGame/include/Weapon.h
+../include/MedChest.h
+/home/valeria/CLionProjects/DeletedGame/include/MedChest.h
+../include/BulletCase.h
+/home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
+../include/Inventory.h
+/home/valeria/CLionProjects/DeletedGame/include/Inventory.h
+../include/Bullet.h
+/home/valeria/CLionProjects/DeletedGame/include/Bullet.h
 
 /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
 iostream
@@ -20,11 +74,23 @@ main.h
 Level.h
 /home/valeria/CLionProjects/DeletedGame/include/Level.h
 
+/home/valeria/CLionProjects/DeletedGame/include/ForagerEnemy.h
+Carrier.h
+/home/valeria/CLionProjects/DeletedGame/include/Carrier.h
+ItemCollector.h
+/home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
+
 /home/valeria/CLionProjects/DeletedGame/include/Hero.h
 ItemCollector.h
 /home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
 Shooter.h
 /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
+
+/home/valeria/CLionProjects/DeletedGame/include/Inventory.h
+main.h
+/home/valeria/CLionProjects/DeletedGame/include/main.h
+ItemCollector.h
+/home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
 
 /home/valeria/CLionProjects/DeletedGame/include/Item.h
 FieldObject.h
@@ -130,6 +196,12 @@ map
 Item.h
 /home/valeria/CLionProjects/DeletedGame/include/Item.h
 
+/home/valeria/CLionProjects/DeletedGame/include/WildEnemy.h
+Unit.h
+/home/valeria/CLionProjects/DeletedGame/include/Unit.h
+../include/Hero.h
+/home/valeria/CLionProjects/DeletedGame/include/Hero.h
+
 /home/valeria/CLionProjects/DeletedGame/include/main.h
 SFML/Graphics.hpp
 -
@@ -146,7 +218,11 @@ SFML/System.hpp
 main.h
 /home/valeria/CLionProjects/DeletedGame/include/main.h
 
-/home/valeria/CLionProjects/DeletedGame/src/Hero.cpp
-../include/Hero.h
-/home/valeria/CLionProjects/DeletedGame/include/Hero.h
+/home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp
+../include/DeletedGame.h
+/home/valeria/CLionProjects/DeletedGame/include/DeletedGame.h
+
+/home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp
+../include/Shooter.h
+/home/valeria/CLionProjects/DeletedGame/include/Shooter.h
 

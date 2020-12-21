@@ -7,7 +7,9 @@
 
 #include <iostream>
 #include "main.h"
-
+/**
+ * Класс объекта карты для сериализации данных с XML-файла
+ */
 class MapObject {
 public:
     //класс для десериализации

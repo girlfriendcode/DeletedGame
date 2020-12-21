@@ -150,6 +150,9 @@
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Hero.h">
 			<Option target="DeletedGame"/>
 		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Inventory.h">
+			<Option target="DeletedGame"/>
+		</Unit>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Item.h">
 			<Option target="DeletedGame"/>
 		</Unit>
@@ -229,6 +232,9 @@
 			<Option target="DeletedGame"/>
 		</Unit>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Hero.cpp">
+			<Option target="DeletedGame"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Inventory.cpp">
 			<Option target="DeletedGame"/>
 		</Unit>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/src/Item.cpp">

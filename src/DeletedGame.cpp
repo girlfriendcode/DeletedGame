@@ -19,9 +19,15 @@ void DeletedGame::Run() {
     Level level;
     level.loadStaticObjects("../res/map.tmx");
     level.loadDynamicObjects("../res/objects.xml");
-    Clock clock, itemsClock, heroClock, enemyClock, attackClock;
+    Clock clock, itemsClock, attackClock;
     std::list<Item *> itemsList;
     std::list<Hero *> heroList;
+    Inventory inventBar;
+    sf::RectangleShape shape;
+    shape.setPosition(100, 100);
+    shape.setSize({100, 100});
+    shape.setFillColor(Color::Red);
+    std::list<Inventory *> inventList;
     std::list<Unit *> enemyList;
     std::vector<FieldObject *> collectPoints;
     std::vector<Bullet *> bullets;
@@ -30,15 +36,16 @@ void DeletedGame::Run() {
                 new FieldObject(level, i.name, i.imagePath, i.rect.left, i.rect.top, i.rect.width, i.rect.height));
     }
     for (auto i:level.getObjectsByType("hero")) {
-        heroList.push_back(
-                new Hero(level, std::stof(i.properties["precision"]), i.name, i.imagePath, i.rect.left, i.rect.top,
-                         i.rect.width, i.rect.height, mapView));
+        Hero *hero = new Hero(level, std::stof(i.properties["precision"]), i.name, i.imagePath, i.rect.left, i.rect.top,
+                              i.rect.width, i.rect.height, mapView);
+        heroList.push_back(hero);
+
     }
     for (auto i:level.getObjectsByType("enemy")) {
         if (i.subType == "forager_enemy") {
-            enemyList.push_back(
-                    (Unit *) new ForagerEnemy(level, collectPoints, i.name, i.imagePath, i.rect.left, i.rect.top,
-                                              i.rect.width, i.rect.height, mapView));
+            ForagerEnemy *fenemy = new ForagerEnemy(level, collectPoints, i.name, i.imagePath, i.rect.left, i.rect.top,
+                                                    i.rect.width, i.rect.height, mapView);
+            enemyList.push_back(fenemy);
         }
         if (i.subType == "clever_enemy") {
             enemyList.push_back(
@@ -78,87 +85,150 @@ void DeletedGame::Run() {
     }
 
     while (window.isOpen()) {
-        float time = clock.getElapsedTime().asMicroseconds(); //дать прошедшее время в микросекундах
-        clock.restart(); //перезагружает время
-        time = time / 800;
+        float enemyTime = getSumOfTimePoints(enemyList);
+        float heroTime = getSumOfTimePoints(heroList);
+        float time = clock.getElapsedTime().asMilliseconds(); //дать прошедшее время в микросекундах
+        if (time > 15) {
+            clock.restart();
+            Vector2i pixelPos = Mouse::getPosition(window);//забираем коорд курсора
+            Vector2f pos = window.mapPixelToCoords(pixelPos);//переводим их в игровые (уходим от коорд окна)
 
-        Vector2i pixelPos = Mouse::getPosition(window);//забираем коорд курсора
-        Vector2f pos = window.mapPixelToCoords(pixelPos);//переводим их в игровые (уходим от коорд окна)
-
-        std::cout << pixelPos.x
-                  << "\n";//смотрим на координату Х позиции курсора в консоли (она не будет больше ширины окна)
-        std::cout << pos.x << "\n";//смотрим на Х,которая преобразовалась в мировые координаты
-        Unit *selectedUnit = nullptr;
-        sf::Event event;
-        while (window.pollEvent(event)) {
-            if (event.type == sf::Event::Closed)
-                window.close();
-            if (event.type == sf::Event::KeyPressed) {
-                //обрабатываем в цикле событий, иначе потом будет литься куча пуль
-                if (event.key.code == sf::Keyboard::Space) {
-                    Bullet *bull = new Bullet(level, 500, 500, pos.x,
-                                              pos.y);//cоздаю пулю - пока нет ружья, стреляем из точки (100,100)
-                    bullets.push_back(bull);//кладем в вектор
-                }
-            }
-        }
-
-        for (auto it = heroList.begin(); it != heroList.end(); it++) {
-            Hero *b = *it;
-            if (!b->isAlive) {
-                it = heroList.erase(it);
-                delete b;
-            }
-            b->toSelect(pos, event);
-            if (b->isMove) {
-                b->doStep(time);
-                mapView.getplayercoordforview(b->x, b->y);
-
-            }
-            for (auto item: itemsList) {
-                if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
-                    if (Keyboard::isKeyPressed(Keyboard::T)) {
-                        b->takeItem(item);
+            std::cout << pixelPos.x
+                      << "\n";//смотрим на координату Х позиции курсора в консоли (она не будет больше ширины окна)
+            std::cout << pos.x << "\n";//смотрим на Х,которая преобразовалась в мировые координаты
+            Unit *selectedUnit = nullptr;
+            sf::Event event;
+            while (window.pollEvent(event)) {
+                if (event.type == sf::Event::Closed)
+                    window.close();
+                if (event.type == sf::Event::KeyPressed) {
+                    //обрабатываем в цикле событий, иначе потом будет литься куча пуль
+                    if (event.key.code == sf::Keyboard::Space) {
+                        Bullet *bull = new Bullet(level, 500, 500, pos.x,
+                                                  pos.y);//cоздаю пулю - пока нет ружья, стреляем из точки (100,100)
+                        bullets.push_back(bull);//кладем в вектор
                     }
                 }
-
             }
 
+            for (auto it = heroList.begin(); it != heroList.end(); it++) {
+                Hero *b = *it;
+                b->update(time);
+                if (!b->isAlive) {
+                    it = heroList.erase(it);
+                    delete b;
+                }
+                if (heroTime >= 0) {
+                    b->toSelect(pos, event);
+                    if (b->isSelect) {
+                        inventBar.getUnit(b);
+                    }
+                    if (b->isMove) {
+                        b->doStep(time);
+                        mapView.getplayercoordforview(b->x, b->y);
 
-        }
-        for (auto it = enemyList.begin(); it != enemyList.end(); it++) {
-            Unit *b = *it;
-            if (!b->isAlive) {
-                it = enemyList.erase(it);
-                delete b;
-            }
-            b->toSelect(pos, event);
-            if (b->isMove) {
-                b->doStep(time);
-                mapView.getplayercoordforview(b->x, b->y);
-                b->basicStats["time"] -= b->basicStats["timeStep"];
-            }
-            for (auto item: itemsList) {
-                if (dynamic_cast<ItemCollector *>(b) != nullptr) {
-                    if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
-                        if (Keyboard::isKeyPressed(Keyboard::T)) {
-                            dynamic_cast<ItemCollector *>(b)->takeItem(item);
+                    }
+                    /*for (auto item: itemsList) {
+                        if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
+                            if (Keyboard::isKeyPressed(Keyboard::T)) {
+                                b->takeItem(item);
+                            }
+                        }
+
+                    }*/
+                    if (b->isAlive) {
+                        if (itemsClock.getElapsedTime().asMilliseconds() > 200) {
+                            for (auto item : itemsList) {
+                                if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
+                                    if (Keyboard::isKeyPressed(sf::Keyboard::T)) {
+                                        if (dynamic_cast<Weapon *>(item) != nullptr) {
+                                            b->takeWeapon(dynamic_cast<Weapon *>(item));
+                                        } else
+                                            b->takeItem(item);
+                                        itemsClock.restart();
+                                    }
+                                }
+                            }
                         }
                     }
                 }
-
             }
+            for (auto it = enemyList.begin(); it != enemyList.end(); it++) {
+                Unit *b = *it;
+                b->update(time);
+                if (!b->isAlive) {
+                    it = enemyList.erase(it);
+                    delete b;
+                }
+                if (enemyTime >= 0 && heroTime <= 0) {
+                    b->toSelect(pos, event);
+                    if (b->isSelect && dynamic_cast<ItemCollector *>(b) != nullptr) {
+                        inventBar.getUnit(dynamic_cast<ItemCollector *>(b));
+                    }
+                    if (b->isMove) {
+                        b->doStep(time);
+                        mapView.getplayercoordforview(b->x, b->y);
+                    }
+                    /*for (auto item: itemsList) {
+                        if (dynamic_cast<ItemCollector *>(b) != nullptr) {
+                            if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
+                                if (Keyboard::isKeyPressed(Keyboard::T)) {
+                                    dynamic_cast<ItemCollector *>(b)->takeItem(item);
+                                }
+                            }
+                        }
 
+                    }*/
+                    if (itemsClock.getElapsedTime().asMilliseconds() > 200) {
+                        for (auto item : itemsList) {
+                            if (dynamic_cast<ItemCollector *>(b) != nullptr) {
+                                if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
+                                    if (Keyboard::isKeyPressed(sf::Keyboard::T)) {
+                                        dynamic_cast<ItemCollector *>(b)->takeItem(item);
+                                        itemsClock.restart();
+                                    }
+                                }
+                            }
+                            if (dynamic_cast<Shooter *>(b) != nullptr && dynamic_cast<Weapon *>(item) != nullptr) {
+                                if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
+                                    if (Keyboard::isKeyPressed(sf::Keyboard::T)) {
+                                        dynamic_cast<Shooter *>(b)->takeWeapon(dynamic_cast<Weapon *>(item));
+                                        itemsClock.restart();
+                                    }
+                                }
+                            }
+                            item->update(time);
+                        }
+                    }
+                    if (attackClock.getElapsedTime().asMilliseconds() > 100) {
+                        for (auto hero:heroList) {
+                            if (dynamic_cast<WildEnemy *>(b) != nullptr) {
+                                if (b->getRect().intersects(hero->getRect())) {
+                                    if (Keyboard::isKeyPressed(sf::Keyboard::A)) {
+                                        dynamic_cast<WildEnemy *>(b)->makeDamage(hero);
+                                        hero->update(time);
+                                        attackClock.restart();
+                                    }
+                                }
+
+                            }
+                        }
+
+                    }
+                }
+            }
+            if (enemyTime <= 0 && heroTime <= 0) {
+                updateSquadTime(heroList);
+                updateSquadTime(enemyList);
+            }
         }
-
-        for (auto item = itemsList.begin(); item != itemsList.end(); item++) {
-
-        }
-        window.clear();
         mapView.viewMap(time);
         mapView.changeView();
+        //inventBar.getUnit(heroList.front());
         window.setView(mapView.view);
+        window.clear();
         level.draw(window);
+
 
         for (auto item: itemsList) {
             if (item->state == Item::onMap) {
@@ -169,13 +239,20 @@ void DeletedGame::Run() {
         for (auto hero: heroList) {
             if (hero->isAlive) {
                 hero->draw(window);
-                hero->update(time);
+                if (hero->getWeapon() != nullptr) {
+                    hero->getWeapon()->sprite.setPosition(hero->x + 3, hero->y + 1);
+                    hero->getWeapon()->draw(window);
+                }
             }
         }
         for (auto enemy: enemyList) {
             if (enemy->isAlive) {
                 enemy->draw(window);
-                enemy->update(time);
+                if (dynamic_cast<Shooter *>(enemy) != nullptr &&
+                    dynamic_cast<Shooter *>(enemy)->getWeapon() != nullptr) {
+                    dynamic_cast<Shooter *>(enemy)->getWeapon()->sprite.setPosition(enemy->x + 3, enemy->y + 1);
+                    dynamic_cast<Shooter *>(enemy)->getWeapon()->draw(window);
+                }
             }
         }
         for (auto b:bullets) {
@@ -185,7 +262,7 @@ void DeletedGame::Run() {
                 b->update(time);
             }
         }
+        inventBar.draw(window);
         window.display();
     }
 }
-

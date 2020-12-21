@@ -8,7 +8,9 @@
 #include <iostream>
 #include "main.h"
 
-// слой тайлов
+/**
+ * Слой тайлов
+ */
 class Layer {
 public:
     int opacity;

@@ -12,12 +12,12 @@
 #include "MyContainer.h"
 
 class ItemCollector : virtual public Unit {
-protected:
-    MyContainer<Item *> inventory;
+
 public:
     ItemCollector(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h,
                   myView &view);
 
+    MyContainer<Item *> inventory;
     virtual void takeItem(Item *item);
 
     //обработка выбора выброса именно этого предмета

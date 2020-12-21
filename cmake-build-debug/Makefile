@@ -480,6 +480,33 @@ src/Hero.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Hero.cpp.s
 .PHONY : src/Hero.cpp.s
 
+src/Inventory.o: src/Inventory.cpp.o
+
+.PHONY : src/Inventory.o
+
+# target to build an object file
+src/Inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o
+.PHONY : src/Inventory.cpp.o
+
+src/Inventory.i: src/Inventory.cpp.i
+
+.PHONY : src/Inventory.i
+
+# target to preprocess a source file
+src/Inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Inventory.cpp.i
+.PHONY : src/Inventory.cpp.i
+
+src/Inventory.s: src/Inventory.cpp.s
+
+.PHONY : src/Inventory.s
+
+# target to generate assembly for a file
+src/Inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Inventory.cpp.s
+.PHONY : src/Inventory.cpp.s
+
 src/Item.o: src/Item.cpp.o
 
 .PHONY : src/Item.o
@@ -850,6 +877,9 @@ help:
 	@echo "... src/Hero.o"
 	@echo "... src/Hero.i"
 	@echo "... src/Hero.s"
+	@echo "... src/Inventory.o"
+	@echo "... src/Inventory.i"
+	@echo "... src/Inventory.s"
 	@echo "... src/Item.o"
 	@echo "... src/Item.i"
 	@echo "... src/Item.s"

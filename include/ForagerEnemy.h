@@ -7,7 +7,9 @@
 
 #include "Carrier.h"
 #include "ItemCollector.h"
-
+/**
+ * Класс фуражира
+ */
 class ForagerEnemy : public Carrier, public ItemCollector {
 public:
     ForagerEnemy(Level &level, std::vector<FieldObject *> points, std::string &name, std::string &fileName, float x,

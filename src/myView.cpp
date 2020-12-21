@@ -1,6 +1,4 @@
-//
-// Created by valeria on 07.12.2020.
-//
+
 #include "../include/myView.h"
 
 void myView::viewMap(float time) {
@@ -25,7 +23,8 @@ void myView::getplayercoordforview(int x, int y) {
     float tempY = y;
     if (x > 1000) tempX = 1000;
     if (x < 600) tempX = 600;
-    if (y > 750) tempY = 750;
+    if (y > 750 && y < 1000) tempY = 850;
+    if (y > 1000) tempY = 1200;
     if (y < 400) tempY = 400;
 
     view.setCenter(tempX, tempY);

@@ -15,7 +15,7 @@ public:
     WildEnemy(Level &level, float precision, float damage, std::string &name, std::string &fileName, float x, float y,
               float w, float h, myView &view);
 
-    //void makeDamage(Hero *hero);
+    void makeDamage(Hero *hero);
     float getPrecision() const { return precision; };
 
     virtual float getDamage() const { return damage; };

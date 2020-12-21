@@ -8,7 +8,9 @@
 #include "Shooter.h"
 #include "Carrier.h"
 #include "Weapon.h"
-
+/**
+ * Класс разумного существа
+ */
 class CleverEnemy : public Carrier, public Shooter {
 public:
     CleverEnemy(Level &level, std::vector<FieldObject *> points, float precision, std::string &name,

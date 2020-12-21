@@ -19,10 +19,14 @@
 #include "../include/Weapon.h"
 #include "../include/MedChest.h"
 #include "../include/BulletCase.h"
+#include "../include/Inventory.h"
 #include "../include/Bullet.h"
 
 using namespace sf;
 
+/**
+ * Класс, отвечающий за работку приложения
+ */
 class DeletedGame {
 protected:
     sf::RenderWindow window;
@@ -41,6 +45,29 @@ public:
      */
     void Run();
 
+    /**
+     * Считаем сумму очков времени команды
+     * @param units
+     * @return общее число очков
+     */
+    void End();
+
+    template<typename T>
+    float getSumOfTimePoints(std::list<T *> units) {
+        float sum = 0;
+        for (auto i:units) {
+            sum += i->basicStats["time"];
+        }
+        return sum;
+    }
+
+    template<typename T>
+    void updateSquadTime(std::list<T *> units) {
+        for (auto i:units) {
+            i->basicStats["time"] = i->basicStats["maxTime"];
+            i->sprite.setColor(Color::White);
+        }
+    }
 };
 
 #endif //DELETEDGAME_DELETEDGAME_H

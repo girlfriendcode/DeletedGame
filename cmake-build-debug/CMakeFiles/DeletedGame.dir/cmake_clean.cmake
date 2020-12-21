@@ -11,6 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/Hero.cpp.o"
+  "CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/Item.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o"
   "CMakeFiles/DeletedGame.dir/src/Layer.cpp.o"

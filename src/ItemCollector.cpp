@@ -21,7 +21,7 @@ void ItemCollector::throwItem(Item *item) {
         return;
     }
     int i = 0;
-    while (inventory.getElem()[i] != item) {
+    while (inventory[i] != item) {
         i++;
         if (i > inventory.getSize()) {
             std::cout << "Item wasn't found!" << std::endl;

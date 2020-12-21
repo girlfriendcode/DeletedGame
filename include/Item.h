@@ -2,7 +2,9 @@
 #define GAME_ITEM_H
 
 #include "FieldObject.h"
-
+/**
+ * Абстрактный класс вещи
+ */
 class Item : public FieldObject {
 protected:
     int weight;

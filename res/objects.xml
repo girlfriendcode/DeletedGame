@@ -56,11 +56,11 @@
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="4"/>
                 <property name="radius" value="200"/>
-                <property name="damage" value="5"/>
+                <property name="damage" value="15"/>
                 <property name="precision" value="0.6"/>
             </properties>
         </object>
-        <object name="wild_enemy" type="enemy" subType="wild_enemy" x="130" y="780" width="72" height="50">
+        <object name="wild_enemy" type="enemy" subType="wild_enemy" x="845" y="381" width="72" height="50">
             <properties>
                 <property name="health" value="100"/>
                 <property name="maxHealth" value="100"/>
@@ -68,7 +68,7 @@
                 <property name="maxTime" value="100"/>
                 <property name="timeStep" value="4"/>
                 <property name="radius" value="200"/>
-                <property name="damage" value="5"/>
+                <property name="damage" value="15"/>
                 <property name="precision" value="0.6"/>
             </properties>
         </object>
@@ -139,7 +139,7 @@
                 <property name="time_charge" value="5"/>
             </properties>
         </object>
-        <object name="weapon_auto" type="item" subType="weapon" x="580" y="134" width="50" height="50">
+        <object name="weapon_auto" type="item" subType="weapon" x="380" y="134" width="50" height="50">
             <properties>
                 <property name="damage" value="10"/>
                 <property name="bulletType" value="2"/>

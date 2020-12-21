@@ -16,7 +16,7 @@ public:
     std::string fileName, name, type, subType;
     Level level;
     /**
-     * Перечисление видов статическиъ объектов карты
+     * Перечисление видов статическиx объектов карты
      */
     enum staticObjects {
         FLOOR,

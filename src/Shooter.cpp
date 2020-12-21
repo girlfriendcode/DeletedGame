@@ -17,6 +17,8 @@ void Shooter::throwWeapon() {
     Weapon *weaponThrow = activeWeapon;
     activeWeapon = nullptr;
     weaponThrow->state = Item::STATE::onMap;
+    weaponThrow->x = x - 10;
+    weaponThrow->y = y;
     //добавляем на поле назад
 }
 
@@ -26,6 +28,7 @@ void Shooter::takeWeapon(Weapon *w) {
         //возвращаем на карту
         throwWeapon();//Хотите удалить оружие?(добавить диалог)
     }
+    w->state = Item::STATE::onInvent;
     activeWeapon = w;
 }
 

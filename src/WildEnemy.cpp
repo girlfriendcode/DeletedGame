@@ -12,8 +12,9 @@ WildEnemy::WildEnemy(Level &level, float precision, float damage, std::string &n
     this->damage = damage;
 }
 
-/*void WildEnemy::makeDamage(Hero *hero) {
-    hero->basicStats["health"]-=damage;
-    basicStats["time"]-=5;
-}*/
+void WildEnemy::makeDamage(Hero *hero) {
+    hero->basicStats["health"] -= damage;
+    basicStats["time"] -= 205;
+    hero->sprite.setColor(Color::Red);
+}
 

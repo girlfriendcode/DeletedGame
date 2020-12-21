@@ -7,7 +7,10 @@
 
 #include <iostream>
 #include <iterator>
-
+/**
+ * Собственный шаблон
+ *
+ */
 template<class T>
 class MyContainer {
 private:
@@ -22,36 +25,83 @@ public:
 
     MyContainer(const std::initializer_list<T> &other);
 
+
     ~MyContainer() { delete[] elem; }
 
+    /**
+     * Оператор доступа как к обычному массиву
+     *
+     */
     T &operator[](int n);
+
+    /**
+     * Перегруженный оператор присвоения
+     *
+     */
+    MyContainer &operator=(const MyContainer &vec);
+
+    MyContainer operator-(const MyContainer &vec);
+
+    MyContainer operator+(const MyContainer &vec);
 
     const T &operator[](int n) const;
 
+    /**
+     * Перегруженный оператор равенства
+     *
+     */
     bool operator==(const MyContainer &vec);
 
+    /**
+     * Перегруженный оператор неравенства
+     *
+     */
     bool operator!=(const MyContainer &vec) { return (*this == vec); };
 
     bool empty() { return (this->elem == nullptr); };
 
+    /**
+     * Найти элемент
+     * @return индекс элемента
+     */
     int findElement(T &element);
 
+    /**
+     * Вставка в конец нового элемента
+     *
+     */
     void push_back(const T &it);
 
+    /**
+     *
+     * Замена одного элемента на другой
+     */
     void replace(T &element, const T &other);//заменяем один предмет на другой
+    /**
+     * Удаление последнего элемента
+     */
     void pop_back();
 
+    /**
+     *
+     * Удаление по индексу
+     */
     void erase(int index);
 
+    /**
+     * Очистить весь контейнер
+     */
     void clear();
 
     int getSize() const { return size; };
 
     T *getElem() const { return elem; };
 
+    /**
+     * Изменение размера контейнера
+     */
     void resize(int new_size);
 };
-
 template<class T>
 MyContainer<T>::MyContainer(const MyContainer<T> &other) {
     this->size = 0;
@@ -181,5 +231,42 @@ void MyContainer<T>::erase(int index) {
     }
 }
 
+template<class T>
+MyContainer<T> &MyContainer<T>::operator=(const MyContainer &vec) {
+    if (elem == nullptr)
+        delete[] elem;
+    size = vec.getSize();
+    elem = new T[size];
+    if (vec.elem != nullptr) {
+        for (int i = 0; i < vec.size; ++i) {
+            elem[i] = vec.elem[i];
+        }
+    }
+    return *this;
+}
+
+template<class T>
+MyContainer<T> MyContainer<T>::operator-(const MyContainer<T> &vec) {
+    MyContainer<T> result(*this);
+    for (int i = 0; i < vec.size; i++) {
+        if (result.findElement(vec.elem[i]) != -1)
+            result.erase(result.findElement(vec.elem[i]));
+    }
+    return result;
+}
+
+template<class T>
+MyContainer<T> MyContainer<T>::operator+(const MyContainer<T> &vec) {
+    MyContainer<T> result;
+    for (int i = 0; i < vec.size; i++) {
+        if (result.findElement(vec.elem[i]) == -1)
+            result.push_back(vec.elem[i]);
+    }
+    for (int i = 0; i < this->size_; i++) {
+        if (result.findElement(this->elem[i]) == -1)
+            result.push_back(this->elem[i]);
+    }
+    return result;
+}
 
 #endif //DELETEDGAME_MYCONTAINER_H

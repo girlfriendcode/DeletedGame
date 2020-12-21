@@ -14,8 +14,8 @@ Unit::Unit(Level &level, std::string &name, std::string &fileName, float x, floa
     basicStats = {
             {"maxHealth", 500},
             {"health",    500},
-            {"time",      100000},
-            {"maxTime",   100000},
+            {"time",      5000},
+            {"maxTime",   5000},
             {"timeStep",  20},
             {"radius",    100}
     };
@@ -31,7 +31,6 @@ void Unit::update(float time) {
     }
     if (basicStats["health"] <= 0) {
         isAlive = false;
-        sprite.setColor(Color::Red);
     }
     if (basicStats["time"] <= 0) {
         isMove = false;
@@ -41,6 +40,7 @@ void Unit::update(float time) {
 
 
 void Unit::doStep(float time) {
+    isSelect = false;
     float distance = 0;
     float timePoints = 0;
     distance = sqrt((tempX - x) * (tempX - x) + (tempY - y) * (tempY -
@@ -50,7 +50,7 @@ void Unit::doStep(float time) {
         x += 0.13 * time * (tempX - x) /
              distance;//идем по иксу с помощью вектора нормали 0.13-что-то вроде скорости, чтобы замедлить спрайт
         y += 0.13 * time * (tempY - y) / distance;//идем по игреку так же
-        basicStats["time"] -= basicStats["timeStep"] * distance / 400;
+        basicStats["time"] -= basicStats["timeStep"] * distance / 200;
         for (auto &i:map) {
             if (getRect().intersects(i.rect)) {
                 distance -= sqrt((h + i.rect.height) * (h + i.rect.height) +
@@ -71,6 +71,7 @@ void Unit::doStep(float time) {
                 isMove = false;
             }
         }
+
     } else {
         isMove = false;
         std::cout << "priehali\n";
@@ -90,7 +91,6 @@ void Unit::toSelect(Vector2f pos, sf::Event event) {
             if (event.type == Event::MouseButtonPressed) {//если нажата клавиша мыши
                 if (event.key.code == Mouse::Right) {//а именно правая
                     isMove = true;//то начинаем движение
-                    isSelect = false;//объект уже не выбран
                     sprite.setColor(Color::White);//возвращаем обычный цвет спрайту
                     tempX = pos.x;//забираем координату нажатия курсора Х
                     tempY = pos.y;//и Y

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/Hero.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/Hero.cpp.o"
+  "/home/valeria/CLionProjects/DeletedGame/src/Inventory.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/Item.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/Item.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/src/Layer.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/src/Layer.cpp.o"

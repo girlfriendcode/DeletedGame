@@ -60,10 +60,10 @@ void Hero::recharge(BulletCase *bulletCase) {
 }
 
 void Hero::takeWeapon(Weapon *weapon) {
+    takeItem(weapon);
     if (activeWeapon == nullptr) {
         activeWeapon = weapon;
     }
-    takeItem(weapon);
 }
 
 void Hero::throwWeapon(Weapon *weapon) {

@@ -7,7 +7,9 @@
 
 #include "FieldObject.h"
 #include <cmath>
-
+/**
+ * Класс пули
+ */
 class Bullet {
 public:
     Bullet(Level &level, float x, float y, float temX, float temY);
