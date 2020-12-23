@@ -6,6 +6,7 @@
  * Абстрактный класс вещи
  */
 class Item : public FieldObject {
+
 protected:
     int weight;
 public :

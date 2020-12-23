@@ -30,10 +30,22 @@ public:
     float h;
     bool isAlive;
 
+    /**
+     * Указываем направление стрельбы
+     * @param pos
+     */
     void toPoint(Vector2f pos);
 
+    /**
+     * Перемещение пули
+     * @param time
+     */
     void doShoot(float time);
 
+    /**
+     * Обновление состояния пули
+     * @param time
+     */
     void update(float time);
 
     void draw(RenderWindow &window);

@@ -12,17 +12,19 @@ void Level::draw(sf::RenderWindow &window) {
             window.draw(tile);
 }
 
-MapObject Level::getObjectByName(const std::string &name) {
-    for (auto &object : dynamicObjects) {
-        if (object.name == name)
-            return object;
-    }
-}
 
 std::vector<MapObject> Level::getObjectsByType(const std::string &type) {
     std::vector<MapObject> vec;
     for (auto &object:dynamicObjects)
         if (object.type == type)
+            vec.push_back(object);
+    return vec;
+}
+
+std::vector<MapObject> Level::getObjectsByName(const std::string &name) {
+    std::vector<MapObject> vec;
+    for (auto &object:dynamicObjects)
+        if (object.name == name)
             vec.push_back(object);
     return vec;
 }

@@ -7,7 +7,9 @@
 
 #include "Item.h"
 #include "Weapon.h"
-
+/**
+ * Класс магазина патронов
+ */
 class BulletCase : public Item {
 private:
     int bullets;
@@ -16,6 +18,9 @@ public:
     BulletCase(Level &level, int maxB, int type, int weight, std::string &name, std::string &fileName, float x, float y,
                float w, float h);
 
+    /**
+     * тип пуль
+     */
     enum BULLETTYPE {
         RIFFLE = 1,
         AUTO = 2,

@@ -17,6 +17,7 @@ public:
     std::string type;
     std::string subType;
     std::string imagePath;
+
     sf::Rect<float> rect;
     std::map<std::string, std::string> properties;
     sf::Sprite sprite;

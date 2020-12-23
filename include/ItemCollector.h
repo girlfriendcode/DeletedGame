@@ -10,7 +10,9 @@
 #include "BulletCase.h"
 #include "MedChest.h"
 #include "MyContainer.h"
-
+/**
+ * Абстракный класс юнита, у которого есть инвентарь
+ */
 class ItemCollector : virtual public Unit {
 
 public:
@@ -18,11 +20,15 @@ public:
                   myView &view);
 
     MyContainer<Item *> inventory;
+
     virtual void takeItem(Item *item);
 
     //обработка выбора выброса именно этого предмета
     virtual void throwItem(Item *item);
 
+    /**
+     * Cброс всех вещей инвентаря при смерти
+     */
     virtual void throwItem();//сброс при смерти одинаков
 };
 

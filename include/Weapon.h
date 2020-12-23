@@ -6,16 +6,28 @@
 #define GAME_WEAPON_H
 
 #include "Item.h"
+/**
+ * Класс оружия
+ */
 
 class Weapon : public Item {
 private:
     float w_damage;
+    /**
+     * Время, затрачиваемое на стрельбу
+     */
     float timeShoot;//определяю тут
+    /**
+     * Время, затрачиваемое на перезарядку
+     */
     float timeCharge;//определяю тут
     int maxBullets;
     int bullets;// может меняться в процессе
     //ружье весит 5
 public:
+    /**
+     * Тип оружия
+     */
     enum BULLETTYPE {
         RIFFLE = 1,
         AUTO = 2,

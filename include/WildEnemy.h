@@ -7,6 +7,9 @@
 
 #include "Unit.h"
 #include "../include/Hero.h"
+/**
+ * Класс дикого существа
+ */
 class WildEnemy : public Unit {
 private:
     float precision;
@@ -16,6 +19,7 @@ public:
               float w, float h, myView &view);
 
     void makeDamage(Hero *hero);
+
     float getPrecision() const { return precision; };
 
     virtual float getDamage() const { return damage; };

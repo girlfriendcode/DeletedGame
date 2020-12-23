@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/valeria/CLionProjects/DeletedGame/gtest/gtest.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o"
   "/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp" "/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o"

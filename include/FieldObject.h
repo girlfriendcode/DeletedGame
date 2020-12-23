@@ -10,6 +10,7 @@ using namespace sf;
 /**
  * Класс, описывающий объект карты, имеющий файл текстуры и координаты
  */
+using namespace sf;
 class FieldObject {
 public:
     float x, y, h, w;
@@ -36,7 +37,6 @@ public:
     FieldObject(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h);
 
     FieldObject(std::string &name, std::string &fileName, float x, float y, float w, float h);
-
     /**
      * Отрисовка объекта
      * @param window-окно, в котором отрисовывается объект

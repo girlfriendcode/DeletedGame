@@ -32,8 +32,8 @@ void Shooter::takeWeapon(Weapon *w) {
     activeWeapon = w;
 }
 
-void Shooter::makeShoot(Unit *hitUnit) {
-    if (activeWeapon != nullptr) {
+void Shooter::makeShoot(Unit *hitUnit, Vector2f pos, sf::Event event) {
+    if (activeWeapon != nullptr && activeWeapon->getBullets() >= 0) {
         hitUnit->basicStats["health"] -= activeWeapon->getW_Damage();
         basicStats["time"] -= activeWeapon->gettimeShoot();
         int bullets = activeWeapon->getBullets() - 1;

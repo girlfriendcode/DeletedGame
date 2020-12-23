@@ -24,12 +24,17 @@ public:
      * радиус обзора, кол-во очков времени, затрачиваемое на шаг
      */
     std::map<std::string, float> basicStats;
+    /**
+     * Состояния юнита
+     */
     bool isAlive, isMove, isSelect;
 
     double currentFrame = 0;
 
     myView view;
-
+    /**
+     * Координаты для снятия клика курсора - куда двигаться или стрелять
+     */
     float tempX, tempY;
 
     std::vector<MapObject> map;

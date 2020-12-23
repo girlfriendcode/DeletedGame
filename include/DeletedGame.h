@@ -50,7 +50,6 @@ public:
      * @param units
      * @return общее число очков
      */
-    void End();
 
     template<typename T>
     float getSumOfTimePoints(std::list<T *> units) {
@@ -61,6 +60,11 @@ public:
         return sum;
     }
 
+    /**
+     * Обновление очков времени команды
+     * @tparam T
+     * @param units
+     */
     template<typename T>
     void updateSquadTime(std::list<T *> units) {
         for (auto i:units) {

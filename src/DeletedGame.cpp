@@ -243,6 +243,9 @@ void DeletedGame::Run() {
                     hero->getWeapon()->sprite.setPosition(hero->x + 3, hero->y + 1);
                     hero->getWeapon()->draw(window);
                 }
+                if (hero->isSelect) {
+                    inventBar.draw(window);
+                }
             }
         }
         for (auto enemy: enemyList) {
@@ -253,6 +256,9 @@ void DeletedGame::Run() {
                     dynamic_cast<Shooter *>(enemy)->getWeapon()->sprite.setPosition(enemy->x + 3, enemy->y + 1);
                     dynamic_cast<Shooter *>(enemy)->getWeapon()->draw(window);
                 }
+                if (dynamic_cast<ItemCollector *>(enemy) != nullptr && enemy->isSelect) {
+                    inventBar.draw(window);
+                }
             }
         }
         for (auto b:bullets) {
@@ -262,7 +268,6 @@ void DeletedGame::Run() {
                 b->update(time);
             }
         }
-        inventBar.draw(window);
         window.display();
     }
 }

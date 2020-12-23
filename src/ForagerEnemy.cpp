@@ -11,6 +11,5 @@ ForagerEnemy::ForagerEnemy(Level &level, std::vector<FieldObject *> points, std:
                                                                       Unit(level, name, fileName, x, y, w, h, view),
                                                                       ItemCollector(level, name, fileName, x, y, w, h,
                                                                                     view) {
-
 }
 

@@ -62,6 +62,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
+		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp">
+			<Option target="runUnitTests"/>
+		</Unit>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/tests/gtest.cpp">
 			<Option target="runUnitTests"/>
 		</Unit>

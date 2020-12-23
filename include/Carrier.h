@@ -7,7 +7,9 @@
 
 #include "main.h"
 #include "Unit.h"
-
+/**
+ * Класс знающего точки складированя
+ */
 class Carrier : virtual public Unit {
 protected:
 
@@ -18,7 +20,7 @@ public:
 
     std::tuple<float, float> getNearestPoint();//в зависимости от расположения игрока сейчас
     //предусмотреть, чтобы в режиме врагов были видны точки складирования
-
+    std::vector<FieldObject *> getCollectPoints() const { return collectPoints; };
 };
 
 #endif //DELETEDGAME_CARRIER_H

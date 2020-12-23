@@ -87,6 +87,17 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/home/valeria/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -153,8 +164,38 @@ runUnitTests: cmake_check_build_system
 
 # fast build rule for target.
 runUnitTests/fast:
-	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/build
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
 .PHONY : runUnitTests/fast
+
+gtest/gtest.o: gtest/gtest.cpp.o
+
+.PHONY : gtest/gtest.o
+
+# target to build an object file
+gtest/gtest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/gtest/gtest.cpp.o
+.PHONY : gtest/gtest.cpp.o
+
+gtest/gtest.i: gtest/gtest.cpp.i
+
+.PHONY : gtest/gtest.i
+
+# target to preprocess a source file
+gtest/gtest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/gtest/gtest.cpp.i
+.PHONY : gtest/gtest.cpp.i
+
+gtest/gtest.s: gtest/gtest.cpp.s
+
+.PHONY : gtest/gtest.s
+
+# target to generate assembly for a file
+gtest/gtest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/gtest/gtest.cpp.s
+.PHONY : gtest/gtest.cpp.s
 
 include/TinyXML/tinystr.o: include/TinyXML/tinystr.cpp.o
 
@@ -163,6 +204,7 @@ include/TinyXML/tinystr.o: include/TinyXML/tinystr.cpp.o
 # target to build an object file
 include/TinyXML/tinystr.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinystr.cpp.o
 .PHONY : include/TinyXML/tinystr.cpp.o
 
 include/TinyXML/tinystr.i: include/TinyXML/tinystr.cpp.i
@@ -172,6 +214,7 @@ include/TinyXML/tinystr.i: include/TinyXML/tinystr.cpp.i
 # target to preprocess a source file
 include/TinyXML/tinystr.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinystr.cpp.i
 .PHONY : include/TinyXML/tinystr.cpp.i
 
 include/TinyXML/tinystr.s: include/TinyXML/tinystr.cpp.s
@@ -181,6 +224,7 @@ include/TinyXML/tinystr.s: include/TinyXML/tinystr.cpp.s
 # target to generate assembly for a file
 include/TinyXML/tinystr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinystr.cpp.s
 .PHONY : include/TinyXML/tinystr.cpp.s
 
 include/TinyXML/tinyxml.o: include/TinyXML/tinyxml.cpp.o
@@ -190,6 +234,7 @@ include/TinyXML/tinyxml.o: include/TinyXML/tinyxml.cpp.o
 # target to build an object file
 include/TinyXML/tinyxml.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxml.cpp.o
 .PHONY : include/TinyXML/tinyxml.cpp.o
 
 include/TinyXML/tinyxml.i: include/TinyXML/tinyxml.cpp.i
@@ -199,6 +244,7 @@ include/TinyXML/tinyxml.i: include/TinyXML/tinyxml.cpp.i
 # target to preprocess a source file
 include/TinyXML/tinyxml.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxml.cpp.i
 .PHONY : include/TinyXML/tinyxml.cpp.i
 
 include/TinyXML/tinyxml.s: include/TinyXML/tinyxml.cpp.s
@@ -208,6 +254,7 @@ include/TinyXML/tinyxml.s: include/TinyXML/tinyxml.cpp.s
 # target to generate assembly for a file
 include/TinyXML/tinyxml.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxml.cpp.s
 .PHONY : include/TinyXML/tinyxml.cpp.s
 
 include/TinyXML/tinyxmlerror.o: include/TinyXML/tinyxmlerror.cpp.o
@@ -217,6 +264,7 @@ include/TinyXML/tinyxmlerror.o: include/TinyXML/tinyxmlerror.cpp.o
 # target to build an object file
 include/TinyXML/tinyxmlerror.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlerror.cpp.o
 .PHONY : include/TinyXML/tinyxmlerror.cpp.o
 
 include/TinyXML/tinyxmlerror.i: include/TinyXML/tinyxmlerror.cpp.i
@@ -226,6 +274,7 @@ include/TinyXML/tinyxmlerror.i: include/TinyXML/tinyxmlerror.cpp.i
 # target to preprocess a source file
 include/TinyXML/tinyxmlerror.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlerror.cpp.i
 .PHONY : include/TinyXML/tinyxmlerror.cpp.i
 
 include/TinyXML/tinyxmlerror.s: include/TinyXML/tinyxmlerror.cpp.s
@@ -235,6 +284,7 @@ include/TinyXML/tinyxmlerror.s: include/TinyXML/tinyxmlerror.cpp.s
 # target to generate assembly for a file
 include/TinyXML/tinyxmlerror.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlerror.cpp.s
 .PHONY : include/TinyXML/tinyxmlerror.cpp.s
 
 include/TinyXML/tinyxmlparser.o: include/TinyXML/tinyxmlparser.cpp.o
@@ -244,6 +294,7 @@ include/TinyXML/tinyxmlparser.o: include/TinyXML/tinyxmlparser.cpp.o
 # target to build an object file
 include/TinyXML/tinyxmlparser.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlparser.cpp.o
 .PHONY : include/TinyXML/tinyxmlparser.cpp.o
 
 include/TinyXML/tinyxmlparser.i: include/TinyXML/tinyxmlparser.cpp.i
@@ -253,6 +304,7 @@ include/TinyXML/tinyxmlparser.i: include/TinyXML/tinyxmlparser.cpp.i
 # target to preprocess a source file
 include/TinyXML/tinyxmlparser.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlparser.cpp.i
 .PHONY : include/TinyXML/tinyxmlparser.cpp.i
 
 include/TinyXML/tinyxmlparser.s: include/TinyXML/tinyxmlparser.cpp.s
@@ -262,6 +314,7 @@ include/TinyXML/tinyxmlparser.s: include/TinyXML/tinyxmlparser.cpp.s
 # target to generate assembly for a file
 include/TinyXML/tinyxmlparser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlparser.cpp.s
 .PHONY : include/TinyXML/tinyxmlparser.cpp.s
 
 src/Bullet.o: src/Bullet.cpp.o
@@ -271,6 +324,7 @@ src/Bullet.o: src/Bullet.cpp.o
 # target to build an object file
 src/Bullet.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o
 .PHONY : src/Bullet.cpp.o
 
 src/Bullet.i: src/Bullet.cpp.i
@@ -280,6 +334,7 @@ src/Bullet.i: src/Bullet.cpp.i
 # target to preprocess a source file
 src/Bullet.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Bullet.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Bullet.cpp.i
 .PHONY : src/Bullet.cpp.i
 
 src/Bullet.s: src/Bullet.cpp.s
@@ -289,6 +344,7 @@ src/Bullet.s: src/Bullet.cpp.s
 # target to generate assembly for a file
 src/Bullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Bullet.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Bullet.cpp.s
 .PHONY : src/Bullet.cpp.s
 
 src/BulletCase.o: src/BulletCase.cpp.o
@@ -298,6 +354,7 @@ src/BulletCase.o: src/BulletCase.cpp.o
 # target to build an object file
 src/BulletCase.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/BulletCase.cpp.o
 .PHONY : src/BulletCase.cpp.o
 
 src/BulletCase.i: src/BulletCase.cpp.i
@@ -307,6 +364,7 @@ src/BulletCase.i: src/BulletCase.cpp.i
 # target to preprocess a source file
 src/BulletCase.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/BulletCase.cpp.i
 .PHONY : src/BulletCase.cpp.i
 
 src/BulletCase.s: src/BulletCase.cpp.s
@@ -316,6 +374,7 @@ src/BulletCase.s: src/BulletCase.cpp.s
 # target to generate assembly for a file
 src/BulletCase.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/BulletCase.cpp.s
 .PHONY : src/BulletCase.cpp.s
 
 src/Carrier.o: src/Carrier.cpp.o
@@ -325,6 +384,7 @@ src/Carrier.o: src/Carrier.cpp.o
 # target to build an object file
 src/Carrier.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Carrier.cpp.o
 .PHONY : src/Carrier.cpp.o
 
 src/Carrier.i: src/Carrier.cpp.i
@@ -334,6 +394,7 @@ src/Carrier.i: src/Carrier.cpp.i
 # target to preprocess a source file
 src/Carrier.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Carrier.cpp.i
 .PHONY : src/Carrier.cpp.i
 
 src/Carrier.s: src/Carrier.cpp.s
@@ -343,6 +404,7 @@ src/Carrier.s: src/Carrier.cpp.s
 # target to generate assembly for a file
 src/Carrier.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Carrier.cpp.s
 .PHONY : src/Carrier.cpp.s
 
 src/CleverEnemy.o: src/CleverEnemy.cpp.o
@@ -352,6 +414,7 @@ src/CleverEnemy.o: src/CleverEnemy.cpp.o
 # target to build an object file
 src/CleverEnemy.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/CleverEnemy.cpp.o
 .PHONY : src/CleverEnemy.cpp.o
 
 src/CleverEnemy.i: src/CleverEnemy.cpp.i
@@ -361,6 +424,7 @@ src/CleverEnemy.i: src/CleverEnemy.cpp.i
 # target to preprocess a source file
 src/CleverEnemy.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/CleverEnemy.cpp.i
 .PHONY : src/CleverEnemy.cpp.i
 
 src/CleverEnemy.s: src/CleverEnemy.cpp.s
@@ -370,6 +434,7 @@ src/CleverEnemy.s: src/CleverEnemy.cpp.s
 # target to generate assembly for a file
 src/CleverEnemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/CleverEnemy.cpp.s
 .PHONY : src/CleverEnemy.cpp.s
 
 src/DeletedGame.o: src/DeletedGame.cpp.o
@@ -379,6 +444,7 @@ src/DeletedGame.o: src/DeletedGame.cpp.o
 # target to build an object file
 src/DeletedGame.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/DeletedGame.cpp.o
 .PHONY : src/DeletedGame.cpp.o
 
 src/DeletedGame.i: src/DeletedGame.cpp.i
@@ -388,6 +454,7 @@ src/DeletedGame.i: src/DeletedGame.cpp.i
 # target to preprocess a source file
 src/DeletedGame.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/DeletedGame.cpp.i
 .PHONY : src/DeletedGame.cpp.i
 
 src/DeletedGame.s: src/DeletedGame.cpp.s
@@ -397,6 +464,7 @@ src/DeletedGame.s: src/DeletedGame.cpp.s
 # target to generate assembly for a file
 src/DeletedGame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/DeletedGame.cpp.s
 .PHONY : src/DeletedGame.cpp.s
 
 src/FieldObject.o: src/FieldObject.cpp.o
@@ -406,6 +474,7 @@ src/FieldObject.o: src/FieldObject.cpp.o
 # target to build an object file
 src/FieldObject.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/FieldObject.cpp.o
 .PHONY : src/FieldObject.cpp.o
 
 src/FieldObject.i: src/FieldObject.cpp.i
@@ -415,6 +484,7 @@ src/FieldObject.i: src/FieldObject.cpp.i
 # target to preprocess a source file
 src/FieldObject.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/FieldObject.cpp.i
 .PHONY : src/FieldObject.cpp.i
 
 src/FieldObject.s: src/FieldObject.cpp.s
@@ -424,6 +494,7 @@ src/FieldObject.s: src/FieldObject.cpp.s
 # target to generate assembly for a file
 src/FieldObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/FieldObject.cpp.s
 .PHONY : src/FieldObject.cpp.s
 
 src/ForagerEnemy.o: src/ForagerEnemy.cpp.o
@@ -433,6 +504,7 @@ src/ForagerEnemy.o: src/ForagerEnemy.cpp.o
 # target to build an object file
 src/ForagerEnemy.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ForagerEnemy.cpp.o
 .PHONY : src/ForagerEnemy.cpp.o
 
 src/ForagerEnemy.i: src/ForagerEnemy.cpp.i
@@ -442,6 +514,7 @@ src/ForagerEnemy.i: src/ForagerEnemy.cpp.i
 # target to preprocess a source file
 src/ForagerEnemy.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ForagerEnemy.cpp.i
 .PHONY : src/ForagerEnemy.cpp.i
 
 src/ForagerEnemy.s: src/ForagerEnemy.cpp.s
@@ -451,6 +524,7 @@ src/ForagerEnemy.s: src/ForagerEnemy.cpp.s
 # target to generate assembly for a file
 src/ForagerEnemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ForagerEnemy.cpp.s
 .PHONY : src/ForagerEnemy.cpp.s
 
 src/Hero.o: src/Hero.cpp.o
@@ -460,6 +534,7 @@ src/Hero.o: src/Hero.cpp.o
 # target to build an object file
 src/Hero.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Hero.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Hero.cpp.o
 .PHONY : src/Hero.cpp.o
 
 src/Hero.i: src/Hero.cpp.i
@@ -469,6 +544,7 @@ src/Hero.i: src/Hero.cpp.i
 # target to preprocess a source file
 src/Hero.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Hero.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Hero.cpp.i
 .PHONY : src/Hero.cpp.i
 
 src/Hero.s: src/Hero.cpp.s
@@ -478,6 +554,7 @@ src/Hero.s: src/Hero.cpp.s
 # target to generate assembly for a file
 src/Hero.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Hero.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Hero.cpp.s
 .PHONY : src/Hero.cpp.s
 
 src/Inventory.o: src/Inventory.cpp.o
@@ -487,6 +564,7 @@ src/Inventory.o: src/Inventory.cpp.o
 # target to build an object file
 src/Inventory.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o
 .PHONY : src/Inventory.cpp.o
 
 src/Inventory.i: src/Inventory.cpp.i
@@ -496,6 +574,7 @@ src/Inventory.i: src/Inventory.cpp.i
 # target to preprocess a source file
 src/Inventory.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Inventory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Inventory.cpp.i
 .PHONY : src/Inventory.cpp.i
 
 src/Inventory.s: src/Inventory.cpp.s
@@ -505,6 +584,7 @@ src/Inventory.s: src/Inventory.cpp.s
 # target to generate assembly for a file
 src/Inventory.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Inventory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Inventory.cpp.s
 .PHONY : src/Inventory.cpp.s
 
 src/Item.o: src/Item.cpp.o
@@ -514,6 +594,7 @@ src/Item.o: src/Item.cpp.o
 # target to build an object file
 src/Item.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Item.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Item.cpp.o
 .PHONY : src/Item.cpp.o
 
 src/Item.i: src/Item.cpp.i
@@ -523,6 +604,7 @@ src/Item.i: src/Item.cpp.i
 # target to preprocess a source file
 src/Item.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Item.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Item.cpp.i
 .PHONY : src/Item.cpp.i
 
 src/Item.s: src/Item.cpp.s
@@ -532,6 +614,7 @@ src/Item.s: src/Item.cpp.s
 # target to generate assembly for a file
 src/Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Item.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Item.cpp.s
 .PHONY : src/Item.cpp.s
 
 src/ItemCollector.o: src/ItemCollector.cpp.o
@@ -541,6 +624,7 @@ src/ItemCollector.o: src/ItemCollector.cpp.o
 # target to build an object file
 src/ItemCollector.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o
 .PHONY : src/ItemCollector.cpp.o
 
 src/ItemCollector.i: src/ItemCollector.cpp.i
@@ -550,6 +634,7 @@ src/ItemCollector.i: src/ItemCollector.cpp.i
 # target to preprocess a source file
 src/ItemCollector.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.i
 .PHONY : src/ItemCollector.cpp.i
 
 src/ItemCollector.s: src/ItemCollector.cpp.s
@@ -559,6 +644,7 @@ src/ItemCollector.s: src/ItemCollector.cpp.s
 # target to generate assembly for a file
 src/ItemCollector.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.s
 .PHONY : src/ItemCollector.cpp.s
 
 src/Layer.o: src/Layer.cpp.o
@@ -568,6 +654,7 @@ src/Layer.o: src/Layer.cpp.o
 # target to build an object file
 src/Layer.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Layer.cpp.o
 .PHONY : src/Layer.cpp.o
 
 src/Layer.i: src/Layer.cpp.i
@@ -577,6 +664,7 @@ src/Layer.i: src/Layer.cpp.i
 # target to preprocess a source file
 src/Layer.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Layer.cpp.i
 .PHONY : src/Layer.cpp.i
 
 src/Layer.s: src/Layer.cpp.s
@@ -586,6 +674,7 @@ src/Layer.s: src/Layer.cpp.s
 # target to generate assembly for a file
 src/Layer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Layer.cpp.s
 .PHONY : src/Layer.cpp.s
 
 src/Level.o: src/Level.cpp.o
@@ -595,6 +684,7 @@ src/Level.o: src/Level.cpp.o
 # target to build an object file
 src/Level.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Level.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Level.cpp.o
 .PHONY : src/Level.cpp.o
 
 src/Level.i: src/Level.cpp.i
@@ -604,6 +694,7 @@ src/Level.i: src/Level.cpp.i
 # target to preprocess a source file
 src/Level.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Level.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Level.cpp.i
 .PHONY : src/Level.cpp.i
 
 src/Level.s: src/Level.cpp.s
@@ -613,6 +704,7 @@ src/Level.s: src/Level.cpp.s
 # target to generate assembly for a file
 src/Level.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Level.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Level.cpp.s
 .PHONY : src/Level.cpp.s
 
 src/MapObject.o: src/MapObject.cpp.o
@@ -622,6 +714,7 @@ src/MapObject.o: src/MapObject.cpp.o
 # target to build an object file
 src/MapObject.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/MapObject.cpp.o
 .PHONY : src/MapObject.cpp.o
 
 src/MapObject.i: src/MapObject.cpp.i
@@ -631,6 +724,7 @@ src/MapObject.i: src/MapObject.cpp.i
 # target to preprocess a source file
 src/MapObject.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/MapObject.cpp.i
 .PHONY : src/MapObject.cpp.i
 
 src/MapObject.s: src/MapObject.cpp.s
@@ -640,6 +734,7 @@ src/MapObject.s: src/MapObject.cpp.s
 # target to generate assembly for a file
 src/MapObject.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/MapObject.cpp.s
 .PHONY : src/MapObject.cpp.s
 
 src/MedChest.o: src/MedChest.cpp.o
@@ -649,6 +744,7 @@ src/MedChest.o: src/MedChest.cpp.o
 # target to build an object file
 src/MedChest.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/MedChest.cpp.o
 .PHONY : src/MedChest.cpp.o
 
 src/MedChest.i: src/MedChest.cpp.i
@@ -658,6 +754,7 @@ src/MedChest.i: src/MedChest.cpp.i
 # target to preprocess a source file
 src/MedChest.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/MedChest.cpp.i
 .PHONY : src/MedChest.cpp.i
 
 src/MedChest.s: src/MedChest.cpp.s
@@ -667,6 +764,7 @@ src/MedChest.s: src/MedChest.cpp.s
 # target to generate assembly for a file
 src/MedChest.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/MedChest.cpp.s
 .PHONY : src/MedChest.cpp.s
 
 src/Shooter.o: src/Shooter.cpp.o
@@ -676,6 +774,7 @@ src/Shooter.o: src/Shooter.cpp.o
 # target to build an object file
 src/Shooter.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Shooter.cpp.o
 .PHONY : src/Shooter.cpp.o
 
 src/Shooter.i: src/Shooter.cpp.i
@@ -685,6 +784,7 @@ src/Shooter.i: src/Shooter.cpp.i
 # target to preprocess a source file
 src/Shooter.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Shooter.cpp.i
 .PHONY : src/Shooter.cpp.i
 
 src/Shooter.s: src/Shooter.cpp.s
@@ -694,6 +794,7 @@ src/Shooter.s: src/Shooter.cpp.s
 # target to generate assembly for a file
 src/Shooter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Shooter.cpp.s
 .PHONY : src/Shooter.cpp.s
 
 src/Unit.o: src/Unit.cpp.o
@@ -703,6 +804,7 @@ src/Unit.o: src/Unit.cpp.o
 # target to build an object file
 src/Unit.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Unit.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Unit.cpp.o
 .PHONY : src/Unit.cpp.o
 
 src/Unit.i: src/Unit.cpp.i
@@ -712,6 +814,7 @@ src/Unit.i: src/Unit.cpp.i
 # target to preprocess a source file
 src/Unit.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Unit.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Unit.cpp.i
 .PHONY : src/Unit.cpp.i
 
 src/Unit.s: src/Unit.cpp.s
@@ -721,6 +824,7 @@ src/Unit.s: src/Unit.cpp.s
 # target to generate assembly for a file
 src/Unit.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Unit.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Unit.cpp.s
 .PHONY : src/Unit.cpp.s
 
 src/Weapon.o: src/Weapon.cpp.o
@@ -730,6 +834,7 @@ src/Weapon.o: src/Weapon.cpp.o
 # target to build an object file
 src/Weapon.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Weapon.cpp.o
 .PHONY : src/Weapon.cpp.o
 
 src/Weapon.i: src/Weapon.cpp.i
@@ -739,6 +844,7 @@ src/Weapon.i: src/Weapon.cpp.i
 # target to preprocess a source file
 src/Weapon.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Weapon.cpp.i
 .PHONY : src/Weapon.cpp.i
 
 src/Weapon.s: src/Weapon.cpp.s
@@ -748,6 +854,7 @@ src/Weapon.s: src/Weapon.cpp.s
 # target to generate assembly for a file
 src/Weapon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/Weapon.cpp.s
 .PHONY : src/Weapon.cpp.s
 
 src/WildEnemy.o: src/WildEnemy.cpp.o
@@ -757,6 +864,7 @@ src/WildEnemy.o: src/WildEnemy.cpp.o
 # target to build an object file
 src/WildEnemy.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/WildEnemy.cpp.o
 .PHONY : src/WildEnemy.cpp.o
 
 src/WildEnemy.i: src/WildEnemy.cpp.i
@@ -766,6 +874,7 @@ src/WildEnemy.i: src/WildEnemy.cpp.i
 # target to preprocess a source file
 src/WildEnemy.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/WildEnemy.cpp.i
 .PHONY : src/WildEnemy.cpp.i
 
 src/WildEnemy.s: src/WildEnemy.cpp.s
@@ -775,6 +884,7 @@ src/WildEnemy.s: src/WildEnemy.cpp.s
 # target to generate assembly for a file
 src/WildEnemy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/WildEnemy.cpp.s
 .PHONY : src/WildEnemy.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -811,6 +921,7 @@ src/myView.o: src/myView.cpp.o
 # target to build an object file
 src/myView.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/myView.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/myView.cpp.o
 .PHONY : src/myView.cpp.o
 
 src/myView.i: src/myView.cpp.i
@@ -820,6 +931,7 @@ src/myView.i: src/myView.cpp.i
 # target to preprocess a source file
 src/myView.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/myView.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/myView.cpp.i
 .PHONY : src/myView.cpp.i
 
 src/myView.s: src/myView.cpp.s
@@ -829,6 +941,7 @@ src/myView.s: src/myView.cpp.s
 # target to generate assembly for a file
 src/myView.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/src/myView.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/src/myView.cpp.s
 .PHONY : src/myView.cpp.s
 
 # Help Target
@@ -839,8 +952,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... DeletedGame"
 	@echo "... runUnitTests"
+	@echo "... gtest/gtest.o"
+	@echo "... gtest/gtest.i"
+	@echo "... gtest/gtest.s"
 	@echo "... include/TinyXML/tinystr.o"
 	@echo "... include/TinyXML/tinystr.i"
 	@echo "... include/TinyXML/tinystr.s"

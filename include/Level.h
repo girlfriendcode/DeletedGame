@@ -1,4 +1,4 @@
-
+#pragma once
 #ifndef GAME_LEVEL_H
 #define GAME_LEVEL_H
 
@@ -69,7 +69,7 @@ public:
      * @param name имя объекта
      * @return объект по имени
      */
-    MapObject getObjectByName(const std::string &name);
+    std::vector<MapObject> getObjectsByName(const std::string &name);
 
     /**
      *

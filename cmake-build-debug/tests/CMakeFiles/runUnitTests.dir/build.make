@@ -90,17 +90,81 @@ tests/CMakeFiles/runUnitTests.dir/gtest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/gtest.cpp.s"
 	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/tests/gtest.cpp -o CMakeFiles/runUnitTests.dir/gtest.cpp.s
 
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o: tests/CMakeFiles/runUnitTests.dir/flags.make
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o: ../include/TinyXML/tinystr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.i"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp > CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.i
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.s"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.s
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o: tests/CMakeFiles/runUnitTests.dir/flags.make
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o: ../include/TinyXML/tinyxml.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.i"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp > CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.i
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.s"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.s
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o: tests/CMakeFiles/runUnitTests.dir/flags.make
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o: ../include/TinyXML/tinyxmlparser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.i"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp > CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.i
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.s"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.s
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o: tests/CMakeFiles/runUnitTests.dir/flags.make
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o: ../include/TinyXML/tinyxmlerror.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.i"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp > CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.i
+
+tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.s"
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp -o CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.s
+
 # Object files for target runUnitTests
 runUnitTests_OBJECTS = \
-"CMakeFiles/runUnitTests.dir/gtest.cpp.o"
+"CMakeFiles/runUnitTests.dir/gtest.cpp.o" \
+"CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o" \
+"CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o" \
+"CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o" \
+"CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o"
 
 # External object files for target runUnitTests
 runUnitTests_EXTERNAL_OBJECTS =
 
 tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/gtest.cpp.o
+tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o
+tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o
+tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o
+tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o
 tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/build.make
+tests/runUnitTests: /usr/lib/libsfml-graphics.so.2.5.1
+tests/runUnitTests: /usr/lib/libsfml-audio.so.2.5.1
+tests/runUnitTests: /usr/lib/libsfml-window.so.2.5.1
+tests/runUnitTests: /usr/lib/libsfml-system.so.2.5.1
 tests/runUnitTests: tests/CMakeFiles/runUnitTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable runUnitTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable runUnitTests"
 	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/runUnitTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -90,230 +90,9 @@ CMakeFiles/DeletedGame.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/main.cpp -o CMakeFiles/DeletedGame.dir/src/main.cpp.s
 
-CMakeFiles/DeletedGame.dir/src/Unit.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Unit.cpp.o: ../src/Unit.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DeletedGame.dir/src/Unit.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Unit.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Unit.cpp
-
-CMakeFiles/DeletedGame.dir/src/Unit.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Unit.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Unit.cpp > CMakeFiles/DeletedGame.dir/src/Unit.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Unit.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Unit.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Unit.cpp -o CMakeFiles/DeletedGame.dir/src/Unit.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o: ../src/FieldObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp
-
-CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp > CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp -o CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Level.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Level.cpp.o: ../src/Level.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DeletedGame.dir/src/Level.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Level.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Level.cpp
-
-CMakeFiles/DeletedGame.dir/src/Level.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Level.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Level.cpp > CMakeFiles/DeletedGame.dir/src/Level.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Level.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Level.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Level.cpp -o CMakeFiles/DeletedGame.dir/src/Level.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../src/Hero.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DeletedGame.dir/src/Hero.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Hero.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Hero.cpp
-
-CMakeFiles/DeletedGame.dir/src/Hero.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Hero.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Hero.cpp > CMakeFiles/DeletedGame.dir/src/Hero.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Hero.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Hero.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Hero.cpp -o CMakeFiles/DeletedGame.dir/src/Hero.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../src/DeletedGame.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp
-
-CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp > CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp -o CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o: ../src/Shooter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp
-
-CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp > CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp -o CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o: ../src/Carrier.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp
-
-CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp > CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp -o CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../src/ItemCollector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp
-
-CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp > CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp -o CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Item.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Item.cpp.o: ../src/Item.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DeletedGame.dir/src/Item.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Item.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Item.cpp
-
-CMakeFiles/DeletedGame.dir/src/Item.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Item.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Item.cpp > CMakeFiles/DeletedGame.dir/src/Item.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Item.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Item.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Item.cpp -o CMakeFiles/DeletedGame.dir/src/Item.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: ../src/BulletCase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp
-
-CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp > CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp -o CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o: ../src/MedChest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp
-
-CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp > CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp -o CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../src/WildEnemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp
-
-CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp > CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp -o CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: ../src/CleverEnemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp
-
-CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp > CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp -o CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../src/ForagerEnemy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp
-
-CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp > CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp -o CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: ../src/Weapon.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp
-
-CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp > CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp -o CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o: ../src/MapObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp
-
-CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp > CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp -o CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s
-
-CMakeFiles/DeletedGame.dir/src/Layer.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
-CMakeFiles/DeletedGame.dir/src/Layer.cpp.o: ../src/Layer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/DeletedGame.dir/src/Layer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Layer.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Layer.cpp
-
-CMakeFiles/DeletedGame.dir/src/Layer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Layer.cpp > CMakeFiles/DeletedGame.dir/src/Layer.cpp.i
-
-CMakeFiles/DeletedGame.dir/src/Layer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Layer.cpp -o CMakeFiles/DeletedGame.dir/src/Layer.cpp.s
-
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o: ../include/TinyXML/tinystr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.cpp
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.i: cmake_force
@@ -326,7 +105,7 @@ CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.s: cmake_force
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o: ../include/TinyXML/tinyxml.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.cpp
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.i: cmake_force
@@ -339,7 +118,7 @@ CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.s: cmake_force
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o: ../include/TinyXML/tinyxmlparser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlparser.cpp
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.i: cmake_force
@@ -352,7 +131,7 @@ CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.s: cmake_force
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o: ../include/TinyXML/tinyxmlerror.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o -c /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxmlerror.cpp
 
 CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.i: cmake_force
@@ -365,7 +144,7 @@ CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.s: cmake_force
 
 CMakeFiles/DeletedGame.dir/src/myView.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/src/myView.cpp.o: ../src/myView.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/DeletedGame.dir/src/myView.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/DeletedGame.dir/src/myView.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/myView.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/myView.cpp
 
 CMakeFiles/DeletedGame.dir/src/myView.cpp.i: cmake_force
@@ -378,7 +157,7 @@ CMakeFiles/DeletedGame.dir/src/myView.cpp.s: cmake_force
 
 CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o: ../src/Bullet.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Bullet.cpp
 
 CMakeFiles/DeletedGame.dir/src/Bullet.cpp.i: cmake_force
@@ -391,7 +170,7 @@ CMakeFiles/DeletedGame.dir/src/Bullet.cpp.s: cmake_force
 
 CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
 CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o: ../src/Inventory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Inventory.cpp
 
 CMakeFiles/DeletedGame.dir/src/Inventory.cpp.i: cmake_force
@@ -402,9 +181,250 @@ CMakeFiles/DeletedGame.dir/src/Inventory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Inventory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Inventory.cpp -o CMakeFiles/DeletedGame.dir/src/Inventory.cpp.s
 
+CMakeFiles/DeletedGame.dir/src/Unit.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Unit.cpp.o: ../src/Unit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/DeletedGame.dir/src/Unit.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Unit.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Unit.cpp
+
+CMakeFiles/DeletedGame.dir/src/Unit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Unit.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Unit.cpp > CMakeFiles/DeletedGame.dir/src/Unit.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Unit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Unit.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Unit.cpp -o CMakeFiles/DeletedGame.dir/src/Unit.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o: ../src/FieldObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp
+
+CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp > CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/FieldObject.cpp -o CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Level.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Level.cpp.o: ../src/Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/DeletedGame.dir/src/Level.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Level.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Level.cpp
+
+CMakeFiles/DeletedGame.dir/src/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Level.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Level.cpp > CMakeFiles/DeletedGame.dir/src/Level.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Level.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Level.cpp -o CMakeFiles/DeletedGame.dir/src/Level.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Hero.cpp.o: ../src/Hero.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/DeletedGame.dir/src/Hero.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Hero.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Hero.cpp
+
+CMakeFiles/DeletedGame.dir/src/Hero.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Hero.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Hero.cpp > CMakeFiles/DeletedGame.dir/src/Hero.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Hero.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Hero.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Hero.cpp -o CMakeFiles/DeletedGame.dir/src/Hero.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o: ../src/DeletedGame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp
+
+CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp > CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/DeletedGame.cpp -o CMakeFiles/DeletedGame.dir/src/DeletedGame.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o: ../src/Shooter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Shooter.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp
+
+CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp > CMakeFiles/DeletedGame.dir/src/Shooter.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Shooter.cpp -o CMakeFiles/DeletedGame.dir/src/Shooter.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o: ../src/Carrier.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Carrier.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp
+
+CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp > CMakeFiles/DeletedGame.dir/src/Carrier.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Carrier.cpp -o CMakeFiles/DeletedGame.dir/src/Carrier.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o: ../src/ItemCollector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp
+
+CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp > CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/ItemCollector.cpp -o CMakeFiles/DeletedGame.dir/src/ItemCollector.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Item.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Item.cpp.o: ../src/Item.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/DeletedGame.dir/src/Item.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Item.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Item.cpp
+
+CMakeFiles/DeletedGame.dir/src/Item.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Item.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Item.cpp > CMakeFiles/DeletedGame.dir/src/Item.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Item.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Item.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Item.cpp -o CMakeFiles/DeletedGame.dir/src/Item.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o: ../src/BulletCase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp
+
+CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp > CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/BulletCase.cpp -o CMakeFiles/DeletedGame.dir/src/BulletCase.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o: ../src/MedChest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/MedChest.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp
+
+CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp > CMakeFiles/DeletedGame.dir/src/MedChest.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/MedChest.cpp -o CMakeFiles/DeletedGame.dir/src/MedChest.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o: ../src/WildEnemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp
+
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp > CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/WildEnemy.cpp -o CMakeFiles/DeletedGame.dir/src/WildEnemy.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o: ../src/CleverEnemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp
+
+CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp > CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/CleverEnemy.cpp -o CMakeFiles/DeletedGame.dir/src/CleverEnemy.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o: ../src/ForagerEnemy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp
+
+CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp > CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/ForagerEnemy.cpp -o CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o: ../src/Weapon.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp
+
+CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp > CMakeFiles/DeletedGame.dir/src/Weapon.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Weapon.cpp -o CMakeFiles/DeletedGame.dir/src/Weapon.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o: ../src/MapObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp
+
+CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp > CMakeFiles/DeletedGame.dir/src/MapObject.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/MapObject.cpp -o CMakeFiles/DeletedGame.dir/src/MapObject.cpp.s
+
+CMakeFiles/DeletedGame.dir/src/Layer.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/src/Layer.cpp.o: ../src/Layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/DeletedGame.dir/src/Layer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/src/Layer.cpp.o -c /home/valeria/CLionProjects/DeletedGame/src/Layer.cpp
+
+CMakeFiles/DeletedGame.dir/src/Layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/src/Layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/src/Layer.cpp > CMakeFiles/DeletedGame.dir/src/Layer.cpp.i
+
+CMakeFiles/DeletedGame.dir/src/Layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/src/Layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/src/Layer.cpp -o CMakeFiles/DeletedGame.dir/src/Layer.cpp.s
+
+CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o: CMakeFiles/DeletedGame.dir/flags.make
+CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o: ../gtest/gtest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o -c /home/valeria/CLionProjects/DeletedGame/gtest/gtest.cpp
+
+CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/valeria/CLionProjects/DeletedGame/gtest/gtest.cpp > CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.i
+
+CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/valeria/CLionProjects/DeletedGame/gtest/gtest.cpp -o CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.s
+
 # Object files for target DeletedGame
 DeletedGame_OBJECTS = \
 "CMakeFiles/DeletedGame.dir/src/main.cpp.o" \
+"CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o" \
+"CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o" \
+"CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o" \
+"CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o" \
+"CMakeFiles/DeletedGame.dir/src/myView.cpp.o" \
+"CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o" \
+"CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o" \
 "CMakeFiles/DeletedGame.dir/src/Unit.cpp.o" \
 "CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o" \
 "CMakeFiles/DeletedGame.dir/src/Level.cpp.o" \
@@ -422,18 +442,19 @@ DeletedGame_OBJECTS = \
 "CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o" \
 "CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o" \
 "CMakeFiles/DeletedGame.dir/src/Layer.cpp.o" \
-"CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o" \
-"CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o" \
-"CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o" \
-"CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o" \
-"CMakeFiles/DeletedGame.dir/src/myView.cpp.o" \
-"CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o" \
-"CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o"
+"CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o"
 
 # External object files for target DeletedGame
 DeletedGame_EXTERNAL_OBJECTS =
 
 DeletedGame: CMakeFiles/DeletedGame.dir/src/main.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/src/myView.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/src/Unit.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/src/FieldObject.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/src/Level.cpp.o
@@ -451,20 +472,14 @@ DeletedGame: CMakeFiles/DeletedGame.dir/src/ForagerEnemy.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/src/Weapon.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/src/MapObject.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/src/Layer.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlparser.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/src/myView.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/src/Bullet.cpp.o
-DeletedGame: CMakeFiles/DeletedGame.dir/src/Inventory.cpp.o
+DeletedGame: CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o
 DeletedGame: CMakeFiles/DeletedGame.dir/build.make
 DeletedGame: /usr/lib/libsfml-graphics.so.2.5.1
 DeletedGame: /usr/lib/libsfml-audio.so.2.5.1
 DeletedGame: /usr/lib/libsfml-window.so.2.5.1
 DeletedGame: /usr/lib/libsfml-system.so.2.5.1
 DeletedGame: CMakeFiles/DeletedGame.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Linking CXX executable DeletedGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable DeletedGame"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/DeletedGame.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

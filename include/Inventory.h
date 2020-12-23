@@ -25,7 +25,6 @@ public:
     Color fillColor = Color(255, 231, 186);
 
 
-    Font font;
 
     Inventory();
 
@@ -34,8 +33,6 @@ public:
      * m window
      */
     void draw(RenderWindow &window);
-
-    void changeSize(float x, float y);
 
     /**
      * Получение ссылки на юнит

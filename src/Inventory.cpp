@@ -2,14 +2,12 @@
 #include "../include/Inventory.h"
 
 Inventory::Inventory() {
-    if (!font.loadFromFile("../res/fonts/GameFont.ttf"))
-        std::cout << "Font cannot be downloaded";
-
 }
 
 void Inventory::draw(RenderWindow &window) {
     Vector2f center = window.getView().getCenter();
     Vector2f size = window.getView().getSize();
+
     //отрисовка бара с аптечками и патронами
     float itemsBarOriginX = center.x - size.x / 2 + 10;
     std::cout << "window x y" << abs(center.x - size.x) << std::endl;
@@ -21,6 +19,7 @@ void Inventory::draw(RenderWindow &window) {
     itemsBar.setFillColor(fillColor);
     itemsBar.setOutlineThickness(2);
     window.draw(itemsBar);
+
     //отрисовка бара оружия
     float weaponsBarOriginX = center.x + size.x / 2 - 60;
     float weaponsBarOriginY = center.y - 200;
@@ -31,7 +30,9 @@ void Inventory::draw(RenderWindow &window) {
     weaponsBar.setOutlineThickness(2);
     window.draw(weaponsBar);
     float itemOriginY = itemsBarOriginY + 10;
+
     if (!itemCollector->inventory.empty()) {
+
         for (int i = 0; i < itemCollector->inventory.getSize(); i++) {
             if (dynamic_cast<Weapon *>(itemCollector->inventory[i]) == nullptr) {
                 itemCollector->inventory[i]->sprite.setScale(0.7, 0.7);

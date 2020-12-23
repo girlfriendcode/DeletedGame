@@ -145,6 +145,114 @@ runUnitTests/fast:
 	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/build
 .PHONY : runUnitTests/fast
 
+__/include/TinyXML/tinystr.o: __/include/TinyXML/tinystr.cpp.o
+
+.PHONY : __/include/TinyXML/tinystr.o
+
+# target to build an object file
+__/include/TinyXML/tinystr.cpp.o:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.o
+.PHONY : __/include/TinyXML/tinystr.cpp.o
+
+__/include/TinyXML/tinystr.i: __/include/TinyXML/tinystr.cpp.i
+
+.PHONY : __/include/TinyXML/tinystr.i
+
+# target to preprocess a source file
+__/include/TinyXML/tinystr.cpp.i:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.i
+.PHONY : __/include/TinyXML/tinystr.cpp.i
+
+__/include/TinyXML/tinystr.s: __/include/TinyXML/tinystr.cpp.s
+
+.PHONY : __/include/TinyXML/tinystr.s
+
+# target to generate assembly for a file
+__/include/TinyXML/tinystr.cpp.s:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinystr.cpp.s
+.PHONY : __/include/TinyXML/tinystr.cpp.s
+
+__/include/TinyXML/tinyxml.o: __/include/TinyXML/tinyxml.cpp.o
+
+.PHONY : __/include/TinyXML/tinyxml.o
+
+# target to build an object file
+__/include/TinyXML/tinyxml.cpp.o:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.o
+.PHONY : __/include/TinyXML/tinyxml.cpp.o
+
+__/include/TinyXML/tinyxml.i: __/include/TinyXML/tinyxml.cpp.i
+
+.PHONY : __/include/TinyXML/tinyxml.i
+
+# target to preprocess a source file
+__/include/TinyXML/tinyxml.cpp.i:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.i
+.PHONY : __/include/TinyXML/tinyxml.cpp.i
+
+__/include/TinyXML/tinyxml.s: __/include/TinyXML/tinyxml.cpp.s
+
+.PHONY : __/include/TinyXML/tinyxml.s
+
+# target to generate assembly for a file
+__/include/TinyXML/tinyxml.cpp.s:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxml.cpp.s
+.PHONY : __/include/TinyXML/tinyxml.cpp.s
+
+__/include/TinyXML/tinyxmlerror.o: __/include/TinyXML/tinyxmlerror.cpp.o
+
+.PHONY : __/include/TinyXML/tinyxmlerror.o
+
+# target to build an object file
+__/include/TinyXML/tinyxmlerror.cpp.o:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.o
+.PHONY : __/include/TinyXML/tinyxmlerror.cpp.o
+
+__/include/TinyXML/tinyxmlerror.i: __/include/TinyXML/tinyxmlerror.cpp.i
+
+.PHONY : __/include/TinyXML/tinyxmlerror.i
+
+# target to preprocess a source file
+__/include/TinyXML/tinyxmlerror.cpp.i:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.i
+.PHONY : __/include/TinyXML/tinyxmlerror.cpp.i
+
+__/include/TinyXML/tinyxmlerror.s: __/include/TinyXML/tinyxmlerror.cpp.s
+
+.PHONY : __/include/TinyXML/tinyxmlerror.s
+
+# target to generate assembly for a file
+__/include/TinyXML/tinyxmlerror.cpp.s:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlerror.cpp.s
+.PHONY : __/include/TinyXML/tinyxmlerror.cpp.s
+
+__/include/TinyXML/tinyxmlparser.o: __/include/TinyXML/tinyxmlparser.cpp.o
+
+.PHONY : __/include/TinyXML/tinyxmlparser.o
+
+# target to build an object file
+__/include/TinyXML/tinyxmlparser.cpp.o:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.o
+.PHONY : __/include/TinyXML/tinyxmlparser.cpp.o
+
+__/include/TinyXML/tinyxmlparser.i: __/include/TinyXML/tinyxmlparser.cpp.i
+
+.PHONY : __/include/TinyXML/tinyxmlparser.i
+
+# target to preprocess a source file
+__/include/TinyXML/tinyxmlparser.cpp.i:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.i
+.PHONY : __/include/TinyXML/tinyxmlparser.cpp.i
+
+__/include/TinyXML/tinyxmlparser.s: __/include/TinyXML/tinyxmlparser.cpp.s
+
+.PHONY : __/include/TinyXML/tinyxmlparser.s
+
+# target to generate assembly for a file
+__/include/TinyXML/tinyxmlparser.cpp.s:
+	cd /home/valeria/CLionProjects/DeletedGame/cmake-build-debug && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/runUnitTests.dir/build.make tests/CMakeFiles/runUnitTests.dir/__/include/TinyXML/tinyxmlparser.cpp.s
+.PHONY : __/include/TinyXML/tinyxmlparser.cpp.s
+
 gtest.o: gtest.cpp.o
 
 .PHONY : gtest.o
@@ -181,6 +289,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... runUnitTests"
+	@echo "... __/include/TinyXML/tinystr.o"
+	@echo "... __/include/TinyXML/tinystr.i"
+	@echo "... __/include/TinyXML/tinystr.s"
+	@echo "... __/include/TinyXML/tinyxml.o"
+	@echo "... __/include/TinyXML/tinyxml.i"
+	@echo "... __/include/TinyXML/tinyxml.s"
+	@echo "... __/include/TinyXML/tinyxmlerror.o"
+	@echo "... __/include/TinyXML/tinyxmlerror.i"
+	@echo "... __/include/TinyXML/tinyxmlerror.s"
+	@echo "... __/include/TinyXML/tinyxmlparser.o"
+	@echo "... __/include/TinyXML/tinyxmlparser.i"
+	@echo "... __/include/TinyXML/tinyxmlparser.s"
 	@echo "... gtest.o"
 	@echo "... gtest.i"
 	@echo "... gtest.s"

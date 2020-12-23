@@ -33,7 +33,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.17.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.17.3/CMakeSystem.cmake"
-  "../tests/CMakeLists.txt"
   "/usr/lib64/cmake/SFML/SFMLConfig.cmake"
   "/usr/lib64/cmake/SFML/SFMLConfigDependencies.cmake"
   "/usr/lib64/cmake/SFML/SFMLConfigVersion.cmake"
@@ -50,11 +49,10 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/DeletedGame.dir/DependInfo.cmake"
-  "tests/CMakeFiles/runUnitTests.dir/DependInfo.cmake"
+  "CMakeFiles/runUnitTests.dir/DependInfo.cmake"
   )

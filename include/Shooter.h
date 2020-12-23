@@ -44,7 +44,7 @@ public:
      * @param hitUnit
      */
     //virtual void shoot();
-    void makeShoot(Unit *hitUnit);
+    void makeShoot(Unit *hitUnit, Vector2f pos, sf::Event event);
 };
 
 #endif //DELETEDGAME_SHOOTER_H
