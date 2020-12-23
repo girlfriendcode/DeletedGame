@@ -201,6 +201,7 @@ TEST(Attack, Methods) {
     ASSERT_FLOAT_EQ(hero.basicStats["health"], 485);
     hero.makeShoot(&wildEnemy, pos, event);
     ASSERT_FLOAT_EQ(wildEnemy.basicStats["health"], 470);
+    ASSERT_FLOAT_EQ(5000 - hero.basicStats["time"], hero.getWeapon()->gettimeShoot());
 }
 
 int main(int argc, char **argv) {
