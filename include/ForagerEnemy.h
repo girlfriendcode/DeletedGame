@@ -13,7 +13,7 @@
 class ForagerEnemy : public Carrier, public ItemCollector {
 public:
     ForagerEnemy(Level &level, std::vector<FieldObject *> points, std::string &name, std::string &fileName, float x,
-                 float y, float w, float h, myView &view);
+                 float y, float w, float h, myView &view, std::map<std::string, std::string> properties);
     //cразу все сбрасывает
     //void throwItem(std::vector <Item> itemsTaken, CollectPoint &point);
 };

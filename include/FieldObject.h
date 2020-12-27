@@ -51,7 +51,7 @@ public:
      *
      * @return четырёхугольник объекта
      */
-    virtual FloatRect getRect() const { return {x, y, h, w}; };
+    virtual FloatRect getRect() { return {x, y, h, w}; };
 
     float getX() const { return x; };
 

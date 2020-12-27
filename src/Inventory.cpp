@@ -10,8 +10,6 @@ void Inventory::draw(RenderWindow &window) {
 
     //отрисовка бара с аптечками и патронами
     float itemsBarOriginX = center.x - size.x / 2 + 10;
-    std::cout << "window x y" << abs(center.x - size.x) << std::endl;
-    std::cout << "window size" << size.x << std::endl;
     float itemsBarOriginY = center.y - 200;
     itemsBar.setPosition(itemsBarOriginX, itemsBarOriginY);
     itemsBar.setSize({50, 300});

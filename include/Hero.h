@@ -16,7 +16,7 @@ private:
     int maxWeight;
 public:
     Hero(Level &level, float shootPrecision, std::string &name, std::string &fileName, float x, float y, float w,
-         float h, myView &view);
+         float h, myView &view, std::map<std::string, std::string> properties);
 
     /**
      * Выбор оружия

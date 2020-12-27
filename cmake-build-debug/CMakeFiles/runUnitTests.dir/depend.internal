@@ -42,12 +42,17 @@ CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlparser.cpp.o
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/Bullet.h
  /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/Item.h
  /home/valeria/CLionProjects/DeletedGame/include/Layer.h
  /home/valeria/CLionProjects/DeletedGame/include/Level.h
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
+ /home/valeria/CLionProjects/DeletedGame/include/Unit.h
+ /home/valeria/CLionProjects/DeletedGame/include/Weapon.h
  /home/valeria/CLionProjects/DeletedGame/include/main.h
+ /home/valeria/CLionProjects/DeletedGame/include/myView.h
  /home/valeria/CLionProjects/DeletedGame/src/Bullet.cpp
 CMakeFiles/runUnitTests.dir/src/BulletCase.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h

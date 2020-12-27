@@ -14,7 +14,8 @@
 class CleverEnemy : public Carrier, public Shooter {
 public:
     CleverEnemy(Level &level, std::vector<FieldObject *> points, float precision, std::string &name,
-                std::string &fileName, float x, float y, float w, float h, myView &view);
+                std::string &fileName, float x, float y, float w, float h, myView &view,
+                std::map<std::string, std::string> properties);
 
 
 };

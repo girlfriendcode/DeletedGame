@@ -4,9 +4,12 @@
 #include "../include/Shooter.h"
 
 Shooter::Shooter(Level &level, float precision, std::string &name, std::string &fileName, float x, float y, float w,
-                 float h, myView &view) : Unit(level, name, fileName, x, y, w, h, view) {
+                 float h, myView &view, std::map<std::string, std::string> properties) : Unit(level, name, fileName, x,
+                                                                                              y, w, h, view,
+                                                                                              properties) {
     this->shootPrecision = precision;
     this->activeWeapon = nullptr;
+    isShooting = false;
 }
 
 void Shooter::throwWeapon() {
@@ -32,13 +35,10 @@ void Shooter::takeWeapon(Weapon *w) {
     activeWeapon = w;
 }
 
-void Shooter::makeShoot(Unit *hitUnit, Vector2f pos, sf::Event event) {
-    if (activeWeapon != nullptr && activeWeapon->getBullets() >= 0) {
-        hitUnit->basicStats["health"] -= activeWeapon->getW_Damage();
-        basicStats["time"] -= activeWeapon->gettimeShoot();
-        int bullets = activeWeapon->getBullets() - 1;
-        activeWeapon->setBullets(bullets);
-    }
+void Shooter::makeShoot() {
+    basicStats["time"] -= activeWeapon->gettimeShoot();//сделать timeshoot больше
+    int bullets = activeWeapon->getBullets() - 1;
+    activeWeapon->setBullets(bullets);
 }
 
 bool Shooter::shootSuccessful(float distance) {
@@ -48,4 +48,17 @@ bool Shooter::shootSuccessful(float distance) {
     float random = 0.001 + rand() % 300;
     if (random <= chance - dw || random >= chance + dw)return true;
     else return false;
+}
+
+void Shooter::attack(Unit *unit) {
+    unit->basicStats["health"] -= activeWeapon->getW_Damage();
+    unit->sprite.setColor(Color::Cyan);
+}
+
+void Shooter::update(float time) {
+    Unit::update(time);
+    if (basicStats["time"] <= 0) {
+        isShooting = false;
+        //sprite.setColor(Color::Yellow);
+    }
 }

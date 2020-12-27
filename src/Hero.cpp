@@ -6,9 +6,14 @@
 #include "../include/Hero.h"
 
 Hero::Hero(Level &level, float shootPrecision, std::string &name, std::string &fileName, float x, float y, float w,
-           float h, myView &view) : Unit(level, name, fileName, x, y, w, h, view),
-                                    ItemCollector(level, name, fileName, x, y, w, h, view),
-                                    Shooter(level, shootPrecision, name, fileName, x, y, w, h, view) {
+           float h, myView &view, std::map<std::string, std::string> properties) : Unit(level, name, fileName, x, y, w,
+                                                                                        h, view, properties),
+                                                                                   ItemCollector(level, name, fileName,
+                                                                                                 x, y, w, h, view,
+                                                                                                 properties),
+                                                                                   Shooter(level, shootPrecision, name,
+                                                                                           fileName, x, y, w, h, view,
+                                                                                           properties) {
     this->maxWeight = 20;
     this->weight = 0;
 }
@@ -33,6 +38,8 @@ void Hero::throwItem(Item *item) {
 void Hero::useMedecine(MedChest *med) {
     if (med != nullptr) {
         basicStats["health"] += med->getHp();
+        if (basicStats["health"] >= basicStats["maxHealth"])
+            basicStats["health"] = basicStats["maxHealth"];
         basicStats["timePoints"] -= med->gettimeRec();
         //аптечка уничтожается
     }

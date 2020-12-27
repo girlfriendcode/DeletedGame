@@ -96,12 +96,12 @@ clean: CMakeFiles/runUnitTests.dir/clean
 CMakeFiles/DeletedGame.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27 "Built target DeletedGame"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26 "Built target DeletedGame"
 .PHONY : CMakeFiles/DeletedGame.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/DeletedGame.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles 27
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DeletedGame.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/DeletedGame.dir/rule
@@ -123,7 +123,7 @@ CMakeFiles/DeletedGame.dir/clean:
 CMakeFiles/runUnitTests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53 "Built target runUnitTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/valeria/CLionProjects/DeletedGame/cmake-build-debug/CMakeFiles --progress-num=27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52 "Built target runUnitTests"
 .PHONY : CMakeFiles/runUnitTests.dir/all
 
 # Build rule for subdir invocation for target.

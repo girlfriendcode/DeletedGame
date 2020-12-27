@@ -40,7 +40,8 @@ public:
     std::vector<MapObject> map;
 
 
-    Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view);
+    Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view,
+         std::map<std::string, std::string> properties);
 
     /**
      * Обновление состояния персонажа

@@ -41,12 +41,17 @@ CMakeFiles/runUnitTests.dir/include/TinyXML/tinyxmlparser.cpp.o: ../include/Tiny
 
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Bullet.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/FieldObject.h
+CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Item.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Layer.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Level.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/MapObject.h
+CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Shooter.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/TinyXML/tinyxml.h
+CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Unit.h
+CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/Weapon.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/main.h
+CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../include/myView.h
 CMakeFiles/runUnitTests.dir/src/Bullet.cpp.o: ../src/Bullet.cpp
 
 CMakeFiles/runUnitTests.dir/src/BulletCase.cpp.o: ../include/BulletCase.h

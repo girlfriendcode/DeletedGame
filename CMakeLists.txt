@@ -47,7 +47,7 @@ SET(GAME_SOURCES
         include/MapObject.h
         src/MapObject.cpp
         include/Layer.h
-        src/Layer.cpp gtest/gtest.cpp)
+        src/Layer.cpp)
 find_package(SFML 2.5 COMPONENTS graphics audio REQUIRED)
 add_executable(DeletedGame
         src/main.cpp

@@ -47,9 +47,11 @@ void Bullet::update(float time) {
     for (int i = 0; i < units.size(); i++) {//проход по объектам solid
         if (getRect().intersects(units[i].rect)) //если этот объект столкнулся с пулей,
         {
-            isAlive = false;// то пуля умирает
             units[i].sprite.setColor(Color::Red);
+            isAlive = false;// то пуля умирает
         }
+
+
     }
     for (auto it = level.getAllStaticObjects().begin(); it != level.getAllStaticObjects().end(); it++) {
         if (getRect().intersects(it->rect)) {
@@ -58,6 +60,7 @@ void Bullet::update(float time) {
                 level.getAllStaticObjects().erase(it);
             }
         }
+
     }
 
     sprite.setPosition(x, y);//задается позицию пуле

@@ -16,7 +16,7 @@ private:
     float damage;
 public:
     WildEnemy(Level &level, float precision, float damage, std::string &name, std::string &fileName, float x, float y,
-              float w, float h, myView &view);
+              float w, float h, myView &view, std::map<std::string, std::string> properties);
 
     void makeDamage(Hero *hero);
 

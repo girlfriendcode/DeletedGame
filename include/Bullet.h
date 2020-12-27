@@ -6,7 +6,10 @@
 #define DELETEDGAME_BULLET_H
 
 #include "FieldObject.h"
+#include "Shooter.h"
+#include "Unit.h"
 #include <cmath>
+
 /**
  * Класс пули
  */
@@ -22,8 +25,15 @@ public:
     Image image;
     std::string name;
     std::string fileName;
+    /**
+     * Координата по Х для цели пули
+     */
     float tempX;
+    /**
+     * Координата по Y для цели пули
+     */
     float tempY;
+
     float x;
     float y;
     float w;

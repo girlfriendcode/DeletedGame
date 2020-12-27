@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o"
   "CMakeFiles/DeletedGame.dir/include/TinyXML/tinystr.cpp.o"
   "CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxml.cpp.o"
   "CMakeFiles/DeletedGame.dir/include/TinyXML/tinyxmlerror.cpp.o"

@@ -16,7 +16,7 @@ protected:
     std::vector<FieldObject *> collectPoints;
 public:
     Carrier(Level &level, std::vector<FieldObject *> points, std::string &name, std::string &fileName, float x, float y,
-            float w, float h, myView &view);
+            float w, float h, myView &view, std::map<std::string, std::string> properties);
 
     std::tuple<float, float> getNearestPoint();//в зависимости от расположения игрока сейчас
     //предусмотреть, чтобы в режиме врагов были видны точки складирования

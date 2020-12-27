@@ -137,7 +137,6 @@
 			</Target>
 		</Build>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/gtest/gtest.cpp">
-			<Option target="DeletedGame"/>
 			<Option target="runUnitTests"/>
 		</Unit>
 		<Unit filename="/home/valeria/CLionProjects/DeletedGame/include/Bullet.h">

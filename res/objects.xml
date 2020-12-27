@@ -5,44 +5,44 @@
         <!--Heroes -->
         <object name="hero" type="hero" x="130" y="32" width="30" height="47">
             <properties>
-                <property name="health" value="350"/>
-                <property name="maxHealth" value="350"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="250"/>
+                <property name="maxHealth" value="250"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="25"/>
                 <property name="radius" value="400"/>
                 <property name="precision" value="0.7"/>
             </properties>
         </object>
         <object name="hero" type="hero" x="240" y="34" width="30" height="47">
             <properties>
-                <property name="health" value="350"/>
-                <property name="maxHealth" value="350"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="240"/>
+                <property name="maxHealth" value="240"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="25"/>
                 <property name="radius" value="300"/>
                 <property name="precision" value="0.8"/>
             </properties>
         </object>
         <object name="hero" type="hero" x="182" y="76" width="30" height="47">
             <properties>
-                <property name="health" value="350"/>
-                <property name="maxHealth" value="350"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="250"/>
+                <property name="maxHealth" value="250"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="25"/>
                 <property name="radius" value="500"/>
                 <property name="precision" value="0.6"/>
             </properties>
         </object>
         <object name="hero" type="hero" x="220" y="70" width="30" height="47">
             <properties>
-                <property name="health" value="350"/>
-                <property name="maxHealth" value="350"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="240"/>
+                <property name="maxHealth" value="240"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="25"/>
                 <property name="radius" value="350"/>
                 <property name="precision" value="0.7"/>
             </properties>
@@ -50,11 +50,11 @@
         <!--Enemies-->
         <object name="wild_enemy" type="enemy" subType="wild_enemy" x="1332" y="130" width="72" height="50">
             <properties>
-                <property name="health" value="100"/>
-                <property name="maxHealth" value="100"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="4"/>
+                <property name="health" value="175"/>
+                <property name="maxHealth" value="175"/>
+                <property name="time" value="4000"/>
+                <property name="maxTime" value="4000"/>
+                <property name="timeStep" value="15"/>
                 <property name="radius" value="200"/>
                 <property name="damage" value="15"/>
                 <property name="precision" value="0.6"/>
@@ -62,11 +62,11 @@
         </object>
         <object name="wild_enemy" type="enemy" subType="wild_enemy" x="845" y="381" width="72" height="50">
             <properties>
-                <property name="health" value="100"/>
-                <property name="maxHealth" value="100"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="4"/>
+                <property name="health" value="175"/>
+                <property name="maxHealth" value="175"/>
+                <property name="time" value="4000"/>
+                <property name="maxTime" value="4000"/>
+                <property name="timeStep" value="15"/>
                 <property name="radius" value="200"/>
                 <property name="damage" value="15"/>
                 <property name="precision" value="0.6"/>
@@ -74,44 +74,44 @@
         </object>
         <object name="clever_enemy" type="enemy" subType="clever_enemy" x="600" y="600" width="44" height="50">
             <properties>
-                <property name="health" value="150"/>
-                <property name="maxHealth" value="150"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="250"/>
+                <property name="maxHealth" value="250"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="26"/>
                 <property name="radius" value="500"/>
                 <property name="precision" value="0.6"/>
             </properties>
         </object>
         <object name="clever_enemy" type="enemy" subType="clever_enemy" x="214" y="1328" width="44" height="50">
             <properties>
-                <property name="health" value="150"/>
-                <property name="maxHealth" value="150"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="240"/>
+                <property name="maxHealth" value="300"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="26"/>
                 <property name="radius" value="300"/>
                 <property name="precision" value="0.7"/>
             </properties>
         </object>
         <object name="clever_enemy" type="enemy" subType="clever_enemy" x="1388" y="788" width="44" height="50">
             <properties>
-                <property name="health" value="150"/>
-                <property name="maxHealth" value="150"/>
-                <property name="time" value="100"/>
-                <property name="maxTime" value="100"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="240"/>
+                <property name="maxHealth" value="240"/>
+                <property name="time" value="5000"/>
+                <property name="maxTime" value="5000"/>
+                <property name="timeStep" value="20"/>
                 <property name="radius" value="400"/>
                 <property name="precision" value="0.5"/>
             </properties>
         </object>
-        <object name="forager_enemy" type="enemy" subType="forager_enemy" x="1080" y="576" width="93" height="58">
+        <object name="forager_enemy" type="enemy" subType="forager_enemy" x="923" y="1025" width="93" height="58">
             <properties>
-                <property name="health" value="200"/>
-                <property name="maxHealth" value="200"/>
-                <property name="time" value="120"/>
-                <property name="maxTime" value="120"/>
-                <property name="timeStep" value="5"/>
+                <property name="health" value="210"/>
+                <property name="maxHealth" value="210"/>
+                <property name="time" value="5700"/>
+                <property name="maxTime" value="5700"/>
+                <property name="timeStep" value="30"/>
                 <property name="radius" value="500"/>
                 <property name="precision" value="0.6"/>
             </properties>
@@ -120,9 +120,9 @@
             <properties>
                 <property name="health" value="200"/>
                 <property name="maxHealth" value="200"/>
-                <property name="time" value="120"/>
-                <property name="maxTime" value="120"/>
-                <property name="timeStep" value="5"/>
+                <property name="time" value="5700"/>
+                <property name="maxTime" value="5700"/>
+                <property name="timeStep" value="30"/>
                 <property name="radius" value="500"/>
                 <property name="precision" value="0.6"/>
             </properties>
@@ -130,134 +130,134 @@
         <!--Items-->
         <object name="weapon_auto" type="item" subType="weapon" x="120" y="562" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="12"/>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
                 <property name="maxbullets" value="15"/>
                 <property name="weight" value="5"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="5"/>
+                <property name="time_shoot" value="150"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
         <object name="weapon_auto" type="item" subType="weapon" x="380" y="134" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="12"/>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
                 <property name="maxbullets" value="15"/>
                 <property name="weight" value="5"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="5"/>
+                <property name="time_shoot" value="150"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
         <object name="weapon_auto" type="item" subType="weapon" x="1106" y="108" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="12"/>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
                 <property name="maxbullets" value="15"/>
                 <property name="weight" value="5"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="5"/>
+                <property name="time_shoot" value="150"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
         <object name="weapon_auto" type="item" subType="weapon" x="468" y="406" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="12"/>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
                 <property name="maxbullets" value="15"/>
                 <property name="weight" value="5"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="5"/>
+                <property name="time_shoot" value="25"/>
+                <property name="time_charge" value="30"/>
             </properties>
         </object>
         <object name="weapon_pistol" type="item" subType="weapon" x="1362" y="380" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="16"/>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
                 <property name="maxbullets" value="20"/>
                 <property name="weight" value="3"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="3"/>
+                <property name="time_shoot" value="130"/>
+                <property name="time_charge" value="250"/>
             </properties>
         </object>
-        <object name="weapon_pistol" type="item" subType="weapon" x="1338" y="788" width="50" height="50">
+        <object name="weapon_pistol" type="item" subType="weapon" x="1000" y="788" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="16"/>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
                 <property name="maxbullets" value="20"/>
                 <property name="weight" value="3"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="3"/>
+                <property name="time_shoot" value="130"/>
+                <property name="time_charge" value="250"/>
             </properties>
         </object>
         <object name="weapon_pistol" type="item" subType="weapon" x="774" y="630" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="16"/>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
                 <property name="maxbullets" value="20"/>
                 <property name="weight" value="3"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="3"/>
+                <property name="time_shoot" value="130"/>
+                <property name="time_charge" value="250"/>
             </properties>
         </object>
         <object name="weapon_pistol" type="item" subType="weapon" x="708" y="1270" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="16"/>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
                 <property name="maxbullets" value="20"/>
                 <property name="weight" value="3"/>
-                <property name="time_shoot" value="5"/>
-                <property name="time_charge" value="3"/>
+                <property name="time_shoot" value="130"/>
+                <property name="time_charge" value="250"/>
             </properties>
         </object>
         <object name="weapon_riffle" type="item" subType="weapon" x="1240" y="806" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="14"/>
                 <property name="bulletType" value="3"/>
                 <property name="bullets" value="10"/>
                 <property name="maxbullets" value="10"/>
                 <property name="weight" value="7"/>
-                <property name="time_shoot" value="4"/>
-                <property name="time_charge" value="7"/>
+                <property name="time_shoot" value="180"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
         <object name="weapon_riffle" type="item" subType="weapon" x="644" y="330" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="14"/>
                 <property name="bulletType" value="3"/>
                 <property name="bullets" value="10"/>
                 <property name="maxbullets" value="10"/>
                 <property name="weight" value="7"/>
-                <property name="time_shoot" value="4"/>
-                <property name="time_charge" value="7"/>
+                <property name="time_shoot" value="180"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
-        <object name="weapon_riffle" type="item" subType="weapon" x="1166" y="582" width="50" height="50">
+        <object name="weapon_riffle" type="item" subType="weapon" x="500" y="582" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="14"/>
                 <property name="bulletType" value="3"/>
                 <property name="bullets" value="10"/>
                 <property name="maxbullets" value="10"/>
                 <property name="weight" value="7"/>
-                <property name="time_shoot" value="4"/>
-                <property name="time_charge" value="7"/>
+                <property name="time_shoot" value="180"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
         <object name="weapon_riffle" type="item" subType="weapon" x="1230" y="94" width="50" height="50">
             <properties>
-                <property name="damage" value="10"/>
+                <property name="damage" value="14"/>
                 <property name="bulletType" value="3"/>
                 <property name="bullets" value="10"/>
                 <property name="maxbullets" value="10"/>
                 <property name="weight" value="7"/>
-                <property name="time_shoot" value="4"/>
-                <property name="time_charge" value="7"/>
+                <property name="time_shoot" value="180"/>
+                <property name="time_charge" value="300"/>
             </properties>
         </object>
         <object name="riffle_c" type="item" subType="bullet_case" x="776" y="82" width="50" height="50">
@@ -285,7 +285,7 @@
                 <property name="weight" value="5"/>
             </properties>
         </object>
-        <object name="riffle_c" type="item" subType="bullet_case" x="400" y="1000" width="50" height="50">
+        <object name="riffle_c" type="item" subType="bullet_case" x="200" y="1000" width="50" height="50">
             <properties>
                 <property name="bulletType" value="3"/>
                 <property name="bullets" value="10"/>
@@ -309,7 +309,7 @@
                 <property name="weight" value="4"/>
             </properties>
         </object>
-        <object name="auto_c" type="item" subType="bullet_case" x="286" y="1154" width="50" height="50">
+        <object name="auto_c" type="item" subType="bullet_case" x="500" y="500" width="50" height="50">
             <properties>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
@@ -317,7 +317,7 @@
                 <property name="weight" value="4"/>
             </properties>
         </object>
-        <object name="auto_c" type="item" subType="bullet_case" x="516" y="846" width="50" height="50">
+        <object name="auto_c" type="item" subType="bullet_case" x="416" y="450" width="50" height="50">
             <properties>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
@@ -325,7 +325,7 @@
                 <property name="weight" value="3"/>
             </properties>
         </object>
-        <object name="pistol_c" type="item" subType="bullet_case" x="500" y="400" width="50" height="50">
+        <object name="pistol_c" type="item" subType="bullet_case" x="50" y="400" width="50" height="50">
             <properties>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
@@ -349,7 +349,7 @@
                 <property name="weight" value="3"/>
             </properties>
         </object>
-        <object name="pistol_c" type="item" subType="bullet_case" x="256" y="900" width="50" height="50">
+        <object name="pistol_c" type="item" subType="bullet_case" x="1006" y="900" width="50" height="50">
             <properties>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
@@ -357,7 +357,7 @@
                 <property name="weight" value="3"/>
             </properties>
         </object>
-        <object name="pistol_c" type="item" subType="bullet_case" x="250" y="160" width="50" height="50">
+        <object name="pistol_c" type="item" subType="bullet_case" x="500" y="160" width="50" height="50">
             <properties>
                 <property name="bulletType" value="1"/>
                 <property name="bullets" value="20"/>
@@ -367,43 +367,43 @@
         </object>
         <object name="med" type="item" subType="medchest" x="1392" y="1308" width="50" height="50">
             <properties>
-                <property name="hp" value="20.0"/>
-                <property name="time_rec" value="15.0"/>
+                <property name="hp" value="130.0"/>
+                <property name="time_rec" value="300"/>
                 <property name="weight" value="1"/>
             </properties>
         </object>
-        <object name="med" type="item" subType="medchest" x="594" y="616" width="50" height="50">
+        <object name="med" type="item" subType="medchest" x="594" y="800" width="50" height="50">
             <properties>
-                <property name="hp" value="100.0"/>
-                <property name="time_rec" value="30.0"/>
+                <property name="hp" value="120.0"/>
+                <property name="time_rec" value="300"/>
                 <property name="weight" value="7"/>
             </properties>
         </object>
         <object name="med" type="item" subType="medchest" x="174" y="938" width="50" height="50">
             <properties>
-                <property name="hp" value="50.0"/>
-                <property name="time_rec" value="15.0"/>
+                <property name="hp" value="200.0"/>
+                <property name="time_rec" value="250"/>
                 <property name="weight" value="3"/>
             </properties>
         </object>
-        <object name="med" type="item" subType="medchest" x="264" y="1184" width="50" height="50">
+        <object name="med" type="item" subType="medchest" x="100" y="200" width="50" height="50">
             <properties>
-                <property name="hp" value="70.0"/>
-                <property name="time_rec" value="15.0"/>
+                <property name="hp" value="170.0"/>
+                <property name="time_rec" value="250"/>
                 <property name="weight" value="3"/>
             </properties>
         </object>
         <object name="med" type="item" subType="medchest" x="856" y="716" width="50" height="50">
             <properties>
-                <property name="hp" value="80.0"/>
-                <property name="time_rec" value="20.0"/>
+                <property name="hp" value="200.0"/>
+                <property name="time_rec" value="250"/>
                 <property name="weight" value="4"/>
             </properties>
         </object>
         <object name="med" type="item" subType="medchest" x="1340" y="380" width="50" height="50">
             <properties>
-                <property name="hp" value="50.0"/>
-                <property name="time_rec" value="15.0"/>
+                <property name="hp" value="250.0"/>
+                <property name="time_rec" value="300.0"/>
                 <property name="weight" value="3"/>
             </properties>
         </object>

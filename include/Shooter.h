@@ -16,7 +16,9 @@ protected:
     float shootPrecision;
 public:
     Shooter(Level &level, float precision, std::string &name, std::string &fileName, float x, float y, float w, float h,
-            myView &view);
+            myView &view, std::map<std::string, std::string> properties);
+
+    bool isShooting;
 
     /**
      * Взять оружие
@@ -44,7 +46,11 @@ public:
      * @param hitUnit
      */
     //virtual void shoot();
-    void makeShoot(Unit *hitUnit, Vector2f pos, sf::Event event);
+    void makeShoot();
+
+    virtual void update(float time) override;
+
+    void attack(Unit *unit);
 };
 
 #endif //DELETEDGAME_SHOOTER_H

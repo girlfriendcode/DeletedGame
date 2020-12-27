@@ -17,7 +17,7 @@ class ItemCollector : virtual public Unit {
 
 public:
     ItemCollector(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h,
-                  myView &view);
+                  myView &view, std::map<std::string, std::string> properties);
 
     MyContainer<Item *> inventory;
 
@@ -29,7 +29,7 @@ public:
     /**
      * Cброс всех вещей инвентаря при смерти
      */
-    virtual void throwItem();//сброс при смерти одинаков
+    virtual void throwItem(float x, float y);//сброс при смерти одинаков
 };
 
 #endif //DELETEDGAME_ITEMCOLLECTOR_H

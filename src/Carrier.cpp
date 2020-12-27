@@ -5,7 +5,12 @@
 #include <cmath>
 
 Carrier::Carrier(Level &level, std::vector<FieldObject *> points, std::string &name, std::string &fileName, float x,
-                 float y, float w, float h, myView &view) : Unit(level, name, fileName, x, y, w, h, view) {
+                 float y, float w, float h, myView &view, std::map<std::string, std::string> properties) : Unit(level,
+                                                                                                                name,
+                                                                                                                fileName,
+                                                                                                                x, y, w,
+                                                                                                                h, view,
+                                                                                                                properties) {
     collectPoints.assign(points.begin(), points.end());
 }
 

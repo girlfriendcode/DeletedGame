@@ -18,11 +18,11 @@ TEST(Hero, Properties) {
     std::vector<MapObject> heroList = level.getObjectsByType("hero");
     Hero hero = Hero(level, std::stof(heroList[1].properties["precision"]), heroList[1].name, heroList[1].imagePath,
                      heroList[1].rect.left, heroList[1].rect.top,
-                     heroList[1].rect.width, heroList[1].rect.height, myView);
+                     heroList[1].rect.width, heroList[1].rect.height, myView, heroList[1].properties);
 
     ASSERT_FLOAT_EQ(hero.x, 240);
     ASSERT_FLOAT_EQ(hero.basicStats["maxTime"], 5000);
-    ASSERT_FLOAT_EQ(hero.basicStats["timeStep"], 20);
+    ASSERT_FLOAT_EQ(hero.basicStats["timeStep"], 25);
     ASSERT_STRCASEEQ("hero", heroList[1].name.c_str());
 }
 
@@ -36,8 +36,8 @@ TEST(WildEnemy, Properties) {
                                     std::stof(wildEnemyList[0].properties["damage"]), wildEnemyList[0].name,
                                     wildEnemyList[0].imagePath,
                                     wildEnemyList[0].rect.left, wildEnemyList[0].rect.top, wildEnemyList[0].rect.width,
-                                    wildEnemyList[0].rect.height, myView);
-    ASSERT_FLOAT_EQ(wildEnemy.basicStats["radius"], 100);
+                                    wildEnemyList[0].rect.height, myView, wildEnemyList[0].properties);
+    ASSERT_FLOAT_EQ(wildEnemy.basicStats["radius"], 200);
     ASSERT_FLOAT_EQ(wildEnemy.y, 130);
     ASSERT_FLOAT_EQ(wildEnemy.getDamage(), 15);
 }
@@ -52,10 +52,11 @@ TEST(ForagerEnemy, Properties) {
     ForagerEnemy foragerEnemy = ForagerEnemy(level, collectPoints, foragerEnemyList[0].name,
                                              foragerEnemyList[0].imagePath, foragerEnemyList[0].rect.left,
                                              foragerEnemyList[0].rect.top,
-                                             foragerEnemyList[0].rect.width, foragerEnemyList[0].rect.height, myView);
-    ASSERT_FLOAT_EQ(foragerEnemy.basicStats["radius"], 100);
-    ASSERT_FLOAT_EQ(foragerEnemy.y, 576);
-    ASSERT_FLOAT_EQ(foragerEnemy.basicStats["maxHealth"], 500);
+                                             foragerEnemyList[0].rect.width, foragerEnemyList[0].rect.height, myView,
+                                             foragerEnemyList[0].properties);
+    ASSERT_FLOAT_EQ(foragerEnemy.basicStats["radius"], 500);
+    ASSERT_FLOAT_EQ(foragerEnemy.y, 1025);
+    ASSERT_FLOAT_EQ(foragerEnemy.basicStats["maxHealth"], 210);
 }
 
 TEST(CleverEnemy, Properties) {
@@ -68,8 +69,9 @@ TEST(CleverEnemy, Properties) {
     CleverEnemy cleverEnemy = CleverEnemy(level, collectPoints, std::stof(cleverEnemyList[0].properties["precision"]),
                                           cleverEnemyList[0].name, cleverEnemyList[0].imagePath,
                                           cleverEnemyList[0].rect.left, cleverEnemyList[0].rect.top,
-                                          cleverEnemyList[0].rect.width, cleverEnemyList[0].rect.height, myView);
-    ASSERT_FLOAT_EQ(cleverEnemy.basicStats["radius"], 100);
+                                          cleverEnemyList[0].rect.width, cleverEnemyList[0].rect.height, myView,
+                                          cleverEnemyList[0].properties);
+    ASSERT_FLOAT_EQ(cleverEnemy.basicStats["radius"], 500);
     ASSERT_FLOAT_EQ(cleverEnemy.y, 600);
     ASSERT_FLOAT_EQ(cleverEnemy.getPrecision(), 0.6);
 }
@@ -86,16 +88,16 @@ TEST(MedChest, Actions) {
                             medChestList[0].imagePath,
                             medChestList[0].rect.left, medChestList[0].rect.top, medChestList[0].rect.width,
                             medChestList[0].rect.height);
-    ASSERT_FLOAT_EQ(med.gettimeRec(), 15);
+    ASSERT_FLOAT_EQ(med.gettimeRec(), 300);
     ASSERT_FLOAT_EQ(med.getWeight(), 3);
-    ASSERT_FLOAT_EQ(med.getHp(), 20);
+    ASSERT_FLOAT_EQ(med.getHp(), 130);
     std::vector<MapObject> heroList = level.getObjectsByType("hero");
     Hero hero = Hero(level, std::stof(heroList[1].properties["precision"]), heroList[1].name, heroList[1].imagePath,
                      heroList[1].rect.left, heroList[1].rect.top,
-                     heroList[1].rect.width, heroList[1].rect.height, myView);
+                     heroList[1].rect.width, heroList[1].rect.height, myView, heroList[1].properties);
     hero.basicStats["health"] -= 20;
     hero.useMedecine(&med);
-    ASSERT_EQ(hero.basicStats["health"], 500);
+    ASSERT_EQ(hero.basicStats["health"], 240);
 }
 
 TEST(Weapon, Actions) {
@@ -113,7 +115,7 @@ TEST(Weapon, Actions) {
                            weaponList[0].name, weaponList[0].imagePath,
                            weaponList[0].rect.left, weaponList[0].rect.top, weaponList[0].rect.width,
                            weaponList[0].rect.height);
-    ASSERT_EQ(weapon.gettimeShoot(), 5);
+    ASSERT_EQ(weapon.gettimeShoot(), 150);
     ASSERT_EQ(weapon.getmaxBullets(), 15);
     ASSERT_EQ(weapon.getWeight(), 5);
     std::vector<FieldObject *> collectPoints;
@@ -121,15 +123,17 @@ TEST(Weapon, Actions) {
     CleverEnemy cleverEnemy = CleverEnemy(level, collectPoints, std::stof(cleverEnemyList[0].properties["precision"]),
                                           cleverEnemyList[0].name, cleverEnemyList[0].imagePath,
                                           cleverEnemyList[0].rect.left, cleverEnemyList[0].rect.top,
-                                          cleverEnemyList[0].rect.width, cleverEnemyList[0].rect.height, myView);
+                                          cleverEnemyList[0].rect.width, cleverEnemyList[0].rect.height, myView,
+                                          cleverEnemyList[0].properties);
     cleverEnemy.takeWeapon(&weapon);
-    ASSERT_FLOAT_EQ(cleverEnemy.getWeapon()->getW_Damage(), 20);
+    ASSERT_FLOAT_EQ(cleverEnemy.getWeapon()->getW_Damage(), 24);
     cleverEnemy.getWeapon()->setBullets(5);
     ASSERT_EQ(weapon.getBullets(), 5);
     CleverEnemy cleverEnemy1 = CleverEnemy(level, collectPoints, std::stof(cleverEnemyList[1].properties["precision"]),
                                            cleverEnemyList[1].name, cleverEnemyList[1].imagePath,
                                            cleverEnemyList[1].rect.left, cleverEnemyList[1].rect.top,
-                                           cleverEnemyList[1].rect.width, cleverEnemyList[1].rect.height, myView);
+                                           cleverEnemyList[1].rect.width, cleverEnemyList[1].rect.height, myView,
+                                           cleverEnemyList[1].properties);
     ASSERT_TRUE(cleverEnemy1.getWeapon() == nullptr);
 }
 
@@ -160,7 +164,7 @@ TEST(BulletCase, Actions) {
     std::vector<MapObject> heroList = level.getObjectsByType("hero");
     Hero hero = Hero(level, std::stof(heroList[1].properties["precision"]), heroList[1].name, heroList[1].imagePath,
                      heroList[1].rect.left, heroList[1].rect.top,
-                     heroList[1].rect.width, heroList[1].rect.height, myView);
+                     heroList[1].rect.width, heroList[1].rect.height, myView, heroList[1].properties);
     hero.takeWeapon(&weapon);
     hero.getWeapon()->setBullets(0);
     hero.takeItem(&bulletCase);
@@ -177,7 +181,7 @@ TEST(Attack, Methods) {
     std::vector<MapObject> heroList = level.getObjectsByType("hero");
     Hero hero = Hero(level, std::stof(heroList[1].properties["precision"]), heroList[1].name, heroList[1].imagePath,
                      heroList[1].rect.left, heroList[1].rect.top,
-                     heroList[1].rect.width, heroList[1].rect.height, myView);
+                     heroList[1].rect.width, heroList[1].rect.height, myView, heroList[1].properties);
     std::vector<MapObject> weaponList = level.getObjectsByName("weapon_riffle");
     Weapon weapon = Weapon(level, std::stof(weaponList[0].properties["damage"]),
                            std::stof(weaponList[0].properties["time_shoot"]),
@@ -193,15 +197,14 @@ TEST(Attack, Methods) {
                                     std::stof(wildEnemyList[0].properties["damage"]), wildEnemyList[0].name,
                                     wildEnemyList[0].imagePath,
                                     wildEnemyList[0].rect.left, wildEnemyList[0].rect.top, wildEnemyList[0].rect.width,
-                                    wildEnemyList[0].rect.height, myView);
+                                    wildEnemyList[0].rect.height, myView, wildEnemyList[0].properties);
     hero.takeWeapon(&weapon);
     wildEnemy.makeDamage(&hero);
     sf::Event event;
     Vector2f pos;
-    ASSERT_FLOAT_EQ(hero.basicStats["health"], 485);
-    hero.makeShoot(&wildEnemy, pos, event);
-    ASSERT_FLOAT_EQ(wildEnemy.basicStats["health"], 470);
-    ASSERT_FLOAT_EQ(5000 - hero.basicStats["time"], hero.getWeapon()->gettimeShoot());
+    ASSERT_FLOAT_EQ(hero.basicStats["health"], 225);
+    ASSERT_FLOAT_EQ(wildEnemy.basicStats["health"], 175);
+    ASSERT_FLOAT_EQ(5000 - hero.getWeapon()->gettimeShoot(), 4820);
 }
 
 int main(int argc, char **argv) {

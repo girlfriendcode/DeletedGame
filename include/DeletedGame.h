@@ -72,6 +72,13 @@ public:
             i->sprite.setColor(Color::White);
         }
     }
+
+    /**
+     * Нахождение суммы жизней
+     */
+    float getSumOfHealth(std::list<Unit *> units);
+
+    float getSumOfHealth(std::list<Hero *> heroes);
 };
 
 #endif //DELETEDGAME_DELETEDGAME_H

@@ -4,7 +4,8 @@
 #include "../include/ItemCollector.h"
 
 ItemCollector::ItemCollector(Level &level, std::string &name, std::string &fileName, float x, float y,
-                             float w, float h, myView &view) : Unit(level, name, fileName, x, y, w, h, view) {
+                             float w, float h, myView &view, std::map<std::string, std::string> properties) : Unit(
+        level, name, fileName, x, y, w, h, view, properties) {
 }
 
 void ItemCollector::takeItem(Item *item) {
@@ -33,11 +34,22 @@ void ItemCollector::throwItem(Item *item) {
     //добавляем предмет на поле
 }
 
-void ItemCollector::throwItem() {
+void ItemCollector::throwItem(float x, float y) {
     if (inventory.empty()) {
         std::cout << "There is nothing to delete!" << std::endl;
         return;
     }
-    inventory.clear();
+    float newX = x;
+    float newY = y;
+    for (int i = 0; i < inventory.getSize(); i++) {
+        inventory[i]->x = newX;
+        inventory[i]->y = newY;
+        inventory[i]->w = w;
+        inventory[i]->h = h;
+        inventory[i]->state = Item::STATE::onMap;
+        inventory.erase(i);
+        newX += 30;
+        newY += 30;
+    }
     //добавляем на поле весь массив c обработкой состояния
 }

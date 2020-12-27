@@ -6,18 +6,28 @@
 #include <cmath>
 
 
-Unit::Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view)
+Unit::Unit(Level &level, std::string &name, std::string &fileName, float x, float y, float w, float h, myView &view,
+           std::map<std::string, std::string> properties)
         : FieldObject(level, name, fileName, x, y, w, h) {
     isAlive = true;
     isMove = false;
     isSelect = false;
+    /*
     basicStats = {
-            {"maxHealth", 500},
-            {"health",    500},
+            {"maxHealth", 100},
+            {"health",    100},
             {"time",      5000},
             {"maxTime",   5000},
             {"timeStep",  20},
             {"radius",    100}
+    };*/
+    basicStats = {
+            {"maxHealth", std::stof(properties["maxHealth"])},
+            {"health",    std::stof(properties["health"])},
+            {"time",      std::stof(properties["time"])},
+            {"maxTime",   std::stof(properties["maxTime"])},
+            {"timeStep",  std::stof(properties["timeStep"])},
+            {"radius",    std::stof(properties["radius"])}
     };
     this->view = view;
     tempX = 0;
@@ -34,7 +44,7 @@ void Unit::update(float time) {
     }
     if (basicStats["time"] <= 0) {
         isMove = false;
-        sprite.setColor(Color::Yellow);
+        //sprite.setColor(Color::Yellow);
     }
 }
 

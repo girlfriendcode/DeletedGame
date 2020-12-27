@@ -173,7 +173,6 @@ gtest/gtest.o: gtest/gtest.cpp.o
 
 # target to build an object file
 gtest/gtest.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/gtest/gtest.cpp.o
 .PHONY : gtest/gtest.cpp.o
 
@@ -183,7 +182,6 @@ gtest/gtest.i: gtest/gtest.cpp.i
 
 # target to preprocess a source file
 gtest/gtest.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/gtest/gtest.cpp.i
 .PHONY : gtest/gtest.cpp.i
 
@@ -193,7 +191,6 @@ gtest/gtest.s: gtest/gtest.cpp.s
 
 # target to generate assembly for a file
 gtest/gtest.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeletedGame.dir/build.make CMakeFiles/DeletedGame.dir/gtest/gtest.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/gtest/gtest.cpp.s
 .PHONY : gtest/gtest.cpp.s
 

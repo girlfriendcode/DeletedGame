@@ -100,7 +100,7 @@ public:
     /**
      * Изменение размера контейнера
      */
-    void resize(int new_size);
+    void resize(int index, int new_size);
 };
 template<class T>
 MyContainer<T>::MyContainer(const MyContainer<T> &other) {
@@ -133,17 +133,14 @@ MyContainer<T>::MyContainer(const std::initializer_list<T> &other) {
 }
 
 template<class T>
-void MyContainer<T>::resize(int new_size) {
+void MyContainer<T>::resize(int index, int new_size) {
     T *p = new T[new_size];
     if (this->elem != nullptr) {
-        if (new_size >= size) {
-            for (int i = 0, j = 0; i < this->size; i++, j++) {
+        for (int i = 0, j = 0; i < this->size; i++, j++) {
+            if (index == i)
+                j--;
+            else
                 p[j] = this->elem[i];
-            }
-        } else {
-            for (int i = 0, j = 0; j < new_size; i++, j++) {
-                p[j] = this->elem[i];
-            }
         }
         delete[] this->elem;
     }
@@ -153,7 +150,7 @@ void MyContainer<T>::resize(int new_size) {
 
 template<class T>
 void MyContainer<T>::push_back(const T &it) {
-    this->resize(size + 1);
+    this->resize(size + 2, size + 1);
     elem[size - 1] = it;
 }
 
@@ -209,26 +206,32 @@ void MyContainer<T>::replace(T &element, const T &other) {
 template<class T>
 void MyContainer<T>::pop_back() {
     if (this->size > 0)
-        resize(size - 1);
+        resize(size - 1, size - 1);
     else
         throw std::exception();
 }
 
 template<class T>
 void MyContainer<T>::erase(int index) {
-    if (this->size > 0 && (index < this->size && index >= 0)) {
-        T *p = new T[size - 1];
-        for (int i = 0, j = 0; i < this->size; i++, j++) {
-            if (index == i)
-                j--;
-            else
-                p[i] = this->elem[i];
-        }
-        delete[]this->elem;
+    /* if (this->size > 0 && (index < this->size && index >= 0)) {
+         T *p = new T[size - 1];
+         for (int i = 0, j = 0; i < this->size; i++, j++) {
+             if (index == i){
+                 if(j>0) j--;
+                 else j=0;
+             }
+             else
+                 p[j] = this->elem[i];
+         }
+         delete[]this->elem;
 
-        this->elem = p;
-        this->size = size - 1;
-    }
+         this->elem = p;
+         this->size = size - 1;
+     }*/
+    if (this->size > 0 && (index < this->size && index >= 0))
+        this->resize(index, size - 1);
+    else
+        throw std::exception();
 }
 
 template<class T>

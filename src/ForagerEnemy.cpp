@@ -6,10 +6,11 @@
 
 ForagerEnemy::ForagerEnemy(Level &level, std::vector<FieldObject *> points, std::string &name, std::string &fileName,
                            float x,
-                           float y, float w, float h, myView &view) : Carrier(level, points, name, fileName, x, y, w, h,
-                                                                              view),
-                                                                      Unit(level, name, fileName, x, y, w, h, view),
-                                                                      ItemCollector(level, name, fileName, x, y, w, h,
-                                                                                    view) {
+                           float y, float w, float h, myView &view, std::map<std::string, std::string> properties)
+        : Carrier(level, points, name, fileName, x, y, w, h,
+                  view, properties),
+          Unit(level, name, fileName, x, y, w, h, view, properties),
+          ItemCollector(level, name, fileName, x, y, w, h,
+                        view, properties) {
 }
 

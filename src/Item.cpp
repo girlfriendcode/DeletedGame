@@ -13,3 +13,8 @@ Item::Item(Level &level, int weight, std::string &name, std::string &fileName, f
 void Item::draw(sf::RenderWindow &window) {
     window.draw(sprite);
 }
+
+FloatRect Item::getRect() {
+    return {x + w / 4, y + h / 4, w - w / 5, h - h / 5};
+}
+

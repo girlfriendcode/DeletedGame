@@ -22,6 +22,7 @@ public :
     int getWeight() { return weight; };
 
     void setWeight(int w) { this->weight = w; };
+    virtual FloatRect getRect() override;
 
     void draw(sf::RenderWindow &window);
     //когда берут вещь, она должна исчезнуть c карты
