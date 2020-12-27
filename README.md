@@ -1,2 +1,2 @@
 DeletedGame
-https://girlfriendcode.github.io/DeletedGame/doxygen/annotated.html
+https://girlfriendcode.github.io/DeletedGame/doxygen/html/annotated.html
