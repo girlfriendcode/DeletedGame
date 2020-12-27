@@ -17,22 +17,21 @@ void Shooter::throwWeapon() {
         std::cout << "There is nothing to delete!" << std::endl;
         return;
     }
-    Weapon *weaponThrow = activeWeapon;
+    activeWeapon->state = Item::STATE::onMap;
+    activeWeapon->x = x - 10;
+    activeWeapon->y = y;
     activeWeapon = nullptr;
-    weaponThrow->state = Item::STATE::onMap;
-    weaponThrow->x = x - 10;
-    weaponThrow->y = y;
     //добавляем на поле назад
 }
 
 void Shooter::takeWeapon(Weapon *w) {
-    if (activeWeapon != nullptr) {
-        Weapon *weaponThrow = activeWeapon;
+    if (!activeWeapon) {
         //возвращаем на карту
-        throwWeapon();//Хотите удалить оружие?(добавить диалог)
+
+        w->state = Item::STATE::onInvent;
+        activeWeapon = w;
+        basicStats["time"] -= 10;
     }
-    w->state = Item::STATE::onInvent;
-    activeWeapon = w;
 }
 
 void Shooter::makeShoot() {

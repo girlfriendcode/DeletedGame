@@ -2,10 +2,12 @@
 // Created by valeria on 28.11.2020.
 //
 #include "../include/ItemCollector.h"
+#include "../include/Shooter.h"
 
 ItemCollector::ItemCollector(Level &level, std::string &name, std::string &fileName, float x, float y,
                              float w, float h, myView &view, std::map<std::string, std::string> properties) : Unit(
         level, name, fileName, x, y, w, h, view, properties) {
+
 }
 
 void ItemCollector::takeItem(Item *item) {
@@ -30,6 +32,10 @@ void ItemCollector::throwItem(Item *item) {
         }
     }
     item->state = Item::STATE::onMap;
+    item->x = x + 10;
+    item->y = y + 10;
+    item->w = 50;
+    item->h = 50;
     inventory.erase(i);
     //добавляем предмет на поле
 }
@@ -44,8 +50,8 @@ void ItemCollector::throwItem(float x, float y) {
     for (int i = 0; i < inventory.getSize(); i++) {
         inventory[i]->x = newX;
         inventory[i]->y = newY;
-        inventory[i]->w = w;
-        inventory[i]->h = h;
+        inventory[i]->w = 50;
+        inventory[i]->h = 50;
         inventory[i]->state = Item::STATE::onMap;
         inventory.erase(i);
         newX += 30;

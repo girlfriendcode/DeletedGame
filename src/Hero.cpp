@@ -16,6 +16,7 @@ Hero::Hero(Level &level, float shootPrecision, std::string &name, std::string &f
                                                                                            properties) {
     this->maxWeight = 20;
     this->weight = 0;
+    this->currItem = 0;
 }
 
 void Hero::takeItem(Item *item) {
@@ -25,6 +26,7 @@ void Hero::takeItem(Item *item) {
         item->state = Item::STATE::onInvent;
         weight += item->getWeight();
         //исчезновение вещи c карты
+
     }
 }
 
@@ -75,9 +77,13 @@ void Hero::takeWeapon(Weapon *weapon) {
 
 void Hero::throwWeapon(Weapon *weapon) {
     if (activeWeapon == weapon) {
-        activeWeapon == nullptr;
+        activeWeapon = nullptr;
         //возвращаем на поле оружие
     }
     throwItem(weapon);
+}
+
+void Hero::throwItem(float x, float y) {
+    ItemCollector::throwItem(x, y);
 }
 

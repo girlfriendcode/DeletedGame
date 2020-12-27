@@ -16,7 +16,7 @@ void DeletedGame::Run() {
     Level level;
     level.loadStaticObjects("../res/map.tmx");
     level.loadDynamicObjects("../res/objects.xml");
-    Clock clock, itemsClock, attackClock, shooter1Clock, shooter2Clock, medClock, caseClock;
+    Clock clock, itemsClock, attackClock, shooter1Clock, shooter2Clock, inventoryClock;
     std::list<Item *> itemsList;
     std::list<Hero *> heroList;
     Inventory inventBar;
@@ -111,6 +111,7 @@ void DeletedGame::Run() {
                 Hero *b = *it;
                 b->update(time);
                 if (!b->isAlive) {
+                    b->throwItem(b->x + 5, b->y + 5);
                     it = heroList.erase(it);
                     //delete b;
                 }
@@ -132,7 +133,7 @@ void DeletedGame::Run() {
                         if (itemsClock.getElapsedTime().asMilliseconds() > 200) {
                             for (auto item : itemsList) {
                                 if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
-                                    if (Keyboard::isKeyPressed(sf::Keyboard::T)) {
+                                    if (Keyboard::isKeyPressed(Keyboard::T)) {
                                         if (dynamic_cast<Weapon *>(item) != nullptr) {
                                             b->takeWeapon(dynamic_cast<Weapon *>(item));
                                         } else
@@ -142,36 +143,56 @@ void DeletedGame::Run() {
                                 }
                             }
                         }
-                        if (medClock.getElapsedTime().asMilliseconds() > 100) {
-                            if (Keyboard::isKeyPressed(Keyboard::H)) {
-                                for (auto i = 0; i < b->inventory.getSize(); i++) {
-                                    if (dynamic_cast<MedChest *>(b->inventory[i]) != nullptr) {
-                                        std::cout << "health before" << b->basicStats["health"] << std::endl;
-                                        b->useMedecine(dynamic_cast<MedChest *>(b->inventory[i]));
-                                        b->inventory.erase(i);
-                                        std::cout << "health after" << b->basicStats["health"] << std::endl;
-                                        b->sprite.setColor(Color::Magenta);
-                                        i = b->inventory.getSize();
+                        if (inventoryClock.getElapsedTime().asMilliseconds() > 200 && b->isSelect) {
+                            if (Keyboard::isKeyPressed(Keyboard::W)) {
+                                inventoryClock.restart();
+                                if (b->currItem == b->inventory.getSize() - 1) {
+                                    b->currItem = 0;
+                                    break;
+                                } else {
+                                    b->currItem++;
+                                    break;
+                                }
+                                std::cout << "currItem" << b->currItem << std::endl;
+                            }
+                            if (Keyboard::isKeyPressed(Keyboard::U)) {
+                                inventoryClock.restart();
+                                if (!b->inventory.empty()) {
+                                    if (dynamic_cast<MedChest *>(b->inventory[b->currItem])) {
+                                        if (b->basicStats["health"] != b->basicStats["maxHealth"]) {
+                                            std::cout << "health before" << b->basicStats["health"] << std::endl;
+                                            b->useMedecine(dynamic_cast<MedChest *>(b->inventory[b->currItem]));
+                                            b->inventory.erase(b->currItem);
+                                        }
                                     }
-                                    medClock.restart();
+                                    if (dynamic_cast<BulletCase *>(b->inventory[b->currItem]) &&
+                                        dynamic_cast<BulletCase *>(b->inventory[b->currItem])->bulletType ==
+                                        b->getWeapon()->bulletType) {
+                                        if (b->getWeapon()->getBullets() != b->getWeapon()->getmaxBullets()) {
+                                            b->recharge(dynamic_cast<BulletCase *>(b->inventory[b->currItem]));
+                                            if (dynamic_cast<BulletCase *>(b->inventory[b->currItem])->getBullets() <=
+                                                0) {
+                                                b->inventory.erase(b->currItem);
+                                            }
+                                        }
+                                    }
+                                    if (dynamic_cast<Weapon *>(b->inventory[b->currItem])) {
+                                        b->activateWeapon(dynamic_cast<Weapon *>(b->inventory[b->currItem]));
+                                    }
                                 }
                             }
-                        }
-                        if (caseClock.getElapsedTime().asMilliseconds() > 100) {
-                            if (Keyboard::isKeyPressed(Keyboard::R)) {
-                                for (auto i = 0; i < b->inventory.getSize(); i++) {
-                                    if (dynamic_cast<BulletCase *>(b->inventory[i]) != nullptr &&
-                                        dynamic_cast<BulletCase *>(b->inventory[i])->bulletType ==
-                                        b->getWeapon()->bulletType) {
-                                        std::cout << "bullets before" << b->getWeapon()->getBullets() << std::endl;
-                                        b->recharge(dynamic_cast<BulletCase *>(b->inventory[i]));
-                                        if (dynamic_cast<BulletCase *>(b->inventory[i])->getBullets() <= 0) {
-                                            b->inventory.erase(i);
-                                            i = b->inventory.getSize();
-                                        }
-                                        std::cout << "bullets after" << b->getWeapon()->getBullets() << std::endl;
-                                    }
-                                    caseClock.restart();
+                            if (Keyboard::isKeyPressed(Keyboard::D)) {
+                                inventoryClock.restart();
+                                if (dynamic_cast<Weapon *>(b->inventory[b->currItem]))
+                                    b->throwWeapon(dynamic_cast<Weapon *>(b->inventory[b->currItem]));
+                                else
+                                    b->throwItem(b->inventory[b->currItem]);
+                                if (b->currItem == b->inventory.getSize() - 1) {
+                                    b->currItem = 0;
+                                    break;
+                                } else {
+                                    b->currItem++;
+                                    break;
                                 }
                             }
                         }
@@ -214,30 +235,35 @@ void DeletedGame::Run() {
                     //для разброса вещей
                     float itx = b->x;
                     float ity = b->y;
-                    if (itemsClock.getElapsedTime().asMilliseconds() > 300) {
+                    if (itemsClock.getElapsedTime().asMilliseconds() > 350) {
                         for (auto item : itemsList) {
                             if (dynamic_cast<ItemCollector *>(b) != nullptr) {
                                 if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
-                                    if (Keyboard::isKeyPressed(sf::Keyboard::T)) {
+                                    if (Keyboard::isKeyPressed(Keyboard::T)) {
                                         dynamic_cast<ItemCollector *>(b)->takeItem(item);
                                         itemsClock.restart();
                                     }
                                 }
-
-                                if (Keyboard::isKeyPressed(sf::Keyboard::BackSpace)) {
+                                if (Keyboard::isKeyPressed(sf::Keyboard::D) && b->isSelect) {
+                                    itemsClock.restart();
                                     dynamic_cast<ItemCollector *>(b)->throwItem(itx, ity);
                                     itx += 30;
                                     ity += 30;
-                                    itemsClock.restart();
                                 }
+
                             }
                             if (dynamic_cast<Shooter *>(b) != nullptr && dynamic_cast<Weapon *>(item) != nullptr) {
                                 if (b->getRect().intersects(item->getRect()) && item->state == Item::STATE::onMap) {
-                                    if (Keyboard::isKeyPressed(sf::Keyboard::T)) {
+                                    if (Keyboard::isKeyPressed(Keyboard::T)) {
                                         dynamic_cast<Shooter *>(b)->takeWeapon(dynamic_cast<Weapon *>(item));
                                         itemsClock.restart();
                                     }
                                 }
+                                if (Keyboard::isKeyPressed(sf::Keyboard::D) && b->isSelect) {
+                                    itemsClock.restart();
+                                    dynamic_cast<Shooter *>(b)->throwWeapon();
+                                }
+
                             }
                             item->update(time);
                         }
@@ -246,7 +272,7 @@ void DeletedGame::Run() {
                         for (auto hero:heroList) {
                             if (dynamic_cast<WildEnemy *>(b) != nullptr) {
                                 if (b->getRect().intersects(hero->getRect())) {
-                                    if (Keyboard::isKeyPressed(sf::Keyboard::A)) {
+                                    if (Keyboard::isKeyPressed(Keyboard::A)) {
                                         dynamic_cast<WildEnemy *>(b)->makeDamage(hero);
                                         hero->update(time);
                                         attackClock.restart();
@@ -261,7 +287,7 @@ void DeletedGame::Run() {
                             if ((Keyboard::isKeyPressed(Keyboard::Space)) && b->isSelect) {
                                 if (dynamic_cast<Shooter *>(b)->getWeapon() != nullptr &&
                                     dynamic_cast<Shooter *>(b)->getWeapon()->getBullets() > 0) {
-                                    Bullet *bull = new Bullet(level, b->x - 5, b->y - 5, pos.x,
+                                    Bullet *bull = new Bullet(level, b->x, b->y, pos.x,
                                                               pos.y);//cоздаю пулю - пока нет ружья, стреляем из точки (100,100)
                                     bull->toPoint(pos);
                                     bullets.push_back(bull);//кладем в вектор

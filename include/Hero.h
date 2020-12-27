@@ -14,9 +14,13 @@ class Hero : public Shooter, public ItemCollector {
 private:
     int weight;
     int maxWeight;
+
+    //MyContainer<Weapon*> weapons;
 public:
     Hero(Level &level, float shootPrecision, std::string &name, std::string &fileName, float x, float y, float w,
          float h, myView &view, std::map<std::string, std::string> properties);
+
+    int currItem;
 
     /**
      * Выбор оружия
@@ -46,6 +50,8 @@ public:
      * @param item
      */
     virtual void throwItem(Item *item) override;
+
+    virtual void throwItem(float x, float y);
 
     /**
      * Бросить оружие

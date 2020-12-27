@@ -150,7 +150,7 @@
                 <property name="time_charge" value="300"/>
             </properties>
         </object>
-        <object name="weapon_auto" type="item" subType="weapon" x="1106" y="108" width="50" height="50">
+        <object name="weapon_auto" type="item" subType="weapon" x="1106" y="78" width="50" height="50">
             <properties>
                 <property name="damage" value="12"/>
                 <property name="bulletType" value="2"/>
@@ -249,7 +249,7 @@
                 <property name="time_charge" value="300"/>
             </properties>
         </object>
-        <object name="weapon_riffle" type="item" subType="weapon" x="1230" y="94" width="50" height="50">
+        <object name="weapon_riffle" type="item" subType="weapon" x="1230" y="270" width="50" height="50">
             <properties>
                 <property name="damage" value="14"/>
                 <property name="bulletType" value="3"/>
@@ -260,7 +260,7 @@
                 <property name="time_charge" value="300"/>
             </properties>
         </object>
-        <object name="riffle_c" type="item" subType="bullet_case" x="776" y="82" width="50" height="50">
+        <object name="riffle_c" type="item" subType="bullet_case" x="1215" y="381" width="50" height="50">
             <properties>
                 <property name="bulletType" value="3"/>
                 <property name="bullets" value="10"/>
@@ -293,7 +293,7 @@
                 <property name="weight" value="5"/>
             </properties>
         </object>
-        <object name="auto_c" type="item" subType="bullet_case" x="480" y="334" width="50" height="50">
+        <object name="auto_c" type="item" subType="bullet_case" x="480" y="134" width="50" height="50">
             <properties>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
@@ -309,7 +309,7 @@
                 <property name="weight" value="4"/>
             </properties>
         </object>
-        <object name="auto_c" type="item" subType="bullet_case" x="500" y="500" width="50" height="50">
+        <object name="auto_c" type="item" subType="bullet_case" x="1000" y="220" width="50" height="50">
             <properties>
                 <property name="bulletType" value="2"/>
                 <property name="bullets" value="15"/>
