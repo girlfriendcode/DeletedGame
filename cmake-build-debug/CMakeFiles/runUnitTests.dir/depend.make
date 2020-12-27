@@ -170,6 +170,7 @@ CMakeFiles/runUnitTests.dir/src/Hero.cpp.o: ../src/Hero.cpp
 
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/BulletCase.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/FieldObject.h
+CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/Hero.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/Inventory.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/Item.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/ItemCollector.h
@@ -178,6 +179,7 @@ CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/Level.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/MapObject.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/MedChest.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/MyContainer.h
+CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/Shooter.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/TinyXML/tinyxml.h
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o: ../include/Unit.h
@@ -205,6 +207,7 @@ CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/Level.h
 CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/MapObject.h
 CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/MedChest.h
 CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/MyContainer.h
+CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/Shooter.h
 CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/TinyXML/tinystr.h
 CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/TinyXML/tinyxml.h
 CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o: ../include/Unit.h

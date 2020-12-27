@@ -171,6 +171,7 @@ CMakeFiles/runUnitTests.dir/src/Hero.cpp.o
 CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/BulletCase.h
  /home/valeria/CLionProjects/DeletedGame/include/FieldObject.h
+ /home/valeria/CLionProjects/DeletedGame/include/Hero.h
  /home/valeria/CLionProjects/DeletedGame/include/Inventory.h
  /home/valeria/CLionProjects/DeletedGame/include/Item.h
  /home/valeria/CLionProjects/DeletedGame/include/ItemCollector.h
@@ -179,6 +180,7 @@ CMakeFiles/runUnitTests.dir/src/Inventory.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
  /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
+ /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
  /home/valeria/CLionProjects/DeletedGame/include/Unit.h
@@ -206,6 +208,7 @@ CMakeFiles/runUnitTests.dir/src/ItemCollector.cpp.o
  /home/valeria/CLionProjects/DeletedGame/include/MapObject.h
  /home/valeria/CLionProjects/DeletedGame/include/MedChest.h
  /home/valeria/CLionProjects/DeletedGame/include/MyContainer.h
+ /home/valeria/CLionProjects/DeletedGame/include/Shooter.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinystr.h
  /home/valeria/CLionProjects/DeletedGame/include/TinyXML/tinyxml.h
  /home/valeria/CLionProjects/DeletedGame/include/Unit.h
