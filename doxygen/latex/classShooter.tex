@@ -1,0 +1,134 @@
+\hypertarget{classShooter}{}\doxysection{Shooter Class Reference}
+\label{classShooter}\index{Shooter@{Shooter}}
+
+
+{\ttfamily \#include $<$Shooter.\+h$>$}
+
+
+
+Inheritance diagram for Shooter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classShooter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shooter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classShooter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShooter_ab6b9ad07988551791edee9438e681024}\label{classShooter_ab6b9ad07988551791edee9438e681024}} 
+{\bfseries Shooter} (\mbox{\hyperlink{classLevel}{Level}} \&level, float precision, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h, \mbox{\hyperlink{classmyView}{my\+View}} \&view, std\+::map$<$ std\+::string, std\+::string $>$ properties)
+\item 
+virtual void \mbox{\hyperlink{classShooter_a8776098588c020b923bb01618ea4d8d7}{take\+Weapon}} (\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$w)
+\item 
+virtual void \mbox{\hyperlink{classShooter_a761f7c02f76dd8e71071e95d0197a694}{throw\+Weapon}} ()
+\item 
+\mbox{\Hypertarget{classShooter_a2e78c90f9052a5c5e1725f27dded0fa3}\label{classShooter_a2e78c90f9052a5c5e1725f27dded0fa3}} 
+float {\bfseries get\+Precision} () const
+\item 
+\mbox{\Hypertarget{classShooter_a1580088ce5318ab06e70678421387363}\label{classShooter_a1580088ce5318ab06e70678421387363}} 
+\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$ {\bfseries get\+Weapon} () const
+\item 
+bool \mbox{\hyperlink{classShooter_a2cf0fdddb61c4025d9dcb81aeba61a64}{shoot\+Successful}} (float distance)
+\item 
+void \mbox{\hyperlink{classShooter_a68d1e55ff3fd7f858b8c4fc39cfa633d}{make\+Shoot}} ()
+\item 
+virtual void \mbox{\hyperlink{classShooter_a0ca80da2bdd2cf09fc6edcf2bc97d69d}{update}} (float time) override
+\item 
+\mbox{\Hypertarget{classShooter_a0efeca107c8a39e24cb1ae10f81183eb}\label{classShooter_a0efeca107c8a39e24cb1ae10f81183eb}} 
+void {\bfseries attack} (\mbox{\hyperlink{classUnit}{Unit}} $\ast$unit)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShooter_afa7a967e5c1ca6425a4e1ae0b1e9faad}\label{classShooter_afa7a967e5c1ca6425a4e1ae0b1e9faad}} 
+bool {\bfseries is\+Shooting}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShooter_a8c2d21f7fe20bcf442a644c4ba77ddcb}\label{classShooter_a8c2d21f7fe20bcf442a644c4ba77ddcb}} 
+\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$ {\bfseries active\+Weapon}
+\item 
+\mbox{\Hypertarget{classShooter_ad0067b2c666a7985e593902b7f3f9852}\label{classShooter_ad0067b2c666a7985e593902b7f3f9852}} 
+float {\bfseries shoot\+Precision}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс стрелка 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShooter_a68d1e55ff3fd7f858b8c4fc39cfa633d}\label{classShooter_a68d1e55ff3fd7f858b8c4fc39cfa633d}} 
+\index{Shooter@{Shooter}!makeShoot@{makeShoot}}
+\index{makeShoot@{makeShoot}!Shooter@{Shooter}}
+\doxysubsubsection{\texorpdfstring{makeShoot()}{makeShoot()}}
+{\footnotesize\ttfamily void Shooter\+::make\+Shoot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Cделать выстрел 
+\begin{DoxyParams}{Parameters}
+{\em hit\+Unit} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShooter_a2cf0fdddb61c4025d9dcb81aeba61a64}\label{classShooter_a2cf0fdddb61c4025d9dcb81aeba61a64}} 
+\index{Shooter@{Shooter}!shootSuccessful@{shootSuccessful}}
+\index{shootSuccessful@{shootSuccessful}!Shooter@{Shooter}}
+\doxysubsubsection{\texorpdfstring{shootSuccessful()}{shootSuccessful()}}
+{\footnotesize\ttfamily bool Shooter\+::shoot\+Successful (\begin{DoxyParamCaption}\item[{float}]{distance }\end{DoxyParamCaption})}
+
+Функция для вычисления попадания/непопадания в юнит 
+\begin{DoxyParams}{Parameters}
+{\em distance} & расстояние между стрелком и целью \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+возвращает, удачен или нет выстрел 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShooter_a8776098588c020b923bb01618ea4d8d7}\label{classShooter_a8776098588c020b923bb01618ea4d8d7}} 
+\index{Shooter@{Shooter}!takeWeapon@{takeWeapon}}
+\index{takeWeapon@{takeWeapon}!Shooter@{Shooter}}
+\doxysubsubsection{\texorpdfstring{takeWeapon()}{takeWeapon()}}
+{\footnotesize\ttfamily virtual void Shooter\+::take\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$}]{w }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Взять оружие 
+\begin{DoxyParams}{Parameters}
+{\em w} & выбранное оружие \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classHero_a61cf970a1e227fcf74358d6fb67c9c6a}{Hero}}.
+
+\mbox{\Hypertarget{classShooter_a761f7c02f76dd8e71071e95d0197a694}\label{classShooter_a761f7c02f76dd8e71071e95d0197a694}} 
+\index{Shooter@{Shooter}!throwWeapon@{throwWeapon}}
+\index{throwWeapon@{throwWeapon}!Shooter@{Shooter}}
+\doxysubsubsection{\texorpdfstring{throwWeapon()}{throwWeapon()}}
+{\footnotesize\ttfamily virtual void Shooter\+::throw\+Weapon (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Сбросить активное оружие \mbox{\Hypertarget{classShooter_a0ca80da2bdd2cf09fc6edcf2bc97d69d}\label{classShooter_a0ca80da2bdd2cf09fc6edcf2bc97d69d}} 
+\index{Shooter@{Shooter}!update@{update}}
+\index{update@{update}!Shooter@{Shooter}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Shooter\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновление состояния персонажа 
+
+Reimplemented from \mbox{\hyperlink{classUnit_aa36359cf1ed1eb51e1a48fcbe5b05c4e}{Unit}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Shooter.\+h\end{DoxyCompactItemize}

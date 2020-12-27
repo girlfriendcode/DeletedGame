@@ -1,0 +1,8 @@
+<map id="ItemCollector" name="ItemCollector">
+<area shape="rect" id="node1" title=" " alt="" coords="120,273,231,300"/>
+<area shape="rect" id="node2" href="$classUnit.html" title=" " alt="" coords="83,184,132,211"/>
+<area shape="rect" id="node3" href="$classFieldObject.html" title=" " alt="" coords="5,95,100,121"/>
+<area shape="rect" id="node4" href="$classLevel.html" title=" " alt="" coords="24,5,81,32"/>
+<area shape="rect" id="node5" href="$classmyView.html" title=" " alt="" coords="125,95,199,121"/>
+<area shape="rect" id="node6" href="$classMyContainer.html" title=" " alt="" coords="157,184,333,211"/>
+</map>

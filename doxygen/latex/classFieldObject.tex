@@ -1,0 +1,161 @@
+\hypertarget{classFieldObject}{}\doxysection{Field\+Object Class Reference}
+\label{classFieldObject}\index{FieldObject@{FieldObject}}
+
+
+Inheritance diagram for Field\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classFieldObject__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Field\+Object\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classFieldObject__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classFieldObject_a9d8d12445968d31ae14a1c504f2b3d7b}{static\+Objects}} \{ \newline
+{\bfseries F\+L\+O\+OR}, 
+{\bfseries W\+A\+LL}, 
+{\bfseries G\+L\+A\+SS}, 
+{\bfseries C\+O\+L\+L\+E\+CT}, 
+\newline
+{\bfseries P\+A\+R\+T\+I\+T\+I\+ON}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFieldObject_ad74c183d981b33240d97520d884c97bf}\label{classFieldObject_ad74c183d981b33240d97520d884c97bf}} 
+{\bfseries Field\+Object} (\mbox{\hyperlink{classLevel}{Level}} \&level, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h)
+\item 
+\mbox{\Hypertarget{classFieldObject_a3f23bc023bd6a16887194617145fca52}\label{classFieldObject_a3f23bc023bd6a16887194617145fca52}} 
+{\bfseries Field\+Object} (std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h)
+\item 
+virtual void \mbox{\hyperlink{classFieldObject_aaab016c9383491efbdcd26b0c908df15}{draw}} (Render\+Window \&window)
+\item 
+virtual void \mbox{\hyperlink{classFieldObject_acebfcb91c67b319a4b0c5808438e5d27}{update}} (float time)
+\item 
+virtual Float\+Rect \mbox{\hyperlink{classFieldObject_a663e73150540e41b7d3601c0d688ff86}{get\+Rect}} ()
+\item 
+\mbox{\Hypertarget{classFieldObject_a57d5b74ba497cae50a6104c88e8da94e}\label{classFieldObject_a57d5b74ba497cae50a6104c88e8da94e}} 
+float {\bfseries getX} () const
+\item 
+\mbox{\Hypertarget{classFieldObject_a14cad635f8def71acaf2a8f1a3326414}\label{classFieldObject_a14cad635f8def71acaf2a8f1a3326414}} 
+float {\bfseries getY} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classFieldObject_a77eabf56fcd4ee195d45d078f02102c2}\label{classFieldObject_a77eabf56fcd4ee195d45d078f02102c2}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{classFieldObject_a587242bc894b6068896f363f56ace686}\label{classFieldObject_a587242bc894b6068896f363f56ace686}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{classFieldObject_ab7c78f429bcab564be37da33af088300}\label{classFieldObject_ab7c78f429bcab564be37da33af088300}} 
+float {\bfseries h}
+\item 
+\mbox{\Hypertarget{classFieldObject_a8786586d6fa5b1764d64943208081354}\label{classFieldObject_a8786586d6fa5b1764d64943208081354}} 
+float {\bfseries w}
+\item 
+\mbox{\Hypertarget{classFieldObject_a44460009c2b81689af1a93313c125740}\label{classFieldObject_a44460009c2b81689af1a93313c125740}} 
+std\+::string {\bfseries file\+Name}
+\item 
+\mbox{\Hypertarget{classFieldObject_a7e7576e5f0e41e5e59523128d791480e}\label{classFieldObject_a7e7576e5f0e41e5e59523128d791480e}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classFieldObject_a742fc997f06b3b9dc506697c6aa75a04}\label{classFieldObject_a742fc997f06b3b9dc506697c6aa75a04}} 
+std\+::string {\bfseries type}
+\item 
+\mbox{\Hypertarget{classFieldObject_ab6f95a72cb0290ae42a111df1458b79e}\label{classFieldObject_ab6f95a72cb0290ae42a111df1458b79e}} 
+std\+::string {\bfseries sub\+Type}
+\item 
+\mbox{\Hypertarget{classFieldObject_a567c75d7454405b9ca68497a183c17c9}\label{classFieldObject_a567c75d7454405b9ca68497a183c17c9}} 
+\mbox{\hyperlink{classLevel}{Level}} {\bfseries level}
+\item 
+Texture \mbox{\hyperlink{classFieldObject_a6392afa269679f0a83baaa8a232eed79}{texture}}
+\item 
+\mbox{\Hypertarget{classFieldObject_a70f7ee84014facbf3ceaef1f9921b924}\label{classFieldObject_a70f7ee84014facbf3ceaef1f9921b924}} 
+Sprite {\bfseries sprite}
+\item 
+\mbox{\Hypertarget{classFieldObject_ae197b9554e327fea3275cafaf7353af0}\label{classFieldObject_ae197b9554e327fea3275cafaf7353af0}} 
+Image {\bfseries image}
+\item 
+\mbox{\Hypertarget{classFieldObject_af59f8d1d75f68f2fa8bb7a49f86d87a5}\label{classFieldObject_af59f8d1d75f68f2fa8bb7a49f86d87a5}} 
+Font {\bfseries font}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classFieldObject_a9d8d12445968d31ae14a1c504f2b3d7b}\label{classFieldObject_a9d8d12445968d31ae14a1c504f2b3d7b}} 
+\index{FieldObject@{FieldObject}!staticObjects@{staticObjects}}
+\index{staticObjects@{staticObjects}!FieldObject@{FieldObject}}
+\doxysubsubsection{\texorpdfstring{staticObjects}{staticObjects}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classFieldObject_a9d8d12445968d31ae14a1c504f2b3d7b}{Field\+Object\+::static\+Objects}}}
+
+Перечисление видов статическиx объектов карты 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classFieldObject_aaab016c9383491efbdcd26b0c908df15}\label{classFieldObject_aaab016c9383491efbdcd26b0c908df15}} 
+\index{FieldObject@{FieldObject}!draw@{draw}}
+\index{draw@{draw}!FieldObject@{FieldObject}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily virtual void Field\+Object\+::draw (\begin{DoxyParamCaption}\item[{Render\+Window \&}]{window }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Отрисовка объекта 
+\begin{DoxyParams}{Parameters}
+{\em window-\/окно,в} & котором отрисовывается объект \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classFieldObject_a663e73150540e41b7d3601c0d688ff86}\label{classFieldObject_a663e73150540e41b7d3601c0d688ff86}} 
+\index{FieldObject@{FieldObject}!getRect@{getRect}}
+\index{getRect@{getRect}!FieldObject@{FieldObject}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily virtual Float\+Rect Field\+Object\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+четырёхугольник объекта 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classItem_adcae7856bb579cfcb5471153fd5c14b6}{Item}}.
+
+\mbox{\Hypertarget{classFieldObject_acebfcb91c67b319a4b0c5808438e5d27}\label{classFieldObject_acebfcb91c67b319a4b0c5808438e5d27}} 
+\index{FieldObject@{FieldObject}!update@{update}}
+\index{update@{update}!FieldObject@{FieldObject}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Field\+Object\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Обновление координаты объекта 
+\begin{DoxyParams}{Parameters}
+{\em time} & -\/счётчик времени \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classUnit_aa36359cf1ed1eb51e1a48fcbe5b05c4e}{Unit}}, and \mbox{\hyperlink{classShooter_a0ca80da2bdd2cf09fc6edcf2bc97d69d}{Shooter}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classFieldObject_a6392afa269679f0a83baaa8a232eed79}\label{classFieldObject_a6392afa269679f0a83baaa8a232eed79}} 
+\index{FieldObject@{FieldObject}!texture@{texture}}
+\index{texture@{texture}!FieldObject@{FieldObject}}
+\doxysubsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily Texture Field\+Object\+::texture}
+
+Текстура, спрайт,картинка и шрифт 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Field\+Object.\+h\end{DoxyCompactItemize}

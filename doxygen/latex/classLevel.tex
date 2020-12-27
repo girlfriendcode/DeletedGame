@@ -1,0 +1,131 @@
+\hypertarget{classLevel}{}\doxysection{Level Class Reference}
+\label{classLevel}\index{Level@{Level}}
+
+
+{\ttfamily \#include $<$Level.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classLevel_a7195ddd0c73216532169a1f013513cda}\label{classLevel_a7195ddd0c73216532169a1f013513cda}} 
+int {\bfseries get\+Width} () const
+\item 
+\mbox{\Hypertarget{classLevel_a2bc17614afdfca9a7c7ea5771a70426a}\label{classLevel_a2bc17614afdfca9a7c7ea5771a70426a}} 
+int {\bfseries get\+Height} () const
+\item 
+\mbox{\Hypertarget{classLevel_ad9a34ce58350ebe6d488b6ec473f5c6d}\label{classLevel_ad9a34ce58350ebe6d488b6ec473f5c6d}} 
+void {\bfseries set\+Width} (int w)
+\item 
+\mbox{\Hypertarget{classLevel_ad1e8259e1b80c73160785fdc47908ff1}\label{classLevel_ad1e8259e1b80c73160785fdc47908ff1}} 
+void {\bfseries set\+Height} (int h)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ \mbox{\hyperlink{classLevel_adc8cb5dbc92780c4a03c8e7c698e2bca}{get\+All\+Static\+Objects}} ()
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ \mbox{\hyperlink{classLevel_a1efc443f2d75ecc745a044d05ab0825f}{get\+All\+Dynamic\+Objects}} ()
+\item 
+void \mbox{\hyperlink{classLevel_a20d356fa84aac7c21b39c631882642a6}{draw}} (sf\+::\+Render\+Window \&window)
+\item 
+bool \mbox{\hyperlink{classLevel_aa1717095df5b77117ff0a4a79d4471f4}{load\+Static\+Objects}} (const std\+::string \&file\+Name)
+\item 
+bool \mbox{\hyperlink{classLevel_afab0a436fcb5a25cc4f19c2f95ee83be}{load\+Dynamic\+Objects}} (const std\+::string \&file\+Name)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ \mbox{\hyperlink{classLevel_a1df05d3339476a24891811f8e3851281}{get\+Objects\+By\+Name}} (const std\+::string \&name)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ \mbox{\hyperlink{classLevel_af1139c8537242740a1027f1fbb4ff668}{get\+Objects\+By\+Type}} (const std\+::string \&type)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ \mbox{\hyperlink{classLevel_a1e069bff55d9011ed8a8a55661abad12}{get\+Static\+Objects\+By\+Name}} (const std\+::string \&name)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, характеризующий уровень в игре 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLevel_a20d356fa84aac7c21b39c631882642a6}\label{classLevel_a20d356fa84aac7c21b39c631882642a6}} 
+\index{Level@{Level}!draw@{draw}}
+\index{draw@{draw}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void Level\+::draw (\begin{DoxyParamCaption}\item[{sf\+::\+Render\+Window \&}]{window }\end{DoxyParamCaption})}
+
+Отрисовка уровня \mbox{\Hypertarget{classLevel_a1efc443f2d75ecc745a044d05ab0825f}\label{classLevel_a1efc443f2d75ecc745a044d05ab0825f}} 
+\index{Level@{Level}!getAllDynamicObjects@{getAllDynamicObjects}}
+\index{getAllDynamicObjects@{getAllDynamicObjects}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getAllDynamicObjects()}{getAllDynamicObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMapObject}{Map\+Object}}$>$ Level\+::get\+All\+Dynamic\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+все динамические объекты уровня 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_adc8cb5dbc92780c4a03c8e7c698e2bca}\label{classLevel_adc8cb5dbc92780c4a03c8e7c698e2bca}} 
+\index{Level@{Level}!getAllStaticObjects@{getAllStaticObjects}}
+\index{getAllStaticObjects@{getAllStaticObjects}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getAllStaticObjects()}{getAllStaticObjects()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMapObject}{Map\+Object}}$>$ Level\+::get\+All\+Static\+Objects (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyReturn}{Returns}
+все статические объекты уровня 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_a1df05d3339476a24891811f8e3851281}\label{classLevel_a1df05d3339476a24891811f8e3851281}} 
+\index{Level@{Level}!getObjectsByName@{getObjectsByName}}
+\index{getObjectsByName@{getObjectsByName}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getObjectsByName()}{getObjectsByName()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMapObject}{Map\+Object}}$>$ Level\+::get\+Objects\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & имя объекта \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+объект по имени 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_af1139c8537242740a1027f1fbb4ff668}\label{classLevel_af1139c8537242740a1027f1fbb4ff668}} 
+\index{Level@{Level}!getObjectsByType@{getObjectsByType}}
+\index{getObjectsByType@{getObjectsByType}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getObjectsByType()}{getObjectsByType()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMapObject}{Map\+Object}}$>$ Level\+::get\+Objects\+By\+Type (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & тип объекта \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+все объекты данного типа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_a1e069bff55d9011ed8a8a55661abad12}\label{classLevel_a1e069bff55d9011ed8a8a55661abad12}} 
+\index{Level@{Level}!getStaticObjectsByName@{getStaticObjectsByName}}
+\index{getStaticObjectsByName@{getStaticObjectsByName}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{getStaticObjectsByName()}{getStaticObjectsByName()}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classMapObject}{Map\+Object}}$>$ Level\+::get\+Static\+Objects\+By\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+все объекты поля данного типа 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLevel_afab0a436fcb5a25cc4f19c2f95ee83be}\label{classLevel_afab0a436fcb5a25cc4f19c2f95ee83be}} 
+\index{Level@{Level}!loadDynamicObjects@{loadDynamicObjects}}
+\index{loadDynamicObjects@{loadDynamicObjects}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{loadDynamicObjects()}{loadDynamicObjects()}}
+{\footnotesize\ttfamily bool Level\+::load\+Dynamic\+Objects (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/путь к файлу в общей с картой папке Загрузка юнитов и предметов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classLevel_aa1717095df5b77117ff0a4a79d4471f4}\label{classLevel_aa1717095df5b77117ff0a4a79d4471f4}} 
+\index{Level@{Level}!loadStaticObjects@{loadStaticObjects}}
+\index{loadStaticObjects@{loadStaticObjects}!Level@{Level}}
+\doxysubsubsection{\texorpdfstring{loadStaticObjects()}{loadStaticObjects()}}
+{\footnotesize\ttfamily bool Level\+::load\+Static\+Objects (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & -\/путь к файлу в общей с картой папке Загрузка карты и её текстуры \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Level.\+h\end{DoxyCompactItemize}

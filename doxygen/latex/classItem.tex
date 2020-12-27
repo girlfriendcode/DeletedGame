@@ -1,0 +1,88 @@
+\hypertarget{classItem}{}\doxysection{Item Class Reference}
+\label{classItem}\index{Item@{Item}}
+
+
+{\ttfamily \#include $<$Item.\+h$>$}
+
+
+
+Inheritance diagram for Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classItem__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Item\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classItem__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItem_a3c694220ebae167805368344d1031790}\label{classItem_a3c694220ebae167805368344d1031790}} 
+enum {\bfseries S\+T\+A\+TE} \{ {\bfseries on\+Map}, 
+{\bfseries on\+Invent}, 
+{\bfseries nowhere}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItem_a3ccfb491767606b8fc8cbf6ff580bd5c}\label{classItem_a3ccfb491767606b8fc8cbf6ff580bd5c}} 
+{\bfseries Item} (\mbox{\hyperlink{classLevel}{Level}} \&level, int weight, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h)
+\item 
+\mbox{\Hypertarget{classItem_a56817af92c3db19016949b3277c83dca}\label{classItem_a56817af92c3db19016949b3277c83dca}} 
+int {\bfseries get\+Weight} ()
+\item 
+\mbox{\Hypertarget{classItem_a15cb4cc142613e40dc1a591ebe4168d6}\label{classItem_a15cb4cc142613e40dc1a591ebe4168d6}} 
+void {\bfseries set\+Weight} (int w)
+\item 
+virtual Float\+Rect \mbox{\hyperlink{classItem_adcae7856bb579cfcb5471153fd5c14b6}{get\+Rect}} () override
+\item 
+\mbox{\Hypertarget{classItem_a087cc1661da288dc881ab06a711ef11f}\label{classItem_a087cc1661da288dc881ab06a711ef11f}} 
+void {\bfseries draw} (sf\+::\+Render\+Window \&window)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItem_ad7dca6b5e8e3cf6ea2043294a4c3641b}\label{classItem_ad7dca6b5e8e3cf6ea2043294a4c3641b}} 
+S\+T\+A\+TE {\bfseries state}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItem_a05e743552459fc8c2abdc80a0f4f0b0a}\label{classItem_a05e743552459fc8c2abdc80a0f4f0b0a}} 
+int {\bfseries weight}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Абстрактный класс вещи 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classItem_adcae7856bb579cfcb5471153fd5c14b6}\label{classItem_adcae7856bb579cfcb5471153fd5c14b6}} 
+\index{Item@{Item}!getRect@{getRect}}
+\index{getRect@{getRect}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{getRect()}{getRect()}}
+{\footnotesize\ttfamily virtual Float\+Rect Item\+::get\+Rect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+\begin{DoxyReturn}{Returns}
+четырёхугольник объекта 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classFieldObject_a663e73150540e41b7d3601c0d688ff86}{Field\+Object}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Item.\+h\end{DoxyCompactItemize}

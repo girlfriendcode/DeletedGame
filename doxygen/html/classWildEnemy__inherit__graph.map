@@ -1,0 +1,5 @@
+<map id="WildEnemy" name="WildEnemy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,101,181"/>
+<area shape="rect" id="node2" href="$classUnit.html" title=" " alt="" coords="29,80,78,107"/>
+<area shape="rect" id="node3" href="$classFieldObject.html" title=" " alt="" coords="6,5,101,32"/>
+</map>

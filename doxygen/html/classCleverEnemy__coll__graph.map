@@ -1,0 +1,11 @@
+<map id="CleverEnemy" name="CleverEnemy">
+<area shape="rect" id="node1" title=" " alt="" coords="97,425,206,452"/>
+<area shape="rect" id="node2" href="$classCarrier.html" title=" " alt="" coords="73,349,139,376"/>
+<area shape="rect" id="node3" href="$classUnit.html" title=" " alt="" coords="85,260,135,287"/>
+<area shape="rect" id="node7" href="$classShooter.html" title=" " alt="" coords="163,349,235,376"/>
+<area shape="rect" id="node4" href="$classFieldObject.html" title=" " alt="" coords="5,95,100,121"/>
+<area shape="rect" id="node9" href="$classItem.html" title=" " alt="" coords="173,171,225,197"/>
+<area shape="rect" id="node5" href="$classLevel.html" title=" " alt="" coords="24,5,81,32"/>
+<area shape="rect" id="node6" href="$classmyView.html" title=" " alt="" coords="74,171,149,197"/>
+<area shape="rect" id="node8" href="$classWeapon.html" title=" " alt="" coords="162,260,237,287"/>
+</map>

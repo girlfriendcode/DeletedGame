@@ -1,0 +1,96 @@
+\hypertarget{classItemCollector}{}\doxysection{Item\+Collector Class Reference}
+\label{classItemCollector}\index{ItemCollector@{ItemCollector}}
+
+
+{\ttfamily \#include $<$Item\+Collector.\+h$>$}
+
+
+
+Inheritance diagram for Item\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classItemCollector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Item\+Collector\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classItemCollector__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItemCollector_a268954e7f2abd273c0eccda727f88e84}\label{classItemCollector_a268954e7f2abd273c0eccda727f88e84}} 
+{\bfseries Item\+Collector} (\mbox{\hyperlink{classLevel}{Level}} \&level, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h, \mbox{\hyperlink{classmyView}{my\+View}} \&view, std\+::map$<$ std\+::string, std\+::string $>$ properties)
+\item 
+virtual void \mbox{\hyperlink{classItemCollector_a900672598d93622c0f9c9eb4540e6ab3}{take\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item)
+\item 
+virtual void \mbox{\hyperlink{classItemCollector_a07adefab3e6d9c5b341150f7c785d371}{throw\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item)
+\item 
+virtual void \mbox{\hyperlink{classItemCollector_a5bfbf09882a8ba33872cd6ad85fdac66}{throw\+Item}} (float x, float y)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classItemCollector_a33bbe249cf34c972695cfceb97f75768}\label{classItemCollector_a33bbe249cf34c972695cfceb97f75768}} 
+\mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ \mbox{\hyperlink{classItem}{Item}} $\ast$ $>$ {\bfseries inventory}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Абстракный класс юнита, у которого есть инвентарь 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classItemCollector_a900672598d93622c0f9c9eb4540e6ab3}\label{classItemCollector_a900672598d93622c0f9c9eb4540e6ab3}} 
+\index{ItemCollector@{ItemCollector}!takeItem@{takeItem}}
+\index{takeItem@{takeItem}!ItemCollector@{ItemCollector}}
+\doxysubsubsection{\texorpdfstring{takeItem()}{takeItem()}}
+{\footnotesize\ttfamily virtual void Item\+Collector\+::take\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Взять предмет с карты 
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classHero_a3fd00d05ab2604e2c958da38588c276e}{Hero}}.
+
+\mbox{\Hypertarget{classItemCollector_a5bfbf09882a8ba33872cd6ad85fdac66}\label{classItemCollector_a5bfbf09882a8ba33872cd6ad85fdac66}} 
+\index{ItemCollector@{ItemCollector}!throwItem@{throwItem}}
+\index{throwItem@{throwItem}!ItemCollector@{ItemCollector}}
+\doxysubsubsection{\texorpdfstring{throwItem()}{throwItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Item\+Collector\+::throw\+Item (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Cброс всех вещей инвентаря при смерти или у фуражира 
+
+Reimplemented in \mbox{\hyperlink{classHero_a9136a4e14c2bfc704afc7d10ef227469}{Hero}}.
+
+\mbox{\Hypertarget{classItemCollector_a07adefab3e6d9c5b341150f7c785d371}\label{classItemCollector_a07adefab3e6d9c5b341150f7c785d371}} 
+\index{ItemCollector@{ItemCollector}!throwItem@{throwItem}}
+\index{throwItem@{throwItem}!ItemCollector@{ItemCollector}}
+\doxysubsubsection{\texorpdfstring{throwItem()}{throwItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Item\+Collector\+::throw\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Выбросить данный предмет из инвентаря 
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classHero_ac24b19d884d3f3ab88182f292c3abff5}{Hero}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Item\+Collector.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,139 @@
+\hypertarget{classBullet}{}\doxysection{Bullet Class Reference}
+\label{classBullet}\index{Bullet@{Bullet}}
+
+
+{\ttfamily \#include $<$Bullet.\+h$>$}
+
+
+
+Collaboration diagram for Bullet\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=131pt]{classBullet__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBullet_afb8df67cde912eb779b83c947547dd07}\label{classBullet_afb8df67cde912eb779b83c947547dd07}} 
+{\bfseries Bullet} (\mbox{\hyperlink{classLevel}{Level}} \&level, float x, float y, float temX, float temY)
+\item 
+void \mbox{\hyperlink{classBullet_a12b305020f86a27336e6a70ef364e268}{to\+Point}} (Vector2f pos)
+\item 
+void \mbox{\hyperlink{classBullet_aae4e2ed86bb5ed2f8a14ddb8f6a98657}{do\+Shoot}} (float time)
+\item 
+void \mbox{\hyperlink{classBullet_afb65b24984bca4ea4482267dfe57f83f}{update}} (float time)
+\item 
+\mbox{\Hypertarget{classBullet_a14a795a7a6f4d0ad2e96a19b79afc5ee}\label{classBullet_a14a795a7a6f4d0ad2e96a19b79afc5ee}} 
+void {\bfseries draw} (Render\+Window \&window)
+\item 
+\mbox{\Hypertarget{classBullet_a6b383c1b502370841d5b65319becd350}\label{classBullet_a6b383c1b502370841d5b65319becd350}} 
+Float\+Rect {\bfseries get\+Rect} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBullet_ab7ec100b09c6d8fbe1d97fe091568aea}\label{classBullet_ab7ec100b09c6d8fbe1d97fe091568aea}} 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ {\bfseries objects\+Static}
+\item 
+\mbox{\Hypertarget{classBullet_abefe45a859de69d5ef66860519f66059}\label{classBullet_abefe45a859de69d5ef66860519f66059}} 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ {\bfseries units}
+\item 
+\mbox{\Hypertarget{classBullet_a886df9d58c563a90cc0d68ef1809966c}\label{classBullet_a886df9d58c563a90cc0d68ef1809966c}} 
+\mbox{\hyperlink{classLevel}{Level}} {\bfseries level}
+\item 
+\mbox{\Hypertarget{classBullet_ae14d9fc5a9df27e8436e4220d813857c}\label{classBullet_ae14d9fc5a9df27e8436e4220d813857c}} 
+Texture {\bfseries texture}
+\item 
+\mbox{\Hypertarget{classBullet_a1e429ea8f1f7fc09535b05d8dc0231f3}\label{classBullet_a1e429ea8f1f7fc09535b05d8dc0231f3}} 
+Sprite {\bfseries sprite}
+\item 
+\mbox{\Hypertarget{classBullet_a0638be3607c28582b00a109e2aa7f5c2}\label{classBullet_a0638be3607c28582b00a109e2aa7f5c2}} 
+Image {\bfseries image}
+\item 
+\mbox{\Hypertarget{classBullet_a0126527c24d786958a54608ca5d17dfc}\label{classBullet_a0126527c24d786958a54608ca5d17dfc}} 
+std\+::string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classBullet_ac873d66200581d20332d30f3d9855b13}\label{classBullet_ac873d66200581d20332d30f3d9855b13}} 
+std\+::string {\bfseries file\+Name}
+\item 
+float \mbox{\hyperlink{classBullet_a653e2a95efdb16db3bf44af80f3113a5}{tempX}}
+\item 
+float \mbox{\hyperlink{classBullet_a9747a69522ce6f89d8d3b42c160bc3c5}{tempY}}
+\item 
+\mbox{\Hypertarget{classBullet_acffaa6c3c8136695229d341c5e6da56a}\label{classBullet_acffaa6c3c8136695229d341c5e6da56a}} 
+float {\bfseries x}
+\item 
+\mbox{\Hypertarget{classBullet_a32300c127a7b59a55608a2d949c156c1}\label{classBullet_a32300c127a7b59a55608a2d949c156c1}} 
+float {\bfseries y}
+\item 
+\mbox{\Hypertarget{classBullet_a4de789f2217a0b36032b1a7855256389}\label{classBullet_a4de789f2217a0b36032b1a7855256389}} 
+float {\bfseries w}
+\item 
+\mbox{\Hypertarget{classBullet_a4224fb518485b9099d3f76591db39b8b}\label{classBullet_a4224fb518485b9099d3f76591db39b8b}} 
+float {\bfseries h}
+\item 
+\mbox{\Hypertarget{classBullet_a549591c7f53e9dc859f48e7d39332a31}\label{classBullet_a549591c7f53e9dc859f48e7d39332a31}} 
+bool {\bfseries is\+Alive}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс пули 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBullet_aae4e2ed86bb5ed2f8a14ddb8f6a98657}\label{classBullet_aae4e2ed86bb5ed2f8a14ddb8f6a98657}} 
+\index{Bullet@{Bullet}!doShoot@{doShoot}}
+\index{doShoot@{doShoot}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{doShoot()}{doShoot()}}
+{\footnotesize\ttfamily void Bullet\+::do\+Shoot (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Перемещение пули 
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_a12b305020f86a27336e6a70ef364e268}\label{classBullet_a12b305020f86a27336e6a70ef364e268}} 
+\index{Bullet@{Bullet}!toPoint@{toPoint}}
+\index{toPoint@{toPoint}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{toPoint()}{toPoint()}}
+{\footnotesize\ttfamily void Bullet\+::to\+Point (\begin{DoxyParamCaption}\item[{Vector2f}]{pos }\end{DoxyParamCaption})}
+
+Указываем направление стрельбы 
+\begin{DoxyParams}{Parameters}
+{\em pos} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBullet_afb65b24984bca4ea4482267dfe57f83f}\label{classBullet_afb65b24984bca4ea4482267dfe57f83f}} 
+\index{Bullet@{Bullet}!update@{update}}
+\index{update@{update}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Bullet\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Обновление состояния пули 
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBullet_a653e2a95efdb16db3bf44af80f3113a5}\label{classBullet_a653e2a95efdb16db3bf44af80f3113a5}} 
+\index{Bullet@{Bullet}!tempX@{tempX}}
+\index{tempX@{tempX}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{tempX}{tempX}}
+{\footnotesize\ttfamily float Bullet\+::tempX}
+
+Координата по Х для цели пули \mbox{\Hypertarget{classBullet_a9747a69522ce6f89d8d3b42c160bc3c5}\label{classBullet_a9747a69522ce6f89d8d3b42c160bc3c5}} 
+\index{Bullet@{Bullet}!tempY@{tempY}}
+\index{tempY@{tempY}!Bullet@{Bullet}}
+\doxysubsubsection{\texorpdfstring{tempY}{tempY}}
+{\footnotesize\ttfamily float Bullet\+::tempY}
+
+Координата по Y для цели пули 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Bullet.\+h\end{DoxyCompactItemize}

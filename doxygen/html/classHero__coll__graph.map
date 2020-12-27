@@ -1,0 +1,12 @@
+<map id="Hero" name="Hero">
+<area shape="rect" id="node1" title=" " alt="" coords="188,425,241,452"/>
+<area shape="rect" id="node2" href="$classShooter.html" title=" " alt="" coords="237,349,309,376"/>
+<area shape="rect" id="node3" href="$classUnit.html" title=" " alt="" coords="206,260,255,287"/>
+<area shape="rect" id="node9" href="$classItemCollector.html" title=" " alt="" coords="102,349,213,376"/>
+<area shape="rect" id="node4" href="$classFieldObject.html" title=" " alt="" coords="125,95,219,121"/>
+<area shape="rect" id="node8" href="$classItem.html" title=" " alt="" coords="293,171,345,197"/>
+<area shape="rect" id="node5" href="$classLevel.html" title=" " alt="" coords="143,5,201,32"/>
+<area shape="rect" id="node6" href="$classmyView.html" title=" " alt="" coords="193,171,268,197"/>
+<area shape="rect" id="node7" href="$classWeapon.html" title=" " alt="" coords="280,260,355,287"/>
+<area shape="rect" id="node10" href="$classMyContainer.html" title=" " alt="" coords="5,260,181,287"/>
+</map>

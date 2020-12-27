@@ -1,0 +1,10 @@
+<map id="ForagerEnemy" name="ForagerEnemy">
+<area shape="rect" id="node1" title=" " alt="" coords="115,349,231,376"/>
+<area shape="rect" id="node2" href="$classCarrier.html" title=" " alt="" coords="197,273,264,300"/>
+<area shape="rect" id="node3" href="$classUnit.html" title=" " alt="" coords="206,184,255,211"/>
+<area shape="rect" id="node7" href="$classItemCollector.html" title=" " alt="" coords="62,273,173,300"/>
+<area shape="rect" id="node4" href="$classFieldObject.html" title=" " alt="" coords="113,95,207,121"/>
+<area shape="rect" id="node5" href="$classLevel.html" title=" " alt="" coords="131,5,189,32"/>
+<area shape="rect" id="node6" href="$classmyView.html" title=" " alt="" coords="232,95,307,121"/>
+<area shape="rect" id="node8" href="$classMyContainer.html" title=" " alt="" coords="5,184,181,211"/>
+</map>

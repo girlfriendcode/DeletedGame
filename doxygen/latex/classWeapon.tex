@@ -1,0 +1,100 @@
+\hypertarget{classWeapon}{}\doxysection{Weapon Class Reference}
+\label{classWeapon}\index{Weapon@{Weapon}}
+
+
+{\ttfamily \#include $<$Weapon.\+h$>$}
+
+
+
+Inheritance diagram for Weapon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classWeapon__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Weapon\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classWeapon__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classWeapon_acdff4e78965b38359a9167267536b8c5}{B\+U\+L\+L\+E\+T\+T\+Y\+PE}} \{ \mbox{\hyperlink{classWeapon_acdff4e78965b38359a9167267536b8c5acfae00562dca19d3f6f56015e79990c8}{R\+I\+F\+F\+LE}} = 1, 
+\mbox{\hyperlink{classWeapon_acdff4e78965b38359a9167267536b8c5a9a90231f8142fc499157e6f596672fcc}{A\+U\+TO}} = 2, 
+\mbox{\hyperlink{classWeapon_acdff4e78965b38359a9167267536b8c5a5ce63c6dfe2358eee0fb62cae4fd0be0}{P\+I\+S\+T\+OL}} = 3
+ \}
+\begin{DoxyCompactList}\small\item\em Виды оружия \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeapon_ab9b267b23309837ddba3b0f6c061a5e6}\label{classWeapon_ab9b267b23309837ddba3b0f6c061a5e6}} 
+{\bfseries Weapon} (\mbox{\hyperlink{classLevel}{Level}} \&level, float damage, float tshoot, float tcharge, int type, int maxB, int weight, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h)
+\item 
+\mbox{\Hypertarget{classWeapon_a20fc77004dee28b209619fbb28754b25}\label{classWeapon_a20fc77004dee28b209619fbb28754b25}} 
+float {\bfseries get\+W\+\_\+\+Damage} () const
+\item 
+\mbox{\Hypertarget{classWeapon_a1e56446a4f25c307a0308c500db4432d}\label{classWeapon_a1e56446a4f25c307a0308c500db4432d}} 
+float {\bfseries gettime\+Shoot} () const
+\item 
+\mbox{\Hypertarget{classWeapon_a1ab154a322486220554b83cb48a8d38d}\label{classWeapon_a1ab154a322486220554b83cb48a8d38d}} 
+float {\bfseries gettime\+Charge} () const
+\item 
+\mbox{\Hypertarget{classWeapon_ac4105cc24b5f050da7775fdc68b6a7c1}\label{classWeapon_ac4105cc24b5f050da7775fdc68b6a7c1}} 
+int {\bfseries getmax\+Bullets} () const
+\item 
+\mbox{\Hypertarget{classWeapon_ae824310c6817fe602a091d237eca331b}\label{classWeapon_ae824310c6817fe602a091d237eca331b}} 
+int {\bfseries get\+Bullets} () const
+\item 
+\mbox{\Hypertarget{classWeapon_a494d9e8644c52ee00bc22066891e1370}\label{classWeapon_a494d9e8644c52ee00bc22066891e1370}} 
+void {\bfseries set\+Bullets} (int bullets)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classWeapon_a76fb37879a006fab081a5785dbc6d19c}\label{classWeapon_a76fb37879a006fab081a5785dbc6d19c}} 
+\mbox{\hyperlink{classWeapon_acdff4e78965b38359a9167267536b8c5}{B\+U\+L\+L\+E\+T\+T\+Y\+PE}} {\bfseries bullet\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс оружия 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classWeapon_acdff4e78965b38359a9167267536b8c5}\label{classWeapon_acdff4e78965b38359a9167267536b8c5}} 
+\index{Weapon@{Weapon}!BULLETTYPE@{BULLETTYPE}}
+\index{BULLETTYPE@{BULLETTYPE}!Weapon@{Weapon}}
+\doxysubsubsection{\texorpdfstring{BULLETTYPE}{BULLETTYPE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classWeapon_acdff4e78965b38359a9167267536b8c5}{Weapon\+::\+B\+U\+L\+L\+E\+T\+T\+Y\+PE}}}
+
+
+
+Виды оружия 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RIFFLE@{RIFFLE}!Weapon@{Weapon}}\index{Weapon@{Weapon}!RIFFLE@{RIFFLE}}}\mbox{\Hypertarget{classWeapon_acdff4e78965b38359a9167267536b8c5acfae00562dca19d3f6f56015e79990c8}\label{classWeapon_acdff4e78965b38359a9167267536b8c5acfae00562dca19d3f6f56015e79990c8}} 
+R\+I\+F\+F\+LE&винтовка \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AUTO@{AUTO}!Weapon@{Weapon}}\index{Weapon@{Weapon}!AUTO@{AUTO}}}\mbox{\Hypertarget{classWeapon_acdff4e78965b38359a9167267536b8c5a9a90231f8142fc499157e6f596672fcc}\label{classWeapon_acdff4e78965b38359a9167267536b8c5a9a90231f8142fc499157e6f596672fcc}} 
+A\+U\+TO&автомат \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PISTOL@{PISTOL}!Weapon@{Weapon}}\index{Weapon@{Weapon}!PISTOL@{PISTOL}}}\mbox{\Hypertarget{classWeapon_acdff4e78965b38359a9167267536b8c5a5ce63c6dfe2358eee0fb62cae4fd0be0}\label{classWeapon_acdff4e78965b38359a9167267536b8c5a5ce63c6dfe2358eee0fb62cae4fd0be0}} 
+P\+I\+S\+T\+OL&пистолет \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Weapon.\+h\end{DoxyCompactItemize}

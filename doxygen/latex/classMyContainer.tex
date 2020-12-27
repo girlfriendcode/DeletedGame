@@ -1,0 +1,152 @@
+\hypertarget{classMyContainer}{}\doxysection{My\+Container$<$ T $>$ Class Template Reference}
+\label{classMyContainer}\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+
+
+{\ttfamily \#include $<$My\+Container.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMyContainer_a15f87da830e2e986d4a92bf1cd46cad5}\label{classMyContainer_a15f87da830e2e986d4a92bf1cd46cad5}} 
+{\bfseries My\+Container} (const \mbox{\hyperlink{classMyContainer}{My\+Container}} \&other)
+\item 
+\mbox{\Hypertarget{classMyContainer_a23ea86de33f8296d342839b8d4dcee54}\label{classMyContainer_a23ea86de33f8296d342839b8d4dcee54}} 
+{\bfseries My\+Container} (const std\+::vector$<$ T $>$ \&other)
+\item 
+\mbox{\Hypertarget{classMyContainer_ac7b62e97817c292c2c8dfffc5e226c4d}\label{classMyContainer_ac7b62e97817c292c2c8dfffc5e226c4d}} 
+{\bfseries My\+Container} (const std\+::initializer\+\_\+list$<$ T $>$ \&other)
+\item 
+T \& \mbox{\hyperlink{classMyContainer_ad9fa8af551dfe08c0477b0447e307aa8}{operator\mbox{[}$\,$\mbox{]}}} (int n)
+\item 
+\mbox{\hyperlink{classMyContainer}{My\+Container}} \& \mbox{\hyperlink{classMyContainer_a544e47b21f1a195832847f117ce3fb6a}{operator=}} (const \mbox{\hyperlink{classMyContainer}{My\+Container}} \&vec)
+\item 
+\mbox{\Hypertarget{classMyContainer_a7ac43c24de648a9b4835d08042d1f0f7}\label{classMyContainer_a7ac43c24de648a9b4835d08042d1f0f7}} 
+\mbox{\hyperlink{classMyContainer}{My\+Container}} {\bfseries operator-\/} (const \mbox{\hyperlink{classMyContainer}{My\+Container}} \&vec)
+\item 
+\mbox{\Hypertarget{classMyContainer_ab862b47a34874a01c6db45cd0f8a5283}\label{classMyContainer_ab862b47a34874a01c6db45cd0f8a5283}} 
+\mbox{\hyperlink{classMyContainer}{My\+Container}} {\bfseries operator+} (const \mbox{\hyperlink{classMyContainer}{My\+Container}} \&vec)
+\item 
+\mbox{\Hypertarget{classMyContainer_a0728c586ca5b6af4a4222bcbcf63381d}\label{classMyContainer_a0728c586ca5b6af4a4222bcbcf63381d}} 
+const T \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int n) const
+\item 
+bool \mbox{\hyperlink{classMyContainer_a85e8c6c3fb9155f9bad907e8db3525e7}{operator==}} (const \mbox{\hyperlink{classMyContainer}{My\+Container}} \&vec)
+\item 
+bool \mbox{\hyperlink{classMyContainer_a88925c7985183b5cc75a1db11dc71b82}{operator!=}} (const \mbox{\hyperlink{classMyContainer}{My\+Container}} \&vec)
+\item 
+\mbox{\Hypertarget{classMyContainer_a652615768c423a6d4e2fa08009ea5a7e}\label{classMyContainer_a652615768c423a6d4e2fa08009ea5a7e}} 
+bool {\bfseries empty} ()
+\item 
+int \mbox{\hyperlink{classMyContainer_ad38fcdf507b22c3881bd65eb43737dd1}{find\+Element}} (T \&element)
+\item 
+void \mbox{\hyperlink{classMyContainer_a9e9fe91a0b690e72cc9dc520069aeb8c}{push\+\_\+back}} (const T \&it)
+\item 
+void \mbox{\hyperlink{classMyContainer_a5e75ed52259451466d14c8f460e7a57e}{replace}} (T \&element, const T \&other)
+\item 
+void \mbox{\hyperlink{classMyContainer_a19870a7d38ffd6c88f44c6136f2085a5}{pop\+\_\+back}} ()
+\item 
+void \mbox{\hyperlink{classMyContainer_a8c92656e1dc2d21b83eae0e44dfe0d5f}{erase}} (int index)
+\item 
+void \mbox{\hyperlink{classMyContainer_a53e0731f1f7392d495f72c893bffe6be}{clear}} ()
+\item 
+\mbox{\Hypertarget{classMyContainer_afbc9c904f12b1ebbac7c73a9860c4ada}\label{classMyContainer_afbc9c904f12b1ebbac7c73a9860c4ada}} 
+int {\bfseries get\+Size} () const
+\item 
+\mbox{\Hypertarget{classMyContainer_a8b0d8b6c059be6e76848e4fd57d4f76d}\label{classMyContainer_a8b0d8b6c059be6e76848e4fd57d4f76d}} 
+T $\ast$ {\bfseries get\+Elem} () const
+\item 
+void \mbox{\hyperlink{classMyContainer_a009a4cc7149d0e91791129821b533a67}{resize}} (int index, int new\+\_\+size)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class My\+Container$<$ T $>$}
+
+Собственный шаблон 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMyContainer_a53e0731f1f7392d495f72c893bffe6be}\label{classMyContainer_a53e0731f1f7392d495f72c893bffe6be}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!clear@{clear}}
+\index{clear@{clear}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::clear}
+
+Очистить весь контейнер \mbox{\Hypertarget{classMyContainer_a8c92656e1dc2d21b83eae0e44dfe0d5f}\label{classMyContainer_a8c92656e1dc2d21b83eae0e44dfe0d5f}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!erase@{erase}}
+\index{erase@{erase}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::erase (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+Удаление по индексу \mbox{\Hypertarget{classMyContainer_ad38fcdf507b22c3881bd65eb43737dd1}\label{classMyContainer_ad38fcdf507b22c3881bd65eb43737dd1}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!findElement@{findElement}}
+\index{findElement@{findElement}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{findElement()}{findElement()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::find\+Element (\begin{DoxyParamCaption}\item[{T \&}]{element }\end{DoxyParamCaption})}
+
+Найти элемент \begin{DoxyReturn}{Returns}
+индекс элемента 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMyContainer_a88925c7985183b5cc75a1db11dc71b82}\label{classMyContainer_a88925c7985183b5cc75a1db11dc71b82}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$ \&}]{vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Перегруженный оператор неравенства \mbox{\Hypertarget{classMyContainer_a544e47b21f1a195832847f117ce3fb6a}\label{classMyContainer_a544e47b21f1a195832847f117ce3fb6a}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$ \& \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$ \&}]{vec }\end{DoxyParamCaption})}
+
+Перегруженный оператор присвоения \mbox{\Hypertarget{classMyContainer_a85e8c6c3fb9155f9bad907e8db3525e7}\label{classMyContainer_a85e8c6c3fb9155f9bad907e8db3525e7}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$ \&}]{vec }\end{DoxyParamCaption})}
+
+Перегруженный оператор равенства \mbox{\Hypertarget{classMyContainer_ad9fa8af551dfe08c0477b0447e307aa8}\label{classMyContainer_ad9fa8af551dfe08c0477b0447e307aa8}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Оператор доступа как к обычному массиву \mbox{\Hypertarget{classMyContainer_a19870a7d38ffd6c88f44c6136f2085a5}\label{classMyContainer_a19870a7d38ffd6c88f44c6136f2085a5}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!pop\_back@{pop\_back}}
+\index{pop\_back@{pop\_back}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{pop\_back()}{pop\_back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::pop\+\_\+back}
+
+Удаление последнего элемента \mbox{\Hypertarget{classMyContainer_a9e9fe91a0b690e72cc9dc520069aeb8c}\label{classMyContainer_a9e9fe91a0b690e72cc9dc520069aeb8c}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const T \&}]{it }\end{DoxyParamCaption})}
+
+Вставка в конец нового элемента \mbox{\Hypertarget{classMyContainer_a5e75ed52259451466d14c8f460e7a57e}\label{classMyContainer_a5e75ed52259451466d14c8f460e7a57e}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!replace@{replace}}
+\index{replace@{replace}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{replace()}{replace()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::replace (\begin{DoxyParamCaption}\item[{T \&}]{element,  }\item[{const T \&}]{other }\end{DoxyParamCaption})}
+
+Замена одного элемента на другой \mbox{\Hypertarget{classMyContainer_a009a4cc7149d0e91791129821b533a67}\label{classMyContainer_a009a4cc7149d0e91791129821b533a67}} 
+\index{MyContainer$<$ T $>$@{MyContainer$<$ T $>$}!resize@{resize}}
+\index{resize@{resize}!MyContainer$<$ T $>$@{MyContainer$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \mbox{\hyperlink{classMyContainer}{My\+Container}}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{int}]{new\+\_\+size }\end{DoxyParamCaption})}
+
+Изменение размера контейнера 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/My\+Container.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="Hero" name="Hero">
+<area shape="rect" id="node1" title=" " alt="" coords="72,229,125,256"/>
+<area shape="rect" id="node2" href="$classShooter.html" title=" " alt="" coords="5,155,77,181"/>
+<area shape="rect" id="node3" href="$classUnit.html" title=" " alt="" coords="74,80,123,107"/>
+<area shape="rect" id="node5" href="$classItemCollector.html" title=" " alt="" coords="102,155,213,181"/>
+<area shape="rect" id="node4" href="$classFieldObject.html" title=" " alt="" coords="51,5,146,32"/>
+</map>

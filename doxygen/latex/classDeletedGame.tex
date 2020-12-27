@@ -1,0 +1,89 @@
+\hypertarget{classDeletedGame}{}\doxysection{Deleted\+Game Class Reference}
+\label{classDeletedGame}\index{DeletedGame@{DeletedGame}}
+
+
+{\ttfamily \#include $<$Deleted\+Game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDeletedGame_a297eebced84fc4e04e294ae99298d30d}{Init}} ()
+\item 
+void \mbox{\hyperlink{classDeletedGame_a913c826514e42e0bf148c4afdd9b1971}{Run}} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\float \mbox{\hyperlink{classDeletedGame_aef73d0bbd1c801de2215b7ec4d173bbe}{get\+Sum\+Of\+Time\+Points}} (std\+::list$<$ T $\ast$ $>$ units)
+\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{classDeletedGame_a3ad9f56f17d8b7d801045b66f48555c2}{update\+Squad\+Time}} (std\+::list$<$ T $\ast$ $>$ units)
+\item 
+float \mbox{\hyperlink{classDeletedGame_add350a7e84ca6756c3e952e7667298aa}{get\+Sum\+Of\+Health}} (std\+::list$<$ \mbox{\hyperlink{classUnit}{Unit}} $\ast$ $>$ units)
+\item 
+\mbox{\Hypertarget{classDeletedGame_acf084e2347b4af8c6a52bc1e8c2b4fc7}\label{classDeletedGame_acf084e2347b4af8c6a52bc1e8c2b4fc7}} 
+float {\bfseries get\+Sum\+Of\+Health} (std\+::list$<$ \mbox{\hyperlink{classHero}{Hero}} $\ast$ $>$ heroes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDeletedGame_addbac4a322f2ee3d7cb0e6d17b05d294}\label{classDeletedGame_addbac4a322f2ee3d7cb0e6d17b05d294}} 
+sf\+::\+Render\+Window {\bfseries window}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс, отвечающий за работку приложения 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDeletedGame_add350a7e84ca6756c3e952e7667298aa}\label{classDeletedGame_add350a7e84ca6756c3e952e7667298aa}} 
+\index{DeletedGame@{DeletedGame}!getSumOfHealth@{getSumOfHealth}}
+\index{getSumOfHealth@{getSumOfHealth}!DeletedGame@{DeletedGame}}
+\doxysubsubsection{\texorpdfstring{getSumOfHealth()}{getSumOfHealth()}}
+{\footnotesize\ttfamily float Deleted\+Game\+::get\+Sum\+Of\+Health (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{classUnit}{Unit}} $\ast$ $>$}]{units }\end{DoxyParamCaption})}
+
+Нахождение суммы жизней \mbox{\Hypertarget{classDeletedGame_aef73d0bbd1c801de2215b7ec4d173bbe}\label{classDeletedGame_aef73d0bbd1c801de2215b7ec4d173bbe}} 
+\index{DeletedGame@{DeletedGame}!getSumOfTimePoints@{getSumOfTimePoints}}
+\index{getSumOfTimePoints@{getSumOfTimePoints}!DeletedGame@{DeletedGame}}
+\doxysubsubsection{\texorpdfstring{getSumOfTimePoints()}{getSumOfTimePoints()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+float Deleted\+Game\+::get\+Sum\+Of\+Time\+Points (\begin{DoxyParamCaption}\item[{std\+::list$<$ T $\ast$ $>$}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Считаем сумму очков времени команды 
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+общее число очков 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classDeletedGame_a297eebced84fc4e04e294ae99298d30d}\label{classDeletedGame_a297eebced84fc4e04e294ae99298d30d}} 
+\index{DeletedGame@{DeletedGame}!Init@{Init}}
+\index{Init@{Init}!DeletedGame@{DeletedGame}}
+\doxysubsubsection{\texorpdfstring{Init()}{Init()}}
+{\footnotesize\ttfamily void Deleted\+Game\+::\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Создание окна игры \mbox{\Hypertarget{classDeletedGame_a913c826514e42e0bf148c4afdd9b1971}\label{classDeletedGame_a913c826514e42e0bf148c4afdd9b1971}} 
+\index{DeletedGame@{DeletedGame}!Run@{Run}}
+\index{Run@{Run}!DeletedGame@{DeletedGame}}
+\doxysubsubsection{\texorpdfstring{Run()}{Run()}}
+{\footnotesize\ttfamily void Deleted\+Game\+::\+Run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Загрузка карты и игровой процесс \mbox{\Hypertarget{classDeletedGame_a3ad9f56f17d8b7d801045b66f48555c2}\label{classDeletedGame_a3ad9f56f17d8b7d801045b66f48555c2}} 
+\index{DeletedGame@{DeletedGame}!updateSquadTime@{updateSquadTime}}
+\index{updateSquadTime@{updateSquadTime}!DeletedGame@{DeletedGame}}
+\doxysubsubsection{\texorpdfstring{updateSquadTime()}{updateSquadTime()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void Deleted\+Game\+::update\+Squad\+Time (\begin{DoxyParamCaption}\item[{std\+::list$<$ T $\ast$ $>$}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Обновление очков времени команды 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em units} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Deleted\+Game.\+h\end{DoxyCompactItemize}

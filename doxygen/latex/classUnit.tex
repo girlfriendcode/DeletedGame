@@ -1,0 +1,140 @@
+\hypertarget{classUnit}{}\doxysection{Unit Class Reference}
+\label{classUnit}\index{Unit@{Unit}}
+
+
+{\ttfamily \#include $<$Unit.\+h$>$}
+
+
+
+Inheritance diagram for Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Unit\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classUnit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUnit_a1f775e5722e5ff62d4895f06d09b7633}\label{classUnit_a1f775e5722e5ff62d4895f06d09b7633}} 
+{\bfseries Unit} (\mbox{\hyperlink{classLevel}{Level}} \&level, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h, \mbox{\hyperlink{classmyView}{my\+View}} \&view, std\+::map$<$ std\+::string, std\+::string $>$ properties)
+\item 
+virtual void \mbox{\hyperlink{classUnit_aa36359cf1ed1eb51e1a48fcbe5b05c4e}{update}} (float time) override
+\item 
+void \mbox{\hyperlink{classUnit_a0fbbcbd2bd00cac8e672d2930c201d3f}{to\+Select}} (Vector2f pos, sf\+::\+Event event)
+\item 
+void \mbox{\hyperlink{classUnit_abe037b001d831b3da3f67a27a84f4aa3}{do\+Step}} (float time)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::map$<$ std\+::string, float $>$ \mbox{\hyperlink{classUnit_ad09a0918a575e9d19371c5205c9ef5be}{basic\+Stats}}
+\item 
+bool \mbox{\hyperlink{classUnit_a8b8529ce4a8f816a559113e6f4a6935b}{is\+Alive}}
+\item 
+\mbox{\Hypertarget{classUnit_a869c1c69e8ab51514151c2a3f99c602b}\label{classUnit_a869c1c69e8ab51514151c2a3f99c602b}} 
+bool {\bfseries is\+Move}
+\item 
+\mbox{\Hypertarget{classUnit_a7ce7e9a4ae49a6b056ed5dbb93f7b1e7}\label{classUnit_a7ce7e9a4ae49a6b056ed5dbb93f7b1e7}} 
+bool {\bfseries is\+Select}
+\item 
+\mbox{\Hypertarget{classUnit_af0ba75e32e2a1bf7426f6b3ec84439e7}\label{classUnit_af0ba75e32e2a1bf7426f6b3ec84439e7}} 
+double {\bfseries current\+Frame} = 0
+\item 
+\mbox{\Hypertarget{classUnit_a299840d85e3224396815cb9bc9573da4}\label{classUnit_a299840d85e3224396815cb9bc9573da4}} 
+\mbox{\hyperlink{classmyView}{my\+View}} {\bfseries view}
+\item 
+float \mbox{\hyperlink{classUnit_a5d84c1e435aef091bcad62f0febb7e78}{tempX}}
+\item 
+\mbox{\Hypertarget{classUnit_a28721e1f3da07c17e96d9a6794c5ffe8}\label{classUnit_a28721e1f3da07c17e96d9a6794c5ffe8}} 
+float {\bfseries tempY}
+\item 
+\mbox{\Hypertarget{classUnit_a3cabdb63468a181555a050b6bf808f2b}\label{classUnit_a3cabdb63468a181555a050b6bf808f2b}} 
+std\+::vector$<$ \mbox{\hyperlink{classMapObject}{Map\+Object}} $>$ {\bfseries map}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс, описывающий юнит-\/двигающийся по полю одушевленный объект 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUnit_abe037b001d831b3da3f67a27a84f4aa3}\label{classUnit_abe037b001d831b3da3f67a27a84f4aa3}} 
+\index{Unit@{Unit}!doStep@{doStep}}
+\index{doStep@{doStep}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{doStep()}{doStep()}}
+{\footnotesize\ttfamily void Unit\+::do\+Step (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})}
+
+Сделать шаг в место клика курсора 
+\begin{DoxyParams}{Parameters}
+{\em time} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnit_a0fbbcbd2bd00cac8e672d2930c201d3f}\label{classUnit_a0fbbcbd2bd00cac8e672d2930c201d3f}} 
+\index{Unit@{Unit}!toSelect@{toSelect}}
+\index{toSelect@{toSelect}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{toSelect()}{toSelect()}}
+{\footnotesize\ttfamily void Unit\+::to\+Select (\begin{DoxyParamCaption}\item[{Vector2f}]{pos,  }\item[{sf\+::\+Event}]{event }\end{DoxyParamCaption})}
+
+Обработка столкновений с объектами карты 
+\begin{DoxyParams}{Parameters}
+{\em Dx} & \\
+\hline
+{\em Dy} & Выбор данного юнита \\
+\hline
+{\em pos} & \\
+\hline
+{\em event} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUnit_aa36359cf1ed1eb51e1a48fcbe5b05c4e}\label{classUnit_aa36359cf1ed1eb51e1a48fcbe5b05c4e}} 
+\index{Unit@{Unit}!update@{update}}
+\index{update@{update}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Unit\+::update (\begin{DoxyParamCaption}\item[{float}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Обновление состояния персонажа 
+
+Reimplemented from \mbox{\hyperlink{classFieldObject_acebfcb91c67b319a4b0c5808438e5d27}{Field\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classShooter_a0ca80da2bdd2cf09fc6edcf2bc97d69d}{Shooter}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classUnit_ad09a0918a575e9d19371c5205c9ef5be}\label{classUnit_ad09a0918a575e9d19371c5205c9ef5be}} 
+\index{Unit@{Unit}!basicStats@{basicStats}}
+\index{basicStats@{basicStats}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{basicStats}{basicStats}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, float$>$ Unit\+::basic\+Stats}
+
+Общие для всех юнитов характеристики\+: максимальное и текущее здоровье, максимальное и текущее кол-\/во очков времени радиус обзора, кол-\/во очков времени, затрачиваемое на шаг \mbox{\Hypertarget{classUnit_a8b8529ce4a8f816a559113e6f4a6935b}\label{classUnit_a8b8529ce4a8f816a559113e6f4a6935b}} 
+\index{Unit@{Unit}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{isAlive}{isAlive}}
+{\footnotesize\ttfamily bool Unit\+::is\+Alive}
+
+Состояния юнита \mbox{\Hypertarget{classUnit_a5d84c1e435aef091bcad62f0febb7e78}\label{classUnit_a5d84c1e435aef091bcad62f0febb7e78}} 
+\index{Unit@{Unit}!tempX@{tempX}}
+\index{tempX@{tempX}!Unit@{Unit}}
+\doxysubsubsection{\texorpdfstring{tempX}{tempX}}
+{\footnotesize\ttfamily float Unit\+::tempX}
+
+Координаты для снятия клика курсора -\/ куда двигаться или стрелять 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Unit.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,174 @@
+\hypertarget{classHero}{}\doxysection{Hero Class Reference}
+\label{classHero}\index{Hero@{Hero}}
+
+
+{\ttfamily \#include $<$Hero.\+h$>$}
+
+
+
+Inheritance diagram for Hero\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classHero__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Hero\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classHero__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHero_a81c4f1e177e780bb179c0be3111919c2}\label{classHero_a81c4f1e177e780bb179c0be3111919c2}} 
+{\bfseries Hero} (\mbox{\hyperlink{classLevel}{Level}} \&level, float shoot\+Precision, std\+::string \&name, std\+::string \&file\+Name, float x, float y, float w, float h, \mbox{\hyperlink{classmyView}{my\+View}} \&view, std\+::map$<$ std\+::string, std\+::string $>$ properties)
+\item 
+void \mbox{\hyperlink{classHero_ae8ab6a1380232c4b47dbedd9537e64ad}{activate\+Weapon}} (\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$w)
+\item 
+void \mbox{\hyperlink{classHero_a9adcac660543f07f5243d828017fe488}{recharge}} (\mbox{\hyperlink{classBulletCase}{Bullet\+Case}} $\ast$bullet\+Case)
+\item 
+void \mbox{\hyperlink{classHero_aabc2f8119e6de2086a4f77691eadf86d}{use\+Medecine}} (\mbox{\hyperlink{classMedChest}{Med\+Chest}} $\ast$med)
+\item 
+virtual void \mbox{\hyperlink{classHero_a3fd00d05ab2604e2c958da38588c276e}{take\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item) override
+\item 
+virtual void \mbox{\hyperlink{classHero_ac24b19d884d3f3ab88182f292c3abff5}{throw\+Item}} (\mbox{\hyperlink{classItem}{Item}} $\ast$item) override
+\item 
+virtual void \mbox{\hyperlink{classHero_a9136a4e14c2bfc704afc7d10ef227469}{throw\+Item}} (float x, float y)
+\item 
+virtual void \mbox{\hyperlink{classHero_aeb3b8be01e50a2454ec7fa68c6a6018f}{throw\+Weapon}} (\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$weapon)
+\item 
+virtual void \mbox{\hyperlink{classHero_a61cf970a1e227fcf74358d6fb67c9c6a}{take\+Weapon}} (\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$weapon) override
+\item 
+\mbox{\Hypertarget{classHero_a0b3fa73c03a90ca8999e84d8b03b805b}\label{classHero_a0b3fa73c03a90ca8999e84d8b03b805b}} 
+int {\bfseries get\+Weight} () const
+\item 
+\mbox{\Hypertarget{classHero_aefe5e24b9a6c4cb68a95c19d97e6b7ab}\label{classHero_aefe5e24b9a6c4cb68a95c19d97e6b7ab}} 
+int {\bfseries getmax\+Weight} () const
+\item 
+\mbox{\Hypertarget{classHero_aeb941d63e4dfa5e163b03e31fe78193c}\label{classHero_aeb941d63e4dfa5e163b03e31fe78193c}} 
+void {\bfseries set\+Weight} (int weight)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classHero_a01d524c87f660832b37b926817c0ae88}\label{classHero_a01d524c87f660832b37b926817c0ae88}} 
+int {\bfseries curr\+Item}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Класс оперативника(героя) 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHero_ae8ab6a1380232c4b47dbedd9537e64ad}\label{classHero_ae8ab6a1380232c4b47dbedd9537e64ad}} 
+\index{Hero@{Hero}!activateWeapon@{activateWeapon}}
+\index{activateWeapon@{activateWeapon}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{activateWeapon()}{activateWeapon()}}
+{\footnotesize\ttfamily void Hero\+::activate\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$}]{w }\end{DoxyParamCaption})}
+
+Выбор оружия 
+\begin{DoxyParams}{Parameters}
+{\em w} & выбранное оружие \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHero_a9adcac660543f07f5243d828017fe488}\label{classHero_a9adcac660543f07f5243d828017fe488}} 
+\index{Hero@{Hero}!recharge@{recharge}}
+\index{recharge@{recharge}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{recharge()}{recharge()}}
+{\footnotesize\ttfamily void Hero\+::recharge (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBulletCase}{Bullet\+Case}} $\ast$}]{bullet\+Case }\end{DoxyParamCaption})}
+
+Перезарядка оружия 
+\begin{DoxyParams}{Parameters}
+{\em bullet\+Case} & магазин патронов \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHero_a3fd00d05ab2604e2c958da38588c276e}\label{classHero_a3fd00d05ab2604e2c958da38588c276e}} 
+\index{Hero@{Hero}!takeItem@{takeItem}}
+\index{takeItem@{takeItem}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{takeItem()}{takeItem()}}
+{\footnotesize\ttfamily virtual void Hero\+::take\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Взять вещь с карты 
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classItemCollector_a900672598d93622c0f9c9eb4540e6ab3}{Item\+Collector}}.
+
+\mbox{\Hypertarget{classHero_a61cf970a1e227fcf74358d6fb67c9c6a}\label{classHero_a61cf970a1e227fcf74358d6fb67c9c6a}} 
+\index{Hero@{Hero}!takeWeapon@{takeWeapon}}
+\index{takeWeapon@{takeWeapon}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{takeWeapon()}{takeWeapon()}}
+{\footnotesize\ttfamily virtual void Hero\+::take\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$}]{weapon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Взять оружие 
+\begin{DoxyParams}{Parameters}
+{\em weapon} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classShooter_a8776098588c020b923bb01618ea4d8d7}{Shooter}}.
+
+\mbox{\Hypertarget{classHero_a9136a4e14c2bfc704afc7d10ef227469}\label{classHero_a9136a4e14c2bfc704afc7d10ef227469}} 
+\index{Hero@{Hero}!throwItem@{throwItem}}
+\index{throwItem@{throwItem}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{throwItem()}{throwItem()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Hero\+::throw\+Item (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Cброс всех вещей инвентаря при смерти или у фуражира 
+
+Reimplemented from \mbox{\hyperlink{classItemCollector_a5bfbf09882a8ba33872cd6ad85fdac66}{Item\+Collector}}.
+
+\mbox{\Hypertarget{classHero_ac24b19d884d3f3ab88182f292c3abff5}\label{classHero_ac24b19d884d3f3ab88182f292c3abff5}} 
+\index{Hero@{Hero}!throwItem@{throwItem}}
+\index{throwItem@{throwItem}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{throwItem()}{throwItem()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Hero\+::throw\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classItem}{Item}} $\ast$}]{item }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Сбросить выбранный предмет 
+\begin{DoxyParams}{Parameters}
+{\em item} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classItemCollector_a07adefab3e6d9c5b341150f7c785d371}{Item\+Collector}}.
+
+\mbox{\Hypertarget{classHero_aeb3b8be01e50a2454ec7fa68c6a6018f}\label{classHero_aeb3b8be01e50a2454ec7fa68c6a6018f}} 
+\index{Hero@{Hero}!throwWeapon@{throwWeapon}}
+\index{throwWeapon@{throwWeapon}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{throwWeapon()}{throwWeapon()}}
+{\footnotesize\ttfamily virtual void Hero\+::throw\+Weapon (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWeapon}{Weapon}} $\ast$}]{weapon }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Бросить оружие 
+\begin{DoxyParams}{Parameters}
+{\em weapon} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classHero_aabc2f8119e6de2086a4f77691eadf86d}\label{classHero_aabc2f8119e6de2086a4f77691eadf86d}} 
+\index{Hero@{Hero}!useMedecine@{useMedecine}}
+\index{useMedecine@{useMedecine}!Hero@{Hero}}
+\doxysubsubsection{\texorpdfstring{useMedecine()}{useMedecine()}}
+{\footnotesize\ttfamily void Hero\+::use\+Medecine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMedChest}{Med\+Chest}} $\ast$}]{med }\end{DoxyParamCaption})}
+
+Использовать аптечку 
+\begin{DoxyParams}{Parameters}
+{\em med} & аптечка \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Hero.\+h\end{DoxyCompactItemize}
